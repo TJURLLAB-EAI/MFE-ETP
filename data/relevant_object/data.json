@@ -1,0 +1,575 @@
+{
+    "metadata": {
+        "dataset": "relevant_object",
+        "num_sample": 50,
+        "task_instruction": [
+            "I will provide you with a series of images and a corresponding question. In each image set, you will find numbered objects. Your task is to identify the most appropriate object number and name it according to the question's description. Please respond with only the number and the object name, such as '2. Garbage can.' Exclude any references to robots while answering the questions.",
+            "You'll receive a set of images along with a related question. In each image group, there will be objects numbered for reference. Your job is to determine the most suitable object number and label it according to the question's description. Please provide your response in the format of the number followed by the object name, such as '2. Garbage can.' Avoid mentioning robots when answering.",
+            "I'll furnish you with a sequence of images and a corresponding question. Within each set of images, you will encounter numbered objects. Your responsibility is to select the most fitting object number and designate it according to the question's criteria. Respond using only the number and the object's name, like '2. Garbage can.' Please refrain from any allusions to robots in your answers.",
+            "Anticipate a collection of images paired with associated questions. In each group of images, numbered objects will be present. Your task is to discern the most appropriate object number and label it based on the question's description. Respond with just the number and the object's name, such as '2. Garbage can.' Exclude any references to robots in your responses.",
+            "I will present you with a series of images and a question that corresponds to each set of images. In each image grouping, you will encounter objects marked with numbers. Your duty is to determine the most suitable object number and provide its name in accordance with the question's context. Your response should consist of the number and the object's name only, like '2. Garbage can.' Avoid mentioning robots when answering.",
+            "You can expect to receive a set of images alongside a question related to each image set. Within these image sets, you will find objects labeled with numbers. Your task is to identify the most appropriate object number and assign it a name based on the question's description. Please respond by stating the number and the object's name only, as in '2. Garbage can.' Ensure that your answers do not include any references to robots."
+        ]
+    },
+    "data": [
+        {
+            "sample_id": 0,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Now to wrap the gift, where should you put the gift. You answer is:",
+                "images_path": [
+                    "assembling_gift_baskets_0.jpg",
+                    "assembling_gift_baskets_1.jpg"
+                ]
+            },
+            "response": "1. Busket"
+        },
+        {
+            "sample_id": 1,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Now to store the food, where should you put the food. Your answer is:",
+                "images_path": [
+                    "assembling_gift_baskets_0.jpg",
+                    "assembling_gift_baskets_1.jpg"
+                ]
+            },
+            "response": "2. Refrigerator"
+        },
+        {
+            "sample_id": 2,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Now to cook the food, where should you put the food. Your answer is:",
+                "images_path": [
+                    "assembling_gift_baskets_0.jpg",
+                    "assembling_gift_baskets_1.jpg"
+                ]
+            },
+            "response": "3. Pot"
+        },
+        {
+            "sample_id": 3,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Now to cut the food, where should you put the food. Your answer is:",
+                "images_path": [
+                    "bottling_fruit_0.jpg",
+                    "bottling_fruit_1.jpg",
+                    "bottling_fruit_2.jpg"
+                ]
+            },
+            "response": "4. Cutting Board"
+        },
+        {
+            "sample_id": 4,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Now to wash the food, where should you put the food. Your answer is:",
+                "images_path": [
+                    "bottling_fruit_0.jpg",
+                    "bottling_fruit_1.jpg",
+                    "bottling_fruit_2.jpg"
+                ]
+            },
+            "response": "1. Sink"
+        },
+        {
+            "sample_id": 5,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Now to heat the food, where should you put the food. Your answer is:",
+                "images_path": [
+                    "bottling_fruit_0.jpg",
+                    "bottling_fruit_1.jpg",
+                    "bottling_fruit_2.jpg"
+                ]
+            },
+            "response": "2. Stove"
+        },
+        {
+            "sample_id": 6,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Now to cut the food, what tool should you use. Your answer is:",
+                "images_path": [
+                    "bottling_fruit_3.jpg"
+                ]
+            },
+            "response": "1. Knife"
+        },
+        {
+            "sample_id": 7,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Now to cut the food, what tool should you use. Your answer is:",
+                "images_path": [
+                    "bottling_fruit_3.jpg"
+                ]
+            },
+            "response": "4. Cloth"
+        },
+        {
+            "sample_id": 8,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Now to wipe the table, what tool should you use. Your answer is:",
+                "images_path": [
+                    "bottling_fruit_3.jpg"
+                ]
+            },
+            "response": "4. Cloth"
+        },
+        {
+            "sample_id": 9,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Now to arrange books, where should you put the books.  Your answer is:",
+                "images_path": [
+                    "bottling_fruit_3.jpg"
+                ]
+            },
+            "response": "3. Bookshelf"
+        },
+        {
+            "sample_id": 10,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Now to take a bath, where should you go.  Your answer is:",
+                "images_path": [
+                    "cleaning_bathrooms_0.jpg"
+                ]
+            },
+            "response": "1. Bathtub"
+        },
+        {
+            "sample_id": 11,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Now to take a bath, where should you go.  Your answer is:",
+                "images_path": [
+                    "cleaning_bathrooms_0.jpg"
+                ]
+            },
+            "response": "1. Bathtub"
+        },
+        {
+            "sample_id": 12,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Now to take a bath, where should you go.  Your answer is:",
+                "images_path": [
+                    "cleaning_bathrooms_0.jpg"
+                ]
+            },
+            "response": "1. Bathtub"
+        },
+        {
+            "sample_id": 13,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Now to take a bath, where should you go.  Your answer is:",
+                "images_path": [
+                    "cleaning_bathrooms_0.jpg"
+                ]
+            },
+            "response": "1. Bathtub"
+        },
+        {
+            "sample_id": 14,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Now to wash the cloth, where should you go.  Your answer is:",
+                "images_path": [
+                    "cleaning_bathrooms_0.jpg"
+                ]
+            },
+            "response": "3. Sink"
+        },
+        {
+            "sample_id": 15,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Now to wash the cloth, where should you go.  Your answer is:",
+                "images_path": [
+                    "cleaning_bathrooms_0.jpg"
+                ]
+            },
+            "response": "3. Sink"
+        },
+        {
+            "sample_id": 16,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Now to brush lint off clothing, what tool should you use.  Your answer is:",
+                "images_path": [
+                    "cleaning_cupboards_0.jpg"
+                ]
+            },
+            "response": "2. Lint Roller"
+        },
+        {
+            "sample_id": 17,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Now to write, what tool should you use.  Your answer is:",
+                "images_path": [
+                    "cleaning_cupboards_0.jpg"
+                ]
+            },
+            "response": "1. Pen"
+        },
+        {
+            "sample_id": 18,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Now to wash clothes, where should you put the clothes.  Your answer is:",
+                "images_path": [
+                    "cleaning_barbecue_grill_0.jpg"
+                ]
+            },
+            "response": "3. Washing Machine"
+        },
+        {
+            "sample_id": 19,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Now to grill, where should you put the food.  Your answer is:",
+                "images_path": [
+                    "cleaning_barbecue_grill_0.jpg"
+                ]
+            },
+            "response": "2. Grill"
+        },
+        {
+            "sample_id": 20,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Now to dampen the rag, where should you put the rag.  Your answer is:",
+                "images_path": [
+                    "cleaning_barbecue_grill_0.jpg"
+                ]
+            },
+            "response": "1. Sink"
+        },
+        {
+            "sample_id": 21,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Now to throw the rubbish, where should you put the rubbish.  Your answer is:",
+                "images_path": [
+                    "cleaning_cupboards_1.jpg"
+                ]
+            },
+            "response": "2. Trash Can"
+        },
+        {
+            "sample_id": 22,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Now to sweep the floor, what tool should you use.  Your answer is:",
+                "images_path": [
+                    "cleaning_floors_0.jpg"
+                ]
+            },
+            "response": "2. Broom"
+        },
+        {
+            "sample_id": 23,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Now to heat the food, where should you put the food.  Your answer is:",
+                "images_path": [
+                    "cleaning_microwave_oven_0.jpg"
+                ]
+            },
+            "response": "2. Microwave Oven"
+        },
+        {
+            "sample_id": 24,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Now to tidy up the dishes, where should you put the dishes.  Your answer is:",
+                "images_path": [
+                    "cleaning_microwave_oven_0.jpg"
+                ]
+            },
+            "response": "3. Cabinet"
+        },
+        {
+            "sample_id": 25,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What is most associated with Christmas.  Your answer is:",
+                "images_path": [
+                    "filling_a_Christmas_stocking_0.jpg"
+                ]
+            },
+            "response": "5. Christmas Stocking"
+        },
+        {
+            "sample_id": 26,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Now to brew a pot of tea, what tool should you use.  Your answer is:",
+                "images_path": [
+                    "making_tea_0.jpg"
+                ]
+            },
+            "response": "5. Teapot"
+        },
+        {
+            "sample_id": 27,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What is most associated with Christmas.  Your answer is:",
+                "images_path": [
+                    "putting_up_Christmas_decorations_inside_0.jpg"
+                ]
+            },
+            "response": "1. Christmas Tree"
+        },
+        {
+            "sample_id": 28,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: What is most associated with Christmas.  Your answer is:",
+                "images_path": [
+                    "putting_up_Christmas_decorations_inside_1.jpg"
+                ]
+            },
+            "response": "3. Wreath"
+        },
+        {
+            "sample_id": 29,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: What is most associated with Halloween.  Your answer is:",
+                "images_path": [
+                    "putting_away_Halloween_decorations_0.jpg"
+                ]
+            },
+            "response": "1. Pumpkin"
+        },
+        {
+            "sample_id": 30,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Now to clean the room, where should you throw the rubbish.  Your answer is:",
+                "images_path": [
+                    "cleaning_garage_0.jpg"
+                ]
+            },
+            "response": "2. Trashbin"
+        },
+        {
+            "sample_id": 31,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Now to wash the dirty cloth, What tool should you use to wash the cloth.  Your answer is:",
+                "images_path": [
+                    "cleaning_oven_0.jpg"
+                ]
+            },
+            "response": "2. Soap"
+        },
+        {
+            "sample_id": 32,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Now to drink water, What tool should you use to get water.  Your answer is:",
+                "images_path": [
+                    "cleaning_up_after_a_meal_0.jpg"
+                ]
+            },
+            "response": "2. Cup"
+        },
+        {
+            "sample_id": 33,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Now to sit down, What tool should you use to sit.  Your answer is:",
+                "images_path": [
+                    "cleaning_up_after_a_meal_0.jpg"
+                ]
+            },
+            "response": "4. Chair"
+        },
+        {
+            "sample_id": 34,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Now to serve dishes, What tool should you use to serve the dishes.  Your answer is:",
+                "images_path": [
+                    "cleaning_up_after_a_meal_0.jpg"
+                ]
+            },
+            "response": "1. Plate"
+        },
+        {
+            "sample_id": 35,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Now to pack the food, What tool should you use.  Your answer is:",
+                "images_path": [
+                    "cleaning_up_after_a_meal_1.jpg"
+                ]
+            },
+            "response": "1. Pack"
+        },
+        {
+            "sample_id": 36,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Now to listen to music, What tool should you use.  Your answer is:",
+                "images_path": [
+                    "packing_car_for_trip_0.jpg"
+                ]
+            },
+            "response": "2. Headset"
+        },
+        {
+            "sample_id": 37,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Now to fetch water, What tool should you use.  Your answer is:",
+                "images_path": [
+                    "packing_food_for_work_0.jpg"
+                ]
+            },
+            "response": "1. Pot"
+        },
+        {
+            "sample_id": 38,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Now to pack the book, What tool should you use.  Your answer is:",
+                "images_path": [
+                    "packing_child_s_bag_0.jpg"
+                ]
+            },
+            "response": "1. Bag"
+        },
+        {
+            "sample_id": 39,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Now to throw away the leftover, where should you put the leftover.  Your answer is:",
+                "images_path": [
+                    "picking_up_trash_0.jpg"
+                ]
+            },
+            "response": "1. Trashbin"
+        },
+        {
+            "sample_id": 40,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Now to refrigerate the leftover, where should you put the leftover.  Your answer is:",
+                "images_path": [
+                    "picking_up_trash_0.jpg"
+                ]
+            },
+            "response": "2. Refrigerator"
+        },
+        {
+            "sample_id": 41,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Now to put away the tableware, where should you put the tableware.  Your answer is:",
+                "images_path": [
+                    "picking_up_trash_0.jpg"
+                ]
+            },
+            "response": "3. Cabinet"
+        },
+        {
+            "sample_id": 42,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Now to wash hair, What tool should you use.  Your answer is:",
+                "images_path": [
+                    "preparing_a_shower_for_child_0.jpg"
+                ]
+            },
+            "response": "3. Shampoo"
+        },
+        {
+            "sample_id": 43,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Now to wash face, What tool should you use.  Your answer is:",
+                "images_path": [
+                    "preparing_a_shower_for_child_0.jpg"
+                ]
+            },
+            "response": "5. Soap"
+        },
+        {
+            "sample_id": 44,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Now to wipe face, What tool should you use.  Your answer is:",
+                "images_path": [
+                    "preparing_a_shower_for_child_0.jpg"
+                ]
+            },
+            "response": "1. Towel"
+        },
+        {
+            "sample_id": 45,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Now to surf the Internet, What tool should you use.  Your answer is:",
+                "images_path": [
+                    "putting_away_Halloween_decorations_0.jpg"
+                ]
+            },
+            "response": "4. Computer"
+        },
+        {
+            "sample_id": 46,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Now to play music, What tool should you use.  Your answer is:",
+                "images_path": [
+                    "putting_away_Halloween_decorations_0.jpg"
+                ]
+            },
+            "response": "3. Loudspeaker box"
+        },
+        {
+            "sample_id": 47,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Now to play music, What tool should you use.  Your answer is:",
+                "images_path": [
+                    "putting_away_Halloween_decorations_0.jpg"
+                ]
+            },
+            "response": "3. Loudspeaker box"
+        },
+        {
+            "sample_id": 48,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Now to increase light, What tool should you use.  Your answer is:",
+                "images_path": [
+                    "putting_away_Halloween_decorations_0.jpg"
+                ]
+            },
+            "response": "2. Candle"
+        },
+        {
+            "sample_id": 49,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Now to chop the vegetables, what tool should you use.  Your answer is:",
+                "images_path": [
+                    "chopping_vegetables_0.jpg"
+                ]
+            },
+            "response": "2. Knife"
+        }
+    ]
+}

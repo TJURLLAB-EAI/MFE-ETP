@@ -1,0 +1,4639 @@
+{
+    "metadata": {
+        "dataset": "spatial_perception",
+        "split": "core",
+        "num_sample": 280,
+        "task_instruction": [
+            "You will receive a series of images representing a household task and a specific question to test your spatial perception ability. Answer according to the requirements of the question",
+            "You'll be given a sequence of images depicting a household chore along with a specific question to evaluate your spatial perception skills. Respond in accordance with the question's instructions.",
+            "A set of images illustrating a household task and a particular question to assess your spatial perception will be provided to you. Answer in compliance with the question's criteria.",
+            "You shall receive a succession of images portraying a domestic task, accompanied by a specific question designed to assess your spatial perception. Provide your response in line with the question's guidelines.",
+            "You will be presented with a series of images representing a household activity, along with a specific question aimed at testing your spatial perception. Respond according to the question's requirements.",
+            "An array of images showcasing a household task and a distinct question to evaluate your spatial perception will be given to you. Answer in accordance with the question's stipulations."
+        ],
+        "question_type": "open-ended",
+        "task_type": "Spatiotemporal Perception",
+        "task_intro": "spatial perception"
+    },
+    "data": [
+        {
+            "sample_id": 0,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Based on distance between robot and table in the images,  you need to **determine the correct order of the images** according to the distance from far to near. Please respond only with the order of the images, for example, '2,1,3', indicating that the sequence should be Image 2, followed by Image 1, then Image 3.  Your answer is:",
+                "images_path": [
+                    "assembling_gift_baskets_0.jpg",
+                    "assembling_gift_baskets_1.jpg",
+                    "assembling_gift_baskets_2.jpg"
+                ]
+            },
+            "response": "1,2,3"
+        },
+        {
+            "sample_id": 1,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Which rag is the furthest away of all the rags marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "bottling_fruit_0.jpg"
+                ]
+            },
+            "response": "2"
+        },
+        {
+            "sample_id": 2,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Based on distance between robot and book in the images,  you need to **determine the correct order of the images** according to the distance from far to near. Please respond only with the order of the images, for example, '2,1,3', indicating that the sequence should be Image 2, followed by Image 1, then Image 3.  Your answer is:",
+                "images_path": [
+                    "boxing_books_up_for_storage_0.jpg",
+                    "boxing_books_up_for_storage_0.jpg",
+                    "boxing_books_up_for_storage_0.jpg"
+                ]
+            },
+            "response": "2,1,3"
+        },
+        {
+            "sample_id": 3,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Which toy is the furthest away of all the toys marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "chopping_vegetables_0.jpg"
+                ]
+            },
+            "response": "3"
+        },
+        {
+            "sample_id": 4,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: The task is to reach to the washing machine.  Based on distance between robot and table depicted in the images,  you need to determine the correct order of the images according to the distance from far to near. Please respond only with the order of the images, for example, '2,1,3', indicating that the sequence should be Image 2, followed by Image 1, then Image 3.  Your answer is:",
+                "images_path": [
+                    "cleaning_barbecue_grill_0.jpg",
+                    "cleaning_barbecue_grill_1.jpg",
+                    "cleaning_barbecue_grill_2.jpg"
+                ]
+            },
+            "response": "3,1,2"
+        },
+        {
+            "sample_id": 5,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Which trousers is the furthest away of all the trousers marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "cleaning_bedroom_0.jpg"
+                ]
+            },
+            "response": "2"
+        },
+        {
+            "sample_id": 6,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Which brush is the furthest away of all the brushes marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "cleaning_closet_0.jpg"
+                ]
+            },
+            "response": "1"
+        },
+        {
+            "sample_id": 7,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: The task is to reach to the washing machine.  Based on distance between robot and table depicted in the images,  you need to determine the correct order of the images according to the distance from far to near. Please respond only with the order of the images, for example, '2,1,3', indicating that the sequence should be Image 2, followed by Image 1, then Image 3.  Your answer is:",
+                "images_path": [
+                    "cleaning_cupboards_0.jpg",
+                    "cleaning_cupboards_1.jpg",
+                    "cleaning_cupboards_2.jpg",
+                    "cleaning_cupboards_3.jpg"
+                ]
+            },
+            "response": "3,4,1,2"
+        },
+        {
+            "sample_id": 8,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Which bucket is the furthest away of all the buckets marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "cleaning_floors_0.jpg"
+                ]
+            },
+            "response": "6"
+        },
+        {
+            "sample_id": 9,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: The task is to reach to the sink.  Based on distance between robot and table depicted in the images,  you need to determine the correct order of the images according to the distance from far to near. Please respond only with the order of the images, for example, '2,1,3', indicating that the sequence should be Image 2, followed by Image 1, then Image 3.  Your answer is:",
+                "images_path": [
+                    "cleaning_freezer_0.jpg",
+                    "cleaning_freezer_1.jpg",
+                    "cleaning_freezer_2.jpg"
+                ]
+            },
+            "response": "3,2,1"
+        },
+        {
+            "sample_id": 10,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Which rag is the furthest away of all the rags marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "cleaning_microwave_oven_0.jpg"
+                ]
+            },
+            "response": "3"
+        },
+        {
+            "sample_id": 11,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Which bucket is the furthest away of all the buckets marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "cleaning_oven_0.jpg"
+                ]
+            },
+            "response": "3"
+        },
+        {
+            "sample_id": 12,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Which rag is the furthest away of all the rags marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "cleaning_stove_0.jpg"
+                ]
+            },
+            "response": "2"
+        },
+        {
+            "sample_id": 13,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: The task is to reach to sink.  Based on distance between robot and table depicted in the images,  you need to determine the correct order of the images according to the distance from far to near. Please respond only with the order of the images, for example, '2,1,3', indicating that the sequence should be Image 2, followed by Image 1, then Image 3.  Your answer is:",
+                "images_path": [
+                    "cleaning_table_after_clearing_0.jpg",
+                    "cleaning_table_after_clearing_1.jpg",
+                    "cleaning_table_after_clearing_2.jpg",
+                    "cleaning_table_after_clearing_3.jpg"
+                ]
+            },
+            "response": "3,2,1,4"
+        },
+        {
+            "sample_id": 14,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Which object is the furthest away of all the objects marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "cleaning_table_after_clearing_4.jpg"
+                ]
+            },
+            "response": "3"
+        },
+        {
+            "sample_id": 15,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Which object is the furthest away of all the objects marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "cleaning_up_after_a_meal_0.jpg"
+                ]
+            },
+            "response": "3"
+        },
+        {
+            "sample_id": 16,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Which object is the furthest away of all the objects marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "cleaning_up_after_a_meal_1.jpg"
+                ]
+            },
+            "response": "4"
+        },
+        {
+            "sample_id": 17,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Which object is the furthest away of all the objects marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "cleaning_up_refrigerator_0.jpg"
+                ]
+            },
+            "response": "4"
+        },
+        {
+            "sample_id": 18,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Which box is the furthest away of all the boxes marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "cleaning_up_the_kitchen_only_0.jpg"
+                ]
+            },
+            "response": "3"
+        },
+        {
+            "sample_id": 19,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Which object is the furthest away of all the objects marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "cleaning_windows_0.jpg"
+                ]
+            },
+            "response": "2"
+        },
+        {
+            "sample_id": 20,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Which bowl is the furthest away of all the bowls marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "clearing_the_table_after_dinner_0.jpg"
+                ]
+            },
+            "response": "4"
+        },
+        {
+            "sample_id": 21,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: The task is to reach to table.  Based on distance between robot and table depicted in the images,  you need to determine the correct order of the images according to the distance from far to near. Please respond only with the order of the images, for example, '2,1,3', indicating that the sequence should be Image 2, followed by Image 1, then Image 3.  Your answer is:",
+                "images_path": [
+                    "collect_misplaced_items_0.jpg",
+                    "collect_misplaced_items_1.jpg",
+                    "collect_misplaced_items_2.jpg"
+                ]
+            },
+            "response": "1,3,2"
+        },
+        {
+            "sample_id": 22,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Which can is the furthest away of all the cans marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "clearing_the_table_after_dinner_0.jpg"
+                ]
+            },
+            "response": "3"
+        },
+        {
+            "sample_id": 23,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Which christmas stocking is the furthest away of all the stockings marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "filling_a_Christmas_stocking_0.jpg"
+                ]
+            },
+            "response": "3"
+        },
+        {
+            "sample_id": 24,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Which rag is the furthest away of all the rags marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "filling_an_Easter_basket_0.jpg"
+                ]
+            },
+            "response": "2"
+        },
+        {
+            "sample_id": 25,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Which plate is the furthest away of all the plates marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "loading_the_dishwasher_0.jpg"
+                ]
+            },
+            "response": "3"
+        },
+        {
+            "sample_id": 26,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Based on distance between robot and kitchen counter depicted in the images,you need to **determine the correct order of the images** according to the distance from far to near. Please respond only with the order of the images, for example, '2,1,3', indicating that the sequence should be Image 2, followed by Image 1, then Image 3. Answer with the the sequence of the pictures. Your answer is:",
+                "images_path": [
+                    "making_tea_0.jpg",
+                    "making_tea_1.jpg",
+                    "making_tea_2.jpg"
+                ]
+            },
+            "response": "2,1,3"
+        },
+        {
+            "sample_id": 27,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Based on distance between robot and door depicted in the images,  you need to determine the correct order of the images according to the distance from far to near. Please respond only with the order of the images, for example, '2,1,3', indicating that the sequence should be Image 2, followed by Image 1, then Image 3.  Your answer is:",
+                "images_path": [
+                    "mopping_floors_0.jpg",
+                    "mopping_floors_2.jpg"
+                ]
+            },
+            "response": "1,2"
+        },
+        {
+            "sample_id": 28,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Which lipstick is the furthest away of all the lipsticks marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "packing_adult_s_bags_0.jpg"
+                ]
+            },
+            "response": "2"
+        },
+        {
+            "sample_id": 29,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Which shorts are the furthest away of all the shorts marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "packing_bags_or_suitcase_0.jpg"
+                ]
+            },
+            "response": "2"
+        },
+        {
+            "sample_id": 30,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Which shirt is the furthest away of all the shirts marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "packing_boxes_for_household_move_or_trip_0.jpg"
+                ]
+            },
+            "response": "2"
+        },
+        {
+            "sample_id": 31,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Based on distance between robot and pot on the table,  you need to determine the correct order of the images according to the distance from far to near. Please respond only with the order of the images, for example, '2,1,3', indicating that the sequence should be Image 2, followed by Image 1, then Image 3.  Your answer is:",
+                "images_path": [
+                    "packing_food_for_work_0.jpg",
+                    "packing_food_for_work_1.jpg",
+                    "packing_food_for_work_2.jpg"
+                ]
+            },
+            "response": "3,2,1"
+        },
+        {
+            "sample_id": 32,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Which cushion is the furthest away of all the cushions marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "packing_lunches_0.jpg"
+                ]
+            },
+            "response": "3"
+        },
+        {
+            "sample_id": 33,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Which carton is the furthest away of all the cartons marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "packing_lunches_1.jpg"
+                ]
+            },
+            "response": "2"
+        },
+        {
+            "sample_id": 34,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Which cookies are the furthest away of all the cookies marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "packing_lunches_2.jpg"
+                ]
+            },
+            "response": "2"
+        },
+        {
+            "sample_id": 35,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Which carton is the furthest away of all the cartons marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "packing_picnics_0.jpg"
+                ]
+            },
+            "response": "3"
+        },
+        {
+            "sample_id": 36,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Which apple is the furthest away of all the apples marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "preparing_salad_0.jpg"
+                ]
+            },
+            "response": "2"
+        },
+        {
+            "sample_id": 37,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Which book is the furthest away of all the books marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "re-shelving_library_books_0.jpg"
+                ]
+            },
+            "response": "4"
+        },
+        {
+            "sample_id": 38,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: The task is to reach to the bookshelf.  Based on distance between robot and table depicted in the images,  you need to determine the correct order of the images according to the distance from far to near. Please respond only with the order of the images, for example, '2,1,3', indicating that the sequence should be Image 2, followed by Image 1, then Image 3.  Your answer is:",
+                "images_path": [
+                    "re-shelving_library_books_0.jpg",
+                    "re-shelving_library_books_1.jpg",
+                    "re-shelving_library_books_2.jpg",
+                    "re-shelving_library_books_3.jpg"
+                ]
+            },
+            "response": "3,1,2,4"
+        },
+        {
+            "sample_id": 39,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: The task is to reach to the table.  Based on distance between robot and table depicted in the images,  you need to determine the correct order of the images according to the distance from far to near. Please respond only with the order of the images, for example, '2,1,3', indicating that the sequence should be Image 2, followed by Image 1, then Image 3.  Your answer is:",
+                "images_path": [
+                    "serving_a_meal_0.jpg",
+                    "serving_a_meal_1.jpg",
+                    "serving_a_meal_2.jpg"
+                ]
+            },
+            "response": "3,2,1"
+        },
+        {
+            "sample_id": 40,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: The task is to reach to the refrigerator.  Based on distance between robot and table depicted in the images,  you need to determine the correct order of the images according to the distance from far to near. Please respond only with the order of the images, for example, '2,1,3', indicating that the sequence should be Image 2, followed by Image 1, then Image 3.  Your answer is:",
+                "images_path": [
+                    "serving_hors_d_oeuvres_0.jpg",
+                    "serving_hors_d_oeuvres_1.jpg",
+                    "serving_hors_d_oeuvres_2.jpg"
+                ]
+            },
+            "response": "2,1,3"
+        },
+        {
+            "sample_id": 41,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Which bread is the furthest away of all the bread marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "serving_hors_d_oeuvres_3.jpg"
+                ]
+            },
+            "response": "4"
+        },
+        {
+            "sample_id": 42,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Which book is the furthest away of all the books marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "sorting_books_0.jpg"
+                ]
+            },
+            "response": "4"
+        },
+        {
+            "sample_id": 43,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Which sausage is the furthest away of all the sausages marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "sorting_groceries_0.jpg"
+                ]
+            },
+            "response": "4"
+        },
+        {
+            "sample_id": 44,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Which mail is the furthest away of all the mails marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "sorting_mail_0.jpg"
+                ]
+            },
+            "response": "4"
+        },
+        {
+            "sample_id": 45,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Which fish is the furthest away of all the fish marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "thawing_frozen_food_0.jpg"
+                ]
+            },
+            "response": "3"
+        },
+        {
+            "sample_id": 46,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: The task is to reach to the living room.  Based on distance between robot and table depicted in the images,  you need to determine the correct order of the images according to the distance from far to near. Please respond only with the order of the images, for example, '2,1,3', indicating that the sequence should be Image 2, followed by Image 1, then Image 3.  Your answer is:",
+                "images_path": [
+                    "vacuuming_floors_0.jpg",
+                    "vacuuming_floors_1.jpg",
+                    "vacuuming_floors_2.jpg",
+                    "vacuuming_floors_3.jpg"
+                ]
+            },
+            "response": "2,1,3,4"
+        },
+        {
+            "sample_id": 47,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Qustion: The task is to put the trouser into the cabinet and close it. Percept whether the cabinet can be closed? Your task is to assess whether the action can be successfully completed based solely on the current conditions depicted in the image. Your response should be a simple 'yes' or 'no', focusing exclusively on the state of objects, their positions, and their interactions within the scene, while disregarding any external factors. Your answer is:",
+                "images_path": [
+                    "cleaning_bedroom_1.jpg"
+                ]
+            },
+            "response": "No."
+        },
+        {
+            "sample_id": 48,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Qustion: The task is to open the door. Percept whether the the door can be opened? Your task is to assess whether the action can be successfully completed based solely on the current conditions depicted in the image. Your response should be a simple 'yes' or 'no', focusing exclusively on the state of objects, their positions, and their interactions within the scene, while disregarding any external factors. Your answer is:",
+                "images_path": [
+                    "mopping_floors_3.jpg"
+                ]
+            },
+            "response": "No."
+        },
+        {
+            "sample_id": 49,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Qustion: The task is to open the door. Percept whether the door can be opened? Your task is to assess whether the action can be successfully completed based solely on the current conditions depicted in the image. Your response should be a simple 'yes' or 'no', focusing exclusively on the state of objects, their positions, and their interactions within the scene, while disregarding any external factors. Your answer is:",
+                "images_path": [
+                    "cleaning_cupboards_4.jpg"
+                ]
+            },
+            "response": "No."
+        },
+        {
+            "sample_id": 50,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Qustion: The task is to pick up the broom. Percept whether the broom can be picked up? Your response should be a simple 'yes' or 'no'. Your answer is:",
+                "images_path": [
+                    "cleaning_up_the_kitchen_only_1.jpg"
+                ]
+            },
+            "response": "No."
+        },
+        {
+            "sample_id": 51,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Qustion: The task is to drive the car. Percept whether the seat fits to be sitten? Your task is to assess whether the action can be successfully completed based solely on the current conditions depicted in the image. Your response should be a simple 'yes' or 'no', focusing exclusively on the state of objects, their positions, and their interactions within the scene, while disregarding any external factors. Your answer is:",
+                "images_path": [
+                    "packing_car_for_trip_0.jpg"
+                ]
+            },
+            "response": "No."
+        },
+        {
+            "sample_id": 52,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Qustion: The task is to pack the bag. Percept whether the bag can fit the pillow? Your task is to assess whether the action can be successfully completed based solely on the current conditions depicted in the image. Your response should be a simple 'yes' or 'no', focusing exclusively on the state of objects, their positions, and their interactions within the scene, while disregarding any external factors. Your answer is:",
+                "images_path": [
+                    "packing_child_s_bag_0.jpg"
+                ]
+            },
+            "response": "No."
+        },
+        {
+            "sample_id": 53,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Qustion: The task is to pull out the drawer enclosed by a red box. Percept whether the drawer can be pulled out successfully? Your task is to assess whether the action can be successfully completed based solely on the current conditions depicted in the image. Your response should be a simple 'yes' or 'no', focusing exclusively on the state of objects, their positions, and their interactions within the scene, while disregarding any external factors. Your answer is:",
+                "images_path": [
+                    "preserving_food_0.jpg"
+                ]
+            },
+            "response": "No."
+        },
+        {
+            "sample_id": 54,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the peach relative to the refrigerator ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_bottling_fruit_0.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 55,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the peach relative to the strawberry ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_bottling_fruit_0.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Above"
+        },
+        {
+            "sample_id": 56,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the peach relative to the pot ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_bottling_fruit_1.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Right"
+        },
+        {
+            "sample_id": 57,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the peach relative to the strawberry ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_bottling_fruit_1.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Right"
+        },
+        {
+            "sample_id": 58,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the food relative to the fefrigerator?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_freezer_0.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 59,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the knife relative to the green towel?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_freezer_1.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Right"
+        },
+        {
+            "sample_id": 60,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the purple towel relative to the sink?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_freezer_1.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "On"
+        },
+        {
+            "sample_id": 61,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the scrub_brush relative to the cabinet?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_oven_0.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 62,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the pink rag relative to the table?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_oven_0.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "On"
+        },
+        {
+            "sample_id": 63,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the soap relative to the scrub_brush?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_oven_0.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Left"
+        },
+        {
+            "sample_id": 64,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the scrub_brush relative to the cabinet?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_oven_0.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 65,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the basket relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_assembling_gift_baskets_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 66,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the bow relative to the table ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_assembling_gift_baskets_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 67,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the cheese relative to the table ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_assembling_gift_baskets_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 68,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the candle relative to the table ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_assembling_gift_baskets_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 69,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the cookie relative to the table ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_assembling_gift_baskets_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 70,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the cookie relative to the basket ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_assembling_gift_baskets_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 71,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the candle relative to the basket ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_assembling_gift_baskets_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 72,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the bow relative to the basket ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_assembling_gift_baskets_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 73,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the cheese relative to the basket ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_assembling_gift_baskets_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 74,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the book relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_boxing_books_up_for_storage_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Ontop"
+        },
+        {
+            "sample_id": 75,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the book in red box relative to the shelf ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_boxing_books_up_for_storage_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Ontop"
+        },
+        {
+            "sample_id": 76,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the carton relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_boxing_books_up_for_storage_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Ontop"
+        },
+        {
+            "sample_id": 77,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the book relative to the carton ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_boxing_books_up_for_storage_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 78,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the dish relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_chopping_vegetables_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 79,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the tomato relative to the countertop ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_chopping_vegetables_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 80,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the onion relative to the refrigerator ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_chopping_vegetables_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 81,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the onion relative to the pot ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_chopping_vegetables_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 82,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the tomato relative to the pot ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_chopping_vegetables_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 83,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the rag relative to the table ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_barbecue_grill_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 84,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the brush relative to the table ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_barbecue_grill_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 85,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the grill relative to the washing machine ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_barbecue_grill_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 86,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the grill relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_barbecue_grill_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 87,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the brush relative to the bathtub ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_bathrooms_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 88,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the soap relative to the sink ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_bathrooms_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 89,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the bucket relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_bathrooms_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 90,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the rag relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_bathrooms_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 91,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the rag relative to the bucket ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_bathrooms_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 92,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the brush relative to the bathtub ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_bathtub_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 93,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the bucket relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_bathtub_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 94,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the soap relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_bathtub_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 95,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the apparel relative to the bed ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_bedroom_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 96,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the vacuum relative to the bed ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_bedroom_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "NextTo"
+        },
+        {
+            "sample_id": 97,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the apparel relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_bedroom_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 98,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the perfume relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_bedroom_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 99,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the hand_towel relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_carpets_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 100,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the sandal relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_closet_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 101,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the towel relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_closet_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 102,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the hat relative to the closet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_closet_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 103,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the umbrella relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_closet_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 104,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the sandal relative to the shelf ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_closet_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "NextTo"
+        },
+        {
+            "sample_id": 105,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the pen relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_cupboards_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 106,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the rag relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_cupboards_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 107,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the brush relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_cupboards_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 108,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the bin relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_cupboards_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 109,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the broom relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_floors_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 110,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the dustpan relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_floors_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 111,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the rag relative to the countertop ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_microwave_oven_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 112,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the rag relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_stove_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 113,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the rag in red box relative to the sink ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_stove_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "NextTo"
+        },
+        {
+            "sample_id": 114,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the scrub_brush relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_toilet_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 115,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the detegrent relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_toilet_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 116,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the bowl relative to the table ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_up_after_a_meal_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 117,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the plate relative to the table ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_up_after_a_meal_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 118,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the cup relative to the table ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_up_after_a_meal_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 119,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the hamburger in red box relative to the chair ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_up_after_a_meal_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 120,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the hamburger relative to the sack ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_up_after_a_meal_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 121,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the rag relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_up_refrigerator_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 122,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the rag  relative to the sink ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_up_refrigerator_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 123,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the soap  relative to the countertop ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_up_refrigerator_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 124,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the tray  relative to the refrigerator ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_up_refrigerator_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 125,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the bowl  relative to the refrigerator ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_up_refrigerator_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 126,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the bowl  relative to the sink ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_up_refrigerator_4.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 127,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the bin  relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_up_the_kitchen_only_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 128,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the broom  relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_up_the_kitchen_only_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 129,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the blender  relative to the countertop ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_up_the_kitchen_only_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 130,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the soap  relative to the sink ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_up_the_kitchen_only_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "NextTo"
+        },
+        {
+            "sample_id": 131,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the plate  relative to the refrigerator ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_up_the_kitchen_only_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 132,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the rag in red box relative to the drawer ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_windows_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 133,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the rag marked with '1' relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_cleaning_windows_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 134,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the bucket in red box relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_clearing_the_table_after_dinner_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 135,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the cup in red box relative to the table ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_clearing_the_table_after_dinner_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 136,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where are the cups  relative to the bucket ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_clearing_the_table_after_dinner_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 137,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the beverage  relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_clearing_the_table_after_dinner_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 138,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the catsup  relative to the bucket ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_clearing_the_table_after_dinner_4.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 139,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the bowl in red box relative to the bucket ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_clearing_the_table_after_dinner_5.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 140,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the catsup in red box relative to the table ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_clearing_the_table_after_dinner_6.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 141,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the bowl in red box relative to the table ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_clearing_the_table_after_dinner_7.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 142,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where are the socks relative to the sofa ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_collect_misplaced_items_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 143,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where are the socks  relative to the table ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_collect_misplaced_items_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 144,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the shoe  relative to the table ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_collect_misplaced_items_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 145,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the plate  relative to the table ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_collect_misplaced_items_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 146,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the notebook in red box relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_collect_misplaced_items_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 147,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the towel  relative to the countertop ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_defrosting_freezer_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 148,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the bucket  relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_defrosting_freezer_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 149,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the rag in red box relative to the countertop ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_defrosting_freezer_6.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 150,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the bucket  relative to the countertop ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_defrosting_freezer_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 151,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the scraper  relative to the countertop ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_defrosting_freezer_4.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 152,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the scraper  relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_defrosting_freezer_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 153,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the pear  relative to the bucket ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_defrosting_freezer_5.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 154,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the cube in red box relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_filling_a_Christmas_stocking_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 155,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the stocking in red box relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_filling_a_Christmas_stocking_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 156,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the bucket relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_filling_a_Christmas_stocking_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 157,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the pen relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_filling_a_Christmas_stocking_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 158,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the pen in red box relative to the bucket ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_filling_a_Christmas_stocking_4.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 159,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the candy in red box relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_filling_a_Christmas_stocking_5.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 160,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the candy in red box relative to the stocking ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_filling_a_Christmas_stocking_6.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 161,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the candy in red box relative to the stocking ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_filling_a_Christmas_stocking_7.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 162,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the pen in red box relative to the stocking ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_filling_a_Christmas_stocking_8.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 163,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the basket marked with '1' relative to the countertop ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_filling_an_Easter_basket_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 164,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the basket marked with '2' relative to the countertop ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_filling_an_Easter_basket_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 165,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the ball marked with '3' relative to the countertop ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_filling_an_Easter_basket_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 166,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the ball relative to the basket marked with '1' ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_filling_an_Easter_basket_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 167,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where are the bows in red box relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_filling_an_Easter_basket_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 168,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the bow in red box relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_filling_an_Easter_basket_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 169,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the book in red box relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_filling_an_Easter_basket_4.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 170,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where are the eggs marked with '1' relative to the basket ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_filling_an_Easter_basket_5.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 171,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the book marked with '2' relative to the countertop ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_filling_an_Easter_basket_5.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 172,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where are the eggs in red box relative to the refrigerator ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_filling_an_Easter_basket_6.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 173,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the bowl in red box relative to the dishwasher ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_loading_the_dishwasher_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 174,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the plate marked with '1' relative to the countertop ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_loading_the_dishwasher_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 175,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the bowl marked with '2' relative to the countertop ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_loading_the_dishwasher_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 176,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the cup in red box relative to the countertop ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_loading_the_dishwasher_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 177,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the cup in red box relative to the dishwasher ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_loading_the_dishwasher_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 178,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the plate marked with '1' relative to the dishwasher ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_loading_the_dishwasher_4.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 179,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the teapot relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_making_tea_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 180,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the knife marked with '1' relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_making_tea_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 181,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the lemon marked with '2' relative to the countertop ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_making_tea_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 182,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the tea bag in red box relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_making_tea_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 183,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the tea bag in red box relative to the teapot ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_making_tea_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 184,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the tea bag relative to the teapot ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_making_tea_4.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 185,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the bucket marked with '1' relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_mopping_floors_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 186,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the soap marked with '2' relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_mopping_floors_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 187,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the rag marked with '3' relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_mopping_floors_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 188,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the bucket relative to the sink ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_mopping_floors_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "NextTo"
+        },
+        {
+            "sample_id": 189,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the soap in red box relative to the bucket ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_mopping_floors_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 190,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the broom relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_mopping_floors_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 191,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the broom relative to the sink ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_mopping_floors_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "NextTo"
+        },
+        {
+            "sample_id": 192,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the hanger relative to the bed ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_packing_adult_s_bags_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 193,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the backpack relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_packing_adult_s_bags_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 194,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the mouse in red box relative to the bed ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_packing_adult_s_bags_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 195,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the toothbrush in red box relative to the bed ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_packing_bags_or_suitcase_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 196,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the sweater relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_packing_boxes_for_household_move_or_trip_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 197,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the plate in red box relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_packing_boxes_for_household_move_or_trip_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 198,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where are the shirts relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_packing_boxes_for_household_move_or_trip_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 199,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the sweater relative to the carton ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_packing_boxes_for_household_move_or_trip_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 200,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the pencil_box in red box relative to the table ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_packing_car_for_trip_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 201,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the sunglass in red box relative to the bed?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_packing_child_s_bag_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 202,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the apple in red box relative to the earphone?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_packing_child_s_bag_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "NextTo"
+        },
+        {
+            "sample_id": 203,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the apple in red box relative to the earphone?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_packing_child_s_bag_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "NextTo"
+        },
+        {
+            "sample_id": 204,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the lettucre in red box relative to the electric_refrigerator?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_packing_food_for_work_5.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 205,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the apple in red box relative to the countertop?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_packing_lunches_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 206,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the sandwich in red box relative to the electric_refrigerator?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_packing_lunches_4.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 207,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the sandwich in red box relative to the carton?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_packing_picnics_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 208,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the water in red box relative to the cabinet?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_packing_picnics_5.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 209,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the beef in red box relative to the countertop?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_preserving_food_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 210,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the beef in red box relative to the pan?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_preserving_food_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "NextTo"
+        },
+        {
+            "sample_id": 211,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the plate relative to the cabinet ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_a_meal_1.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 212,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the plate relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_a_meal_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 213,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the chicken relative to the plate ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_a_meal_2.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "On"
+        },
+        {
+            "sample_id": 214,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the chicken relative to the plate ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_a_meal_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 215,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the plate relative to the table ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_a_meal_2.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "On"
+        },
+        {
+            "sample_id": 216,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the plate relative to the table ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_a_meal_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 217,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the spoon relative to the soup ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_a_meal_2.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Left"
+        },
+        {
+            "sample_id": 218,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the spoon relative to the soup ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_a_meal_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "NextTo"
+        },
+        {
+            "sample_id": 219,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the knife relative to the cabinet ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_a_meal_3.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 220,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the knife relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_a_meal_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 221,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the fork relative to the cabinet ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_a_meal_3.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 222,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the fork relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_a_meal_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 223,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the spoon relative to the cabinet ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_a_meal_3.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 224,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the spoon relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_a_meal_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 225,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the bread relative to the electric_refrigerator ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_a_meal_4.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 226,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the bread relative to the electric_refrigerator ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_a_meal_4.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 227,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the water relative to the electric_refrigerator ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_a_meal_4.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 228,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the water relative to the electric_refrigerator ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_a_meal_4.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 229,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the parsley relative to the cheese ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_hors_d_oeuvres_1.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "On"
+        },
+        {
+            "sample_id": 230,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the parsley relative to the cheese ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_hors_d_oeuvres_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 231,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the salad relative to the bread ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_hors_d_oeuvres_2.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Right"
+        },
+        {
+            "sample_id": 232,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the salad relative to the bread ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_hors_d_oeuvres_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "NextTo"
+        },
+        {
+            "sample_id": 233,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the tray relative to the table ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_hors_d_oeuvres_2.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "On"
+        },
+        {
+            "sample_id": 234,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the tray relative to the table ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_hors_d_oeuvres_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 235,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the salad relative to the table ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_hors_d_oeuvres_2.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "On"
+        },
+        {
+            "sample_id": 236,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the salad relative to the table ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_serving_hors_d_oeuvres_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 237,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the book relative to the shelf ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_books_1.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "On"
+        },
+        {
+            "sample_id": 238,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the book relative to the shelf ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_books_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 239,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the bread relative to the cabinet ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_groceries_1.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 240,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the bread relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_groceries_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 241,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the flour relative to the cabinet ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_groceries_2.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 242,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the flour relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_groceries_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 243,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the broccoli relative to the electric_refrigerator ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_groceries_3.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 244,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the broccoli to the electric_refrigerator ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_groceries_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 245,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the apple relative to the electric_refrigerator ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_groceries_3.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 246,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the apple relative to the electric_refrigerator ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_groceries_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 247,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the carrot relative to the electric_refrigerator ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_groceries_2.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 248,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the carrot relative to the electric_refrigerator ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_groceries_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 249,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the milk relative to the electric_refrigerator ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_groceries_4.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 250,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the milk relative to the electric_refrigerator ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_groceries_4.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 251,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the cheese relative to the electric_refrigerator ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_groceries_4.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 252,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the cheese relative to the electric_refrigerator ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_groceries_4.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 253,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the soup relative to the electric_refrigerator ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_groceries_4.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 254,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the soup relative to the electric_refrigerator ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_groceries_4.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 255,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the yogurt relative to the electric_refrigerator ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_groceries_5.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 256,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the yogurt relative to the electric_refrigerator ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_groceries_5.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 257,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the milk relative to the chair ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_groceries_6.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "On"
+        },
+        {
+            "sample_id": 258,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the milk relative to the chair ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_groceries_6.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 259,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the newspaper relative to the newspaper ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_mail_1.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "On"
+        },
+        {
+            "sample_id": 260,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the newspaper relative to the newspaper ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_mail_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 261,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the envelope relative to the envelope ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_sorting_mail_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "NextTo"
+        },
+        {
+            "sample_id": 262,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the chip relative to the cabinet ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_storing_food_1.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 263,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the chip relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_storing_food_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 264,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the oatmeal relative to the cabinet ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_storing_food_2.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 265,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the oatmeal relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_storing_food_2.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 266,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Where is the oil relative to the cabinet ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_storing_food_3.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 267,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the oil relative to the cabinet ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_storing_food_3.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "Inside"
+        },
+        {
+            "sample_id": 268,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the olive relative to the sink ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_thawing_frozen_food_1.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Left"
+        },
+        {
+            "sample_id": 269,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the olive relative to the sink ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_thawing_frozen_food_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "NextTo"
+        },
+        {
+            "sample_id": 270,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the fish relative to the sink ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_thawing_frozen_food_1.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "Right"
+        },
+        {
+            "sample_id": 271,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the fish relative to the sink ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_thawing_frozen_food_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "NextTo"
+        },
+        {
+            "sample_id": 272,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: Where is the vacuum relative to the floor ?   Choice List:['Left', 'Right', 'On', 'Under', 'Front', 'Behind', 'Inside', 'Above' ] Your answer is:",
+                "images_path": [
+                    "pair_vacuuming_floors_1.jpg"
+                ],
+                "choice_list": [
+                    "Left",
+                    "Right",
+                    "On",
+                    "Under",
+                    "Front",
+                    "Behind",
+                    "Inside",
+                    "Above"
+                ]
+            },
+            "response": "On"
+        },
+        {
+            "sample_id": 273,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: Where is the vacuum relative to the floor ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_vacuuming_floors_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 274,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: Where is the book in red box relative to the table ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_re-shelving_library_books_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 275,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: Where is the book in red box relative to the shelf ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "pair_re-shelving_library_books_1.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "OnTop"
+        },
+        {
+            "sample_id": 276,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Based on distance between robot and bathtub in the images,  you need to **determine the correct order of the images** according to the distance from far to near. Please respond only with the order of the images, for example, '2,1,3', indicating that the sequence should be Image 2, followed by Image 1, then Image 3.  Your answer is:",
+                "images_path": [
+                    "cleaning_bathrooms_0.jpg",
+                    "cleaning_bathrooms_1.jpg"
+                ]
+            },
+            "response": "1,2"
+        },
+        {
+            "sample_id": 277,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Based on distance between robot and bathtub in the images,  you need to **determine the correct order of the images** according to the distance from far to near. Please respond only with the order of the images, for example, '2,1,3', indicating that the sequence should be Image 2, followed by Image 1, then Image 3.  Your answer is:",
+                "images_path": [
+                    "cleaning_bathtub_0.jpg",
+                    "cleaning_bathtub_1.jpg"
+                ]
+            },
+            "response": "1,2"
+        },
+        {
+            "sample_id": 278,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: Which door is the furthest away of all the doors marked with number? You need to choose the most fitting item from the images, reply with the number of the most suitable image, like '2'. Additional explanations are not required. Answer with a number, like '1'. Your answer is:",
+                "images_path": [
+                    "cleaning_carpets_0.jpg"
+                ]
+            },
+            "response": "3"
+        },
+        {
+            "sample_id": 279,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: Where is the noodles relative to the canned food ?   Choice List:['Inside', 'OnTop', 'NextTo', 'Under' ] Your answer is:",
+                "images_path": [
+                    "putting_leftovers_away_0.jpg"
+                ],
+                "choice_list": [
+                    "Inside",
+                    "OnTop",
+                    "NextTo",
+                    "Under"
+                ]
+            },
+            "response": "NextTo"
+        }
+    ]
+}

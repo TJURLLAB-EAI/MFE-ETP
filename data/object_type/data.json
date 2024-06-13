@@ -1,0 +1,1958 @@
+{
+    "metadata": {
+        "dataset": "object_type",
+        "split": "core",
+        "num_sample": 176,
+        "task_instruction": [
+            "I will give you a picture. For each picture, you need to identify the name of the object according to the requirements of the question.  Neglect the robot, robot arm, and robot hand when answering. ",
+            "I will provide you with an image. Your task is to determine the object's name based on the question's criteria. Exclude the robot, robot arm, and robot hand from your responses.",
+            "You'll receive an image from me. Your job is to identify the object's name as per the question's specifications. Please disregard the robot, robot arm, and robot hand in your answers.",
+            "I'm going to present you with a picture. Your objective is to ascertain the object's name according to the question's guidelines. Please exclude the robot, robot arm, and robot hand from your responses.",
+            "For each image I provide, your job is to identify the object's name in accordance with the question's guidelines. Keep in mind that when answering, the robot, robot arm, and robot hand should not be considered.",
+            "I will supply you with pictures. In each instance, your task is to determine the object's name based on the question's criteria. Ensure that you do not include the robot, robot arm, or robot hand in your responses."
+        ],
+        "question_type": "open-ended",
+        "task_type": "Understanding",
+        "task_intro": "identify object name/type"
+    },
+    "data": [
+        {
+            "sample_id": 0,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "bottling_fruit_0.jpg"
+                ]
+            },
+            "response": "Peach."
+        },
+        {
+            "sample_id": 1,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What is the fruit enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "bottling_fruit_1.jpg"
+                ]
+            },
+            "response": "Strawberry."
+        },
+        {
+            "sample_id": 2,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "bottling_fruit_2.jpg"
+                ]
+            },
+            "response": "Knife."
+        },
+        {
+            "sample_id": 3,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "bottling_fruit_3.jpg"
+                ]
+            },
+            "response": "Pot."
+        },
+        {
+            "sample_id": 4,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "bottling_fruit_4.jpg"
+                ]
+            },
+            "response": "1.Refrigerator"
+        },
+        {
+            "sample_id": 5,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_freezer_0.jpg"
+                ]
+            },
+            "response": "Stove."
+        },
+        {
+            "sample_id": 6,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question:What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_freezer_1.jpg"
+                ]
+            },
+            "response": "Food."
+        },
+        {
+            "sample_id": 7,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_freezer_2.jpg"
+                ]
+            },
+            "response": "Sink."
+        },
+        {
+            "sample_id": 8,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: List the objects in the drawer marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "cleaning_oven_0.jpg"
+                ]
+            },
+            "response": "1.Faucet 2.Soap 3.Scrub_brush 4.Rag."
+        },
+        {
+            "sample_id": 9,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "cleaning_oven_1.jpg"
+                ]
+            },
+            "response": "1.Oven 2.Scrub_brush."
+        },
+        {
+            "sample_id": 10,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "assembling_gift_baskets_0.jpg"
+                ]
+            },
+            "response": "Basket"
+        },
+        {
+            "sample_id": 11,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "assembling_gift_baskets_1.jpg"
+                ]
+            },
+            "response": "1.Bow 2.Cheese"
+        },
+        {
+            "sample_id": 12,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "assembling_gift_baskets_2.jpg"
+                ]
+            },
+            "response": "1.Candle 2.Cookie"
+        },
+        {
+            "sample_id": 13,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "boxing_books_up_for_storage_0.jpg"
+                ]
+            },
+            "response": "Book"
+        },
+        {
+            "sample_id": 14,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "boxing_books_up_for_storage_1.jpg"
+                ]
+            },
+            "response": "1.Carton 2.Book 3.Shelf 4.Book"
+        },
+        {
+            "sample_id": 15,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "boxing_books_up_for_storage_2.jpg"
+                ]
+            },
+            "response": "Books"
+        },
+        {
+            "sample_id": 16,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "chopping_vegetables_0.jpg"
+                ]
+            },
+            "response": "Pot"
+        },
+        {
+            "sample_id": 17,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "chopping_vegetables_1.jpg"
+                ]
+            },
+            "response": "Tomato"
+        },
+        {
+            "sample_id": 18,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "chopping_vegetables_2.jpg"
+                ]
+            },
+            "response": "Onion"
+        },
+        {
+            "sample_id": 19,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "chopping_vegetables_3.jpg"
+                ]
+            },
+            "response": "Knife"
+        },
+        {
+            "sample_id": 20,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question:What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_barbecue_grill_0.jpg"
+                ]
+            },
+            "response": "Rag"
+        },
+        {
+            "sample_id": 21,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_barbecue_grill_1.jpg"
+                ]
+            },
+            "response": "Sink."
+        },
+        {
+            "sample_id": 22,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "cleaning_barbecue_grill_2.jpg"
+                ]
+            },
+            "response": "Grill"
+        },
+        {
+            "sample_id": 23,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "cleaning_bathrooms_0.jpg"
+                ]
+            },
+            "response": "1.Bathtub 2.Toilet"
+        },
+        {
+            "sample_id": 24,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_bathrooms_1.jpg"
+                ]
+            },
+            "response": "Bucket"
+        },
+        {
+            "sample_id": 25,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_bathrooms_2.jpg"
+                ]
+            },
+            "response": "Sink"
+        },
+        {
+            "sample_id": 26,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "cleaning_bathtub_0.jpg"
+                ]
+            },
+            "response": "1.Bucket 2.Bathtub"
+        },
+        {
+            "sample_id": 27,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "cleaning_bathtub_1.jpg"
+                ]
+            },
+            "response": "1.Sink 2.Toilet 3.Brush"
+        },
+        {
+            "sample_id": 28,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "cleaning_bedroom_0.jpg"
+                ]
+            },
+            "response": "1.Vacuum 2.Apparel 3.Bed"
+        },
+        {
+            "sample_id": 29,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_bedroom_1.jpg"
+                ]
+            },
+            "response": "Perfume"
+        },
+        {
+            "sample_id": 30,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_carpets_0.jpg"
+                ]
+            },
+            "response": "Washing_machine"
+        },
+        {
+            "sample_id": 31,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_closet_0.jpg"
+                ]
+            },
+            "response": "Sandal"
+        },
+        {
+            "sample_id": 32,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_closet_1.jpg"
+                ]
+            },
+            "response": "Hat"
+        },
+        {
+            "sample_id": 33,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "cleaning_closet_2.jpg"
+                ]
+            },
+            "response": "1.Umbrella 2.Shelf 3.Towel"
+        },
+        {
+            "sample_id": 34,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: List the objects in the drawer marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "cleaning_cupboards_0.jpg"
+                ]
+            },
+            "response": "1.Pen 2.Brush 3.Rag"
+        },
+        {
+            "sample_id": 35,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "cleaning_cupboards_1.jpg"
+                ]
+            },
+            "response": "1.Screwdriver 2.Bin"
+        },
+        {
+            "sample_id": 36,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "cleaning_floors_0.jpg"
+                ]
+            },
+            "response": "1.Brush 2.Broom"
+        },
+        {
+            "sample_id": 37,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_floors_1.jpg"
+                ]
+            },
+            "response": "Dustpan"
+        },
+        {
+            "sample_id": 38,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "cleaning_microwave_oven_0.jpg"
+                ]
+            },
+            "response": "1.Microwave 2.Cabinet"
+        },
+        {
+            "sample_id": 39,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_stove_0.jpg"
+                ]
+            },
+            "response": "Stove"
+        },
+        {
+            "sample_id": 40,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "cleaning_stove_1.jpg"
+                ]
+            },
+            "response": "1.Sink 2.Rag"
+        },
+        {
+            "sample_id": 41,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "cleaning_table_after_clearing_0.jpg"
+                ]
+            },
+            "response": "1.Table"
+        },
+        {
+            "sample_id": 42,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "cleaning_toilet_0.jpg"
+                ]
+            },
+            "response": "1.Brush 2.Toilet 3.Detergent"
+        },
+        {
+            "sample_id": 43,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "cleaning_up_after_a_meal_0.jpg"
+                ]
+            },
+            "response": "1.Plate 2.Cup 3.Bowl 4.Chair"
+        },
+        {
+            "sample_id": 44,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_up_after_a_meal_1.jpg"
+                ]
+            },
+            "response": "Hamburger"
+        },
+        {
+            "sample_id": 45,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "cleaning_up_after_a_meal_2.jpg"
+                ]
+            },
+            "response": "1.Sack"
+        },
+        {
+            "sample_id": 46,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_up_refrigerator_0.jpg"
+                ]
+            },
+            "response": "Rag"
+        },
+        {
+            "sample_id": 47,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_up_refrigerator_1.jpg"
+                ]
+            },
+            "response": "Soap"
+        },
+        {
+            "sample_id": 48,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_up_refrigerator_2.jpg"
+                ]
+            },
+            "response": "Cabinet"
+        },
+        {
+            "sample_id": 49,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_up_refrigerator_3.jpg"
+                ]
+            },
+            "response": "Refrigerator"
+        },
+        {
+            "sample_id": 50,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_up_refrigerator_4.jpg"
+                ]
+            },
+            "response": "Tray"
+        },
+        {
+            "sample_id": 51,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_up_refrigerator_5.jpg"
+                ]
+            },
+            "response": "Bowl"
+        },
+        {
+            "sample_id": 52,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_up_refrigerator_6.jpg"
+                ]
+            },
+            "response": "Sink"
+        },
+        {
+            "sample_id": 53,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_up_the_kitchen_only_0.jpg"
+                ]
+            },
+            "response": "Bin"
+        },
+        {
+            "sample_id": 54,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_up_the_kitchen_only_1.jpg"
+                ]
+            },
+            "response": "Broom"
+        },
+        {
+            "sample_id": 55,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_up_the_kitchen_only_2.jpg"
+                ]
+            },
+            "response": "Rag"
+        },
+        {
+            "sample_id": 56,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_up_the_kitchen_only_7.jpg"
+                ]
+            },
+            "response": "Soap"
+        },
+        {
+            "sample_id": 57,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_up_the_kitchen_only_3.jpg"
+                ]
+            },
+            "response": "Blender"
+        },
+        {
+            "sample_id": 58,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_up_the_kitchen_only_4.jpg"
+                ]
+            },
+            "response": "Cabinet"
+        },
+        {
+            "sample_id": 59,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_up_the_kitchen_only_5.jpg"
+                ]
+            },
+            "response": "Refrigerator"
+        },
+        {
+            "sample_id": 60,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_up_the_kitchen_only_6.jpg"
+                ]
+            },
+            "response": "Plate"
+        },
+        {
+            "sample_id": 61,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_windows_0.jpg"
+                ]
+            },
+            "response": "Cabinet"
+        },
+        {
+            "sample_id": 62,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_windows_1.jpg"
+                ]
+            },
+            "response": "Table"
+        },
+        {
+            "sample_id": 63,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_windows_2.jpg"
+                ]
+            },
+            "response": "Rag"
+        },
+        {
+            "sample_id": 64,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_windows_3.jpg"
+                ]
+            },
+            "response": "Window"
+        },
+        {
+            "sample_id": 65,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "clearing_the_table_after_dinner_0.jpg"
+                ]
+            },
+            "response": "Chair"
+        },
+        {
+            "sample_id": 66,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "clearing_the_table_after_dinner_1.jpg"
+                ]
+            },
+            "response": "Bowl"
+        },
+        {
+            "sample_id": 67,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "clearing_the_table_after_dinner_2.jpg"
+                ]
+            },
+            "response": "Bucket"
+        },
+        {
+            "sample_id": 68,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "clearing_the_table_after_dinner_3.jpg"
+                ]
+            },
+            "response": "Beverage"
+        },
+        {
+            "sample_id": 69,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "clearing_the_table_after_dinner_4.jpg"
+                ]
+            },
+            "response": "cup"
+        },
+        {
+            "sample_id": 70,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "clearing_the_table_after_dinner_5.jpg"
+                ]
+            },
+            "response": "catsup"
+        },
+        {
+            "sample_id": 71,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "clearing_the_table_after_dinner_6.jpg"
+                ]
+            },
+            "response": "1.bowl 2.cup 3.catsup 4.bowl"
+        },
+        {
+            "sample_id": 72,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "collect_misplaced_items_0.jpg"
+                ]
+            },
+            "response": "sofa"
+        },
+        {
+            "sample_id": 73,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "collect_misplaced_items_1.jpg"
+                ]
+            },
+            "response": "1.cabinet"
+        },
+        {
+            "sample_id": 74,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "collect_misplaced_items_2.jpg"
+                ]
+            },
+            "response": "socks"
+        },
+        {
+            "sample_id": 75,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "collect_misplaced_items_6.jpg"
+                ]
+            },
+            "response": "socks"
+        },
+        {
+            "sample_id": 76,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "collect_misplaced_items_3.jpg"
+                ]
+            },
+            "response": "shoe"
+        },
+        {
+            "sample_id": 77,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "collect_misplaced_items_4.jpg"
+                ]
+            },
+            "response": "1.table"
+        },
+        {
+            "sample_id": 78,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "collect_misplaced_items_5.jpg"
+                ]
+            },
+            "response": "notebook"
+        },
+        {
+            "sample_id": 79,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "collect_misplaced_items_7.jpg"
+                ]
+            },
+            "response": "1.table"
+        },
+        {
+            "sample_id": 80,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "defrosting_freezer_0.jpg"
+                ]
+            },
+            "response": "rag"
+        },
+        {
+            "sample_id": 81,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "defrosting_freezer_1.jpg"
+                ]
+            },
+            "response": "sink"
+        },
+        {
+            "sample_id": 82,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "defrosting_freezer_2.jpg"
+                ]
+            },
+            "response": "towel"
+        },
+        {
+            "sample_id": 83,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "defrosting_freezer_3.jpg"
+                ]
+            },
+            "response": "bucket"
+        },
+        {
+            "sample_id": 84,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "defrosting_freezer_4.jpg"
+                ]
+            },
+            "response": "scraper"
+        },
+        {
+            "sample_id": 85,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "defrosting_freezer_5.jpg"
+                ]
+            },
+            "response": "refrigerator"
+        },
+        {
+            "sample_id": 86,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "defrosting_freezer_6.jpg"
+                ]
+            },
+            "response": "1.orange 2.pear"
+        },
+        {
+            "sample_id": 87,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "filling_a_Christmas_stocking_0.jpg"
+                ]
+            },
+            "response": "cube"
+        },
+        {
+            "sample_id": 88,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "filling_a_Christmas_stocking_1.jpg"
+                ]
+            },
+            "response": "stocking"
+        },
+        {
+            "sample_id": 89,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "filling_a_Christmas_stocking_2.jpg"
+                ]
+            },
+            "response": "bucket"
+        },
+        {
+            "sample_id": 90,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "filling_a_Christmas_stocking_3.jpg"
+                ]
+            },
+            "response": "cabinet"
+        },
+        {
+            "sample_id": 91,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "filling_a_Christmas_stocking_4.jpg"
+                ]
+            },
+            "response": "pen"
+        },
+        {
+            "sample_id": 92,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "filling_a_Christmas_stocking_5.jpg"
+                ]
+            },
+            "response": "candy"
+        },
+        {
+            "sample_id": 93,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "filling_a_Christmas_stocking_6.jpg"
+                ]
+            },
+            "response": "candy"
+        },
+        {
+            "sample_id": 94,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "filling_an_Easter_basket_0.jpg"
+                ]
+            },
+            "response": "basket"
+        },
+        {
+            "sample_id": 95,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "filling_an_Easter_basket_1.jpg"
+                ]
+            },
+            "response": "ball"
+        },
+        {
+            "sample_id": 96,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "filling_an_Easter_basket_2.jpg"
+                ]
+            },
+            "response": "basket"
+        },
+        {
+            "sample_id": 97,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "filling_an_Easter_basket_3.jpg"
+                ]
+            },
+            "response": "cabinet"
+        },
+        {
+            "sample_id": 98,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "filling_an_Easter_basket_4.jpg"
+                ]
+            },
+            "response": "bow"
+        },
+        {
+            "sample_id": 99,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "filling_an_Easter_basket_5.jpg"
+                ]
+            },
+            "response": "book"
+        },
+        {
+            "sample_id": 100,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "filling_an_Easter_basket_6.jpg"
+                ]
+            },
+            "response": "egg"
+        },
+        {
+            "sample_id": 101,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "loading_the_dishwasher_0.jpg"
+                ]
+            },
+            "response": "dishwasher"
+        },
+        {
+            "sample_id": 102,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "loading_the_dishwasher_1.jpg"
+                ]
+            },
+            "response": "plate"
+        },
+        {
+            "sample_id": 103,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "loading_the_dishwasher_2.jpg"
+                ]
+            },
+            "response": "bowl"
+        },
+        {
+            "sample_id": 104,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "loading_the_dishwasher_3.jpg"
+                ]
+            },
+            "response": "cup"
+        },
+        {
+            "sample_id": 105,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "making_tea_0.jpg"
+                ]
+            },
+            "response": "teapot"
+        },
+        {
+            "sample_id": 106,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What is the object in the drawer enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "making_tea_1.jpg"
+                ]
+            },
+            "response": "knife"
+        },
+        {
+            "sample_id": 107,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "making_tea_2.jpg"
+                ]
+            },
+            "response": "refrigerator"
+        },
+        {
+            "sample_id": 108,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: In these three pictures, the same object is boxed in red. What is it? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "making_tea_3.jpg",
+                    "making_tea_6.jpg",
+                    "making_tea_7.jpg"
+                ]
+            },
+            "response": "tea_bag"
+        },
+        {
+            "sample_id": 109,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "making_tea_4.jpg"
+                ]
+            },
+            "response": "stove"
+        },
+        {
+            "sample_id": 110,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "making_tea_5.jpg"
+                ]
+            },
+            "response": "lemon"
+        },
+        {
+            "sample_id": 111,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "mopping_floors_0.jpg"
+                ]
+            },
+            "response": "soap"
+        },
+        {
+            "sample_id": 112,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "mopping_floors_1.jpg"
+                ]
+            },
+            "response": "bucket"
+        },
+        {
+            "sample_id": 113,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "mopping_floors_2.jpg"
+                ]
+            },
+            "response": "sink"
+        },
+        {
+            "sample_id": 114,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "mopping_floors_3.jpg"
+                ]
+            },
+            "response": "broom"
+        },
+        {
+            "sample_id": 115,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "packing_adult_s_bags_0.jpg"
+                ]
+            },
+            "response": "backpack"
+        },
+        {
+            "sample_id": 116,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "packing_adult_s_bags_1.jpg"
+                ]
+            },
+            "response": "mouse"
+        },
+        {
+            "sample_id": 117,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "packing_adult_s_bags_2.jpg"
+                ]
+            },
+            "response": "makeup"
+        },
+        {
+            "sample_id": 118,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "packing_adult_s_bags_3.jpg"
+                ]
+            },
+            "response": "toothbrush"
+        },
+        {
+            "sample_id": 119,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "packing_adult_s_bags_4.jpg"
+                ]
+            },
+            "response": "jewelry"
+        },
+        {
+            "sample_id": 120,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "packing_bags_or_suitcase_0.jpg"
+                ]
+            },
+            "response": "1.backpack 2.underwear 3.hardback 4.shampoo"
+        },
+        {
+            "sample_id": 121,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "packing_bags_or_suitcase_1.jpg"
+                ]
+            },
+            "response": "toothpaste"
+        },
+        {
+            "sample_id": 122,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "packing_boxes_for_household_move_or_trip_0.jpg"
+                ]
+            },
+            "response": "1.sweater"
+        },
+        {
+            "sample_id": 123,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "packing_boxes_for_household_move_or_trip_1.jpg"
+                ]
+            },
+            "response": "plate"
+        },
+        {
+            "sample_id": 124,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "packing_boxes_for_household_move_or_trip_3.jpg"
+                ]
+            },
+            "response": "book"
+        },
+        {
+            "sample_id": 125,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "packing_car_for_trip_0.jpg"
+                ]
+            },
+            "response": "car"
+        },
+        {
+            "sample_id": 126,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "packing_car_for_trip_1.jpg"
+                ]
+            },
+            "response": "briefcase"
+        },
+        {
+            "sample_id": 127,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "packing_car_for_trip_3.jpg"
+                ]
+            },
+            "response": "pencil_box"
+        },
+        {
+            "sample_id": 128,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "packing_car_for_trip_3.jpg"
+                ]
+            },
+            "response": "pencil_box"
+        },
+        {
+            "sample_id": 129,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "packing_car_for_trip_5.jpg"
+                ]
+            },
+            "response": "1.duffel_bag 2.headset"
+        },
+        {
+            "sample_id": 130,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "packing_child_s_bag_1.jpg"
+                ]
+            },
+            "response": "1.backpack 2.notebook"
+        },
+        {
+            "sample_id": 131,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "packing_child_s_bag_2.jpg"
+                ]
+            },
+            "response": "sunglass"
+        },
+        {
+            "sample_id": 132,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "packing_child_s_bag_3.jpg"
+                ]
+            },
+            "response": "apple"
+        },
+        {
+            "sample_id": 133,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "packing_food_for_work_0.jpg"
+                ]
+            },
+            "response": "1.juice 2.apple"
+        },
+        {
+            "sample_id": 134,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "packing_food_for_work_2.jpg"
+                ]
+            },
+            "response": "1.snack_food"
+        },
+        {
+            "sample_id": 135,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "packing_food_for_work_4.jpg"
+                ]
+            },
+            "response": "1.hamburger 2.sausage 3.broccoli"
+        },
+        {
+            "sample_id": 136,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "packing_lunches_0.jpg"
+                ]
+            },
+            "response": "1.cookie 2.cookie 3.banana 4.apple "
+        },
+        {
+            "sample_id": 137,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "packing_lunches_5.jpg"
+                ]
+            },
+            "response": "1.can 2.pitcher "
+        },
+        {
+            "sample_id": 138,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "packing_picnics_0.jpg"
+                ]
+            },
+            "response": "1.sandwich "
+        },
+        {
+            "sample_id": 139,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "packing_picnics_1.jpg"
+                ]
+            },
+            "response": "melon"
+        },
+        {
+            "sample_id": 140,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "packing_picnics_7.jpg"
+                ]
+            },
+            "response": "1.grape 2.beer 3.grape 4.beer 5.electric_refrigerator "
+        },
+        {
+            "sample_id": 141,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "packing_picnics_8.jpg"
+                ]
+            },
+            "response": "grape"
+        },
+        {
+            "sample_id": 142,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "preparing_salad_0.jpg"
+                ]
+            },
+            "response": "radish"
+        },
+        {
+            "sample_id": 143,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "preparing_salad_1.jpg"
+                ]
+            },
+            "response": "1.apple 2.lettuce 3.radish"
+        },
+        {
+            "sample_id": 144,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "preparing_salad_2.jpg"
+                ]
+            },
+            "response": "1.apple 2.tomato 3.tomato"
+        },
+        {
+            "sample_id": 145,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "preserving_food_0.jpg"
+                ]
+            },
+            "response": "1.beef 2.pan 3.pot 4.carving knife"
+        },
+        {
+            "sample_id": 146,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "preserving_food_1.jpg"
+                ]
+            },
+            "response": "beef"
+        },
+        {
+            "sample_id": 147,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "putting_leftovers_away_0.jpg"
+                ]
+            },
+            "response": "1.sauce 2.pasta 3.pasta"
+        },
+        {
+            "sample_id": 148,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: List objects in red boxes marked with numbers. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "serving_a_meal_1.jpg"
+                ]
+            },
+            "response": "1.Soup 2.Spoon 3.Bread 4.Salad"
+        },
+        {
+            "sample_id": 149,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: List objects in red boxes marked with numbers. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "serving_a_meal_2.jpg"
+                ]
+            },
+            "response": "1.Water 2.Cake 3.Chicken"
+        },
+        {
+            "sample_id": 150,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: List objects in red boxes marked with numbers. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "serving_a_meal_3.jpg"
+                ]
+            },
+            "response": "1.Plate 2.Fork"
+        },
+        {
+            "sample_id": 151,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: List objects in red boxes marked with numbers. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "serving_a_meal_4.jpg"
+                ]
+            },
+            "response": "1.Knife 2.Cabinet"
+        },
+        {
+            "sample_id": 152,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: List objects in red boxes marked with numbers. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "serving_a_meal_5.jpg"
+                ]
+            },
+            "response": "1.Stove"
+        },
+        {
+            "sample_id": 153,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: List objects in red boxes marked with numbers. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "serving_a_meal_6.jpg"
+                ]
+            },
+            "response": "1.Table"
+        },
+        {
+            "sample_id": 154,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: List objects in the refrigerator in red boxes marked with numbers. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "serving_hors_d_oeuvres_1.jpg"
+                ]
+            },
+            "response": "1.Parsley 2.Cheese"
+        },
+        {
+            "sample_id": 155,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: List objects in red boxes marked with numbers. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "serving_hors_d_oeuvres_2.jpg"
+                ]
+            },
+            "response": "1.Tray 2.Bread"
+        },
+        {
+            "sample_id": 156,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: List objects in red boxes marked with numbers. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "sorting_books_1.jpg"
+                ]
+            },
+            "response": "1.Book 2.Shelf"
+        },
+        {
+            "sample_id": 157,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: List objects in red boxes marked with numbers. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "sorting_groceries_1.jpg"
+                ]
+            },
+            "response": "1.Milk 2.Orange 3.Yogurt"
+        },
+        {
+            "sample_id": 158,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: List objects in red boxes marked with numbers. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "sorting_groceries_2.jpg"
+                ]
+            },
+            "response": "1.Flour"
+        },
+        {
+            "sample_id": 159,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: List objects in red boxes marked with numbers. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "sorting_groceries_3.jpg"
+                ]
+            },
+            "response": "1.Carrot 2.Apple 3.Broccoli"
+        },
+        {
+            "sample_id": 160,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: List objects in red boxes marked with numbers. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "sorting_mail_1.jpg"
+                ]
+            },
+            "response": "1.Envelope 2.Newspaper"
+        },
+        {
+            "sample_id": 161,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: List objects in red boxes marked with numbers. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "storing_food_1.jpg"
+                ]
+            },
+            "response": "1.Potato Chips 2.Bottle"
+        },
+        {
+            "sample_id": 162,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: List objects in red boxes marked with numbers. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "storing_food_2.jpg"
+                ]
+            },
+            "response": "1.Bagged Bread"
+        },
+        {
+            "sample_id": 163,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: List objects in red boxes marked with numbers. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "thawing_frozen_food_1.jpg"
+                ]
+            },
+            "response": "1.Fish 2.Sink 3.Olive"
+        },
+        {
+            "sample_id": 164,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: List objects in red boxes marked with numbers. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "vacuuming_floors_1.jpg"
+                ]
+            },
+            "response": "1.Vacuum"
+        },
+        {
+            "sample_id": 165,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "re-shelving_library_books_0.jpg"
+                ]
+            },
+            "response": "book"
+        },
+        {
+            "sample_id": 166,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "re-shelving_library_books_1.jpg"
+                ]
+            },
+            "response": "book"
+        },
+        {
+            "sample_id": 167,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What is the object enclosed by a red box? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "re-shelving_library_books_2.jpg"
+                ]
+            },
+            "response": "shelf"
+        },
+        {
+            "sample_id": 168,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: What is the object in the bucket? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "assembling_gift_baskets_3.jpg"
+                ]
+            },
+            "response": "Bow"
+        },
+        {
+            "sample_id": 169,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: What is the object on the washing machine? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_barbecue_grill_3.jpg"
+                ]
+            },
+            "response": "Grill"
+        },
+        {
+            "sample_id": 170,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: What is the object on the bed? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_bedroom_2.jpg"
+                ]
+            },
+            "response": "Trousers"
+        },
+        {
+            "sample_id": 171,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: What is the object on the bed? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_bedroom_2.jpg"
+                ]
+            },
+            "response": "Trousers"
+        },
+        {
+            "sample_id": 172,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: What is the object on the bed? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_cupboards_2.jpg"
+                ]
+            },
+            "response": "Bucket"
+        },
+        {
+            "sample_id": 173,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: What is the object grabbed in the hand? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_cupboards_2.jpg"
+                ]
+            },
+            "response": "Marker"
+        },
+        {
+            "sample_id": 174,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: What is the object marked with '1'? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "cleaning_table_after_clearing_1.jpg"
+                ]
+            },
+            "response": "dishtowel"
+        },
+        {
+            "sample_id": 175,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question:List the objects marked with number. Answer with a number and its corresponding object name, like '1.Apple 2.Cup 3.Plate.'. Your answer is:",
+                "images_path": [
+                    "mopping_floors_4.jpg"
+                ]
+            },
+            "response": "1.Cloth"
+        }
+    ]
+}

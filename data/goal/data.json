@@ -1,0 +1,701 @@
+{
+    "metadata": {
+        "dataset": "Goal Undestanding",
+        "split": "core",
+        "num_sample": 50,
+        "task_instruction": [
+            "You are a dual armed household robot. You will receive a sequence of images in chronological order, illustrating the progression of a task you are currently executing, with the last image representing your current observation. You will also receive a text task description. Your task is to infer whether the task's goal has been achieved, based on the provided task description. Answer with 'yes' or 'no'.",
+            "As a dual-armed household robot, you will be shown a series of images in sequential order, each depicting a step in a task you are performing. The final image reflects your most recent observation during this task. Along with these images, you will receive a written description of the task. Based on this description, determine if the objective of the task has been successfully met. Simply answer with 'yes' or 'no'.",
+            "In your role as a household robot with two arms, you will view a set of images presented in chronological order. These images represent various stages of a task that you are in the process of completing, with the last image showing your latest action. Additionally, a text describing the task will be provided. Your job is to assess, according to this description, whether the task has been completed correctly. Respond with either 'yes' or 'no'.",
+            "You, as a robot equipped with dual arms for household tasks, will receive a sequence of images. These images are arranged in the order they occurred, demonstrating the progression of a task you are undertaking, with the final image being your current state in this task. Accompanied by these images, there will be a description of the task in text form. Your task is to analyze and decide if the goal of the task has been achieved, as per the description. Answer simply with 'yes' or 'no'.",
+            "As a dual-armed robot designed for household activities, you will be provided with a chronological sequence of images. Each image illustrates a stage of a task that you are executing, and the last image in this sequence represents your present situation in completing this task. You will also be given a textual description of what the task entails. Based on this description, you need to determine if the task has been fulfilled. Your response should be either 'yes' or 'no'.",
+            "You, functioning as a household robot with two arms, will observe a series of images displayed in the order they were taken. These images chronicle the steps of a task you are currently engaged in, with the last image depicting your most recent progress. There will also be a written explanation of the task. Your role is to evaluate if the task's objective has been reached, in line with the provided description. The answer you provide should be simply 'yes' or 'no'."
+        ],
+        "question_type": "open-ended",
+        "task_type": "Understanding",
+        "task_intro": "Goal understanding: infer whether the goal is achived"
+    },
+    "data": [
+        {
+            "sample_id": 0,
+            "task_instance": {
+                "task_name": "assembling_gift_baskets",
+                "context": "Task is to put the bow in the basket. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "assembling_gift_baskets_0.jpg",
+                    "assembling_gift_baskets_1.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 1,
+            "task_instance": {
+                "task_name": "bottling_fruit",
+                "context": "Task is to fetch the fruit out from the refrigerator, cut the fruit and put them in the pot. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "bottling_fruit_0.jpg",
+                    "bottling_fruit_1.jpg",
+                    "bottling_fruit_2.jpg"
+                ]
+            },
+            "response": "Yes",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 2,
+            "task_instance": {
+                "task_name": "boxing_books_up_for_storage",
+                "context": "Task is to pack all the books into the box. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "boxing_books_up_for_storage_0.jpg",
+                    "boxing_books_up_for_storage_1.jpg",
+                    "boxing_books_up_for_storage_2.jpg"
+                ]
+            },
+            "response": "Yes",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 3,
+            "task_instance": {
+                "task_name": "chopping_vegetables",
+                "context": "Task is to take out the pot from the cabinet and slice the vegetables fetched from the refrigerator. After slicing, transfer them into the pot. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "chopping_vegetables_0.jpg",
+                    "chopping_vegetables_1.jpg",
+                    "chopping_vegetables_2.jpg",
+                    "chopping_vegetables_3.jpg",
+                    "chopping_vegetables_4.jpg",
+                    "chopping_vegetables_5.jpg",
+                    "chopping_vegetables_6.jpg",
+                    "chopping_vegetables_7.jpg"
+                ]
+            },
+            "response": "Yes",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 4,
+            "task_instance": {
+                "task_name": "cleaning_barbecue_grill",
+                "context": "Task is to pick up the grill and wipe it, then put it on the washing machine after cleaning. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "cleaning_barbecue_grill_0.jpg",
+                    "cleaning_barbecue_grill_1.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 5,
+            "task_instance": {
+                "task_name": "cleaning_bathrooms",
+                "context": "Task is to clean up all the stains. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "cleaning_bathrooms_0.jpg",
+                    "cleaning_bathrooms_1.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 6,
+            "task_instance": {
+                "task_name": "cleaning_bathtub",
+                "context": "Task is to clean the bathtub's stains with the brush inside it. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "cleaning_bathtub_0.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 7,
+            "task_instance": {
+                "task_name": "cleaning_bedroom",
+                "context": "Task is to put away all the clothes on the bed. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "cleaning_bedroom_0.jpg",
+                    "cleaning_bedroom_1.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 8,
+            "task_instance": {
+                "task_name": "cleaning_carpets",
+                "context": "Task is to clean up stains on the carpets with a wet hand towel. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "cleaning_carpets_0.jpg",
+                    "cleaning_carpets_1.jpg",
+                    "cleaning_carpets_2.jpg",
+                    "cleaning_carpets_3.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 9,
+            "task_instance": {
+                "task_name": "cleaning_closet",
+                "context": "Task is to clean the closet and put the items scattered on the floor into the closet. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "cleaning_closet_0.jpg",
+                    "cleaning_closet_1.jpg",
+                    "cleaning_closet_2.jpg",
+                    "cleaning_closet_3.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 10,
+            "task_instance": {
+                "task_name": "cleaning_cupboards",
+                "context": "Task is to clean the cupboard and clear away the clutter from the cupboard. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "cleaning_cupboards_0.jpg",
+                    "cleaning_cupboards_1.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 11,
+            "task_instance": {
+                "task_name": "cleaning_floors",
+                "context": "Task is to clean the floors with the scrub brush. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "cleaning_floors_0.jpg",
+                    "cleaning_floors_1.jpg",
+                    "cleaning_floors_2.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 12,
+            "task_instance": {
+                "task_name": "cleaning_freezer",
+                "context": "Task is to clean the freezer's stains and clear away the clutter. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "cleaning_freezer_0.jpg",
+                    "cleaning_freezer_1.jpg",
+                    "cleaning_freezer_2.jpg"
+                ]
+            },
+            "response": "Yes",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 13,
+            "task_instance": {
+                "task_name": "cleaning_microwave_oven",
+                "context": "Task is to clean up all the microwave's stains. Now infer whether the task's goal has been achieved. Your answer is: ",
+                "images_path": [
+                    "cleaning_microwave_oven_0.jpg",
+                    "cleaning_microwave_oven_1.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 2
+        },
+        {
+            "sample_id": 14,
+            "task_instance": {
+                "task_name": "cleaning_oven",
+                "context": "Task is to clean up all the oven's stains. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "cleaning_oven_0.jpg",
+                    "cleaning_oven_1.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 15,
+            "task_instance": {
+                "task_name": "cleaning_stove",
+                "context": "Task is to clean the stove with the rag from the cabinet. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "cleaning_stove_0.jpg",
+                    "cleaning_stove_1.jpg",
+                    "cleaning_stove_2.jpg",
+                    "cleaning_stove_3.jpg",
+                    "cleaning_stove_4.jpg"
+                ]
+            },
+            "response": "Yes",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 16,
+            "task_instance": {
+                "task_name": "cleaning_table_after_clearing",
+                "context": "Task is to clean all the table's stains.Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "cleaning_table_after_clearing_0.jpg",
+                    "cleaning_table_after_clearing_1.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 17,
+            "task_instance": {
+                "task_name": "cleaning_toilet",
+                "context": "Task is to clean all the stains on the toilet with the scrub brush. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "cleaning_toilet_0.jpg",
+                    "cleaning_toilet_1.jpg"
+                ]
+            },
+            "response": "Yes",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 18,
+            "task_instance": {
+                "task_name": "cleaning_up_after_a_meal",
+                "context": "Task is to clean up after a meal. Put all the hamburgers in the sack, clean the stain on the chiars, table, and tableware. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "cleaning_up_after_a_meal_0.jpg",
+                    "cleaning_up_after_a_meal_1.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 19,
+            "task_instance": {
+                "task_name": "cleaning_up_refrigerator",
+                "context": "Task is to clean up all the stains of the refrigerator. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "cleaning_up_refrigerator_0.jpg",
+                    "cleaning_up_refrigerator_1.jpg"
+                ]
+            },
+            "response": "Yes",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 20,
+            "task_instance": {
+                "task_name": "clearing_the_table_after_dinner",
+                "context": "Task is to put everything on the table away. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "clearing_the_table_after_dinner_0.jpg",
+                    "clearing_the_table_after_dinner_1.jpg"
+                ]
+            },
+            "response": "Yes",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 21,
+            "task_instance": {
+                "task_name": "filling_a_Christmas_stocking",
+                "context": "Task is to fill the Christmas stocking with presents. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "filling_a_Christmas_stocking_0.jpg",
+                    "filling_a_Christmas_stocking_1.jpg",
+                    "filling_a_Christmas_stocking_2.jpg"
+                ]
+            },
+            "response": "Yes",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 22,
+            "task_instance": {
+                "task_name": "filling_an_Easter_basket",
+                "context": "Task is to put the ball into the basket. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "filling_an_Easter_basket_0.jpg",
+                    "filling_an_Easter_basket_1.jpg"
+                ]
+            },
+            "response": "Yes",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 23,
+            "task_instance": {
+                "task_name": "loading_the_dishwasher",
+                "context": "Task is to put the dirty dishes into the dishwasher. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "loading_the_dishwasher_0.jpg",
+                    "loading_the_dishwasher_1.jpg",
+                    "loading_the_dishwasher_2.jpg"
+                ]
+            },
+            "response": "Yes",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 24,
+            "task_instance": {
+                "task_name": "packing_car_for_trip",
+                "context": "Task is to pack the car for a trip, put the the pencil box, the headset, the briefcase and the duffel bag into the car. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "packing_car_for_trip_0.jpg",
+                    "packing_car_for_trip_1.jpg",
+                    "packing_car_for_trip_2.jpg",
+                    "packing_car_for_trip_3.jpg",
+                    "packing_car_for_trip_4.jpg"
+                ]
+            },
+            "response": "Yes",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 25,
+            "task_instance": {
+                "task_name": "packing_child_s_bag",
+                "context": "Task is to pack a child's backpack, put the sunglasses, the notebook, the bracelet, the apple, and the earphone into the backpack. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "packing_child_s_bag_3.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 26,
+            "task_instance": {
+                "task_name": "packing_food_for_work",
+                "context": "Task is to pack the snack_food and the hamburger into the carton. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "packing_food_for_work_4.jpg"
+                ]
+            },
+            "response": "Yes",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 27,
+            "task_instance": {
+                "context": "Task is to clean up the kitchen, i.e. cleaning the kitchen floor and closet. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "cleaning_up_the_kitchen_only_0.jpg",
+                    "cleaning_up_the_kitchen_only_1.jpg",
+                    "cleaning_up_the_kitchen_only_2.jpg",
+                    "cleaning_up_the_kitchen_only_3.jpg",
+                    "cleaning_up_the_kitchen_only_4.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 28,
+            "task_instance": {
+                "context": "Task is to clean the windows. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "cleaning_windows_0.jpg",
+                    "cleaning_windows_1.jpg",
+                    "cleaning_windows_2.jpg",
+                    "cleaning_windows_3.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 29,
+            "task_instance": {
+                "context": "Task is to collect the misplaced items. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "collect_misplaced_items_0.jpg",
+                    "collect_misplaced_items_1.jpg",
+                    "collect_misplaced_items_2.jpg",
+                    "collect_misplaced_items_3.jpg",
+                    "collect_misplaced_items_4.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 30,
+            "task_instance": {
+                "context": "Task is to defrost the freezer. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "defrosting_freezer_0.jpg",
+                    "defrosting_freezer_1.jpg",
+                    "defrosting_freezer_2.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 31,
+            "task_instance": {
+                "context": "Task is to defrost the freezer. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "preserving_food_0.jpg",
+                    "preserving_food_1.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 32,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Task is to prepare two salads with tomatoes, radishes, apples, and lettuce. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "preparing_salad_0.jpg",
+                    "preparing_salad_1.jpg",
+                    "preparing_salad_2.jpg"
+                ]
+            },
+            "response": "No"
+        },
+        {
+            "sample_id": 33,
+            "task_instance": {
+                "task_name": "making_tea",
+                "context": "Task is to boil tea. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "making_tea_0.jpg",
+                    "making_tea_1.jpg",
+                    "making_tea_4.jpg",
+                    "making_tea_3.jpg",
+                    "making_tea_2.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 34,
+            "task_instance": {
+                "task_name": "mopping_floors",
+                "context": "Task is to clean the stained floors. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "mopping_floors_5.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 35,
+            "task_instance": {
+                "task_name": "packing_adult_s_bags",
+                "context": "Task is to pack the makeups, toothbrush, and mouse on the bed into the bag. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "packing_adult_s_bags_4.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 36,
+            "task_instance": {
+                "task_name": "packing_bags_or_suitcase",
+                "context": "Task is to pack the underwares, toothbrush, shampoo, hardback, and toothpaste on the bed into the backpack. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "packing_bags_or_suitcase_5.jpg",
+                    "packing_bags_or_suitcase_4.jpg",
+                    "packing_bags_or_suitcase_3.jpg",
+                    "packing_bags_or_suitcase_2.jpg",
+                    "packing_bags_or_suitcase_6.jpg",
+                    "packing_bags_or_suitcase_0.jpg",
+                    "packing_bags_or_suitcase_1.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 37,
+            "task_instance": {
+                "task_name": "pair_packing_boxes_for_household_move_or_trip",
+                "context": "Task is to pack the shirts into the carton. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "pair_packing_boxes_for_household_move_or_trip_1.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 2
+        },
+        {
+            "sample_id": 38,
+            "task_instance": {
+                "task_name": "packing_lunches",
+                "context": "Task is to pack the banana into the carton. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "packing_lunches_7.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 39,
+            "task_instance": {
+                "task_name": "packing_picnics",
+                "context": "Task is to pack the fruits into the carton. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "packing_picnics_3.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 40,
+            "task_instance": {
+                "task_name": "putting_leftovers_away",
+                "context": "Task is to put the food on the table into the cabinet. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "putting_leftovers_away_1.jpg",
+                    "putting_leftovers_away_2.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 41,
+            "task_instance": {
+                "task_name": "re-shelving_library_books",
+                "context": "Task is to put the books on the table onto the bookshelf. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "re-shelving_library_books_1.jpg",
+                    "re-shelving_library_books_2.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 42,
+            "task_instance": {
+                "task_name": "serving_a_meal",
+                "context": "Task is to put food and cutlery on the table. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "serving_a_meal_1.jpg",
+                    "serving_a_meal_2.jpg",
+                    "serving_a_meal_3.jpg",
+                    "serving_a_meal_4.jpg",
+                    "serving_a_meal_5.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 43,
+            "task_instance": {
+                "task_name": "serving_hors_d_oeuvres",
+                "context": "Task is to Put the cilantro on top of the cheese and put the salad next to the bread. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "serving_hors_d_oeuvres_1.jpg",
+                    "serving_hors_d_oeuvres_2.jpg",
+                    "serving_hors_d_oeuvres_3.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 44,
+            "task_instance": {
+                "task_name": "sorting_books",
+                "context": "Your task is to place the books on the table and floor onto the shelves. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "sorting_books_1.jpg",
+                    "sorting_books_2.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 2
+        },
+        {
+            "sample_id": 45,
+            "task_instance": {
+                "task_name": "sorting_groceries",
+                "context": "Your task is to put the food on the table and counter into the refrigerator. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "sorting_groceries_1.jpg",
+                    "sorting_groceries_2.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 46,
+            "task_instance": {
+                "task_name": "sorting_mail",
+                "context": "Your task is to fold the envelopes into a pile and the newspapers into a pile. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "sorting_mail_1.jpg",
+                    "sorting_mail_2.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 47,
+            "task_instance": {
+                "task_name": "storing_food",
+                "context": "Your task is to put the food on the table into the cabinet. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "storing_food_1.jpg",
+                    "storing_food_2.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 48,
+            "task_instance": {
+                "task_name": "thawing_frozen_food",
+                "context": "Your task is to take the food in the refrigerator to the sink to defrost them. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "thawing_frozen_food_0.jpg",
+                    "thawing_frozen_food_1.jpg",
+                    "thawing_frozen_food_2.jpg",
+                    "thawing_frozen_food_3.jpg"
+                ]
+            },
+            "response": "Yes",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 49,
+            "task_instance": {
+                "task_name": "vacuuming_floors",
+                "context": "Your task is to get the vacuum cleaner. Now infer whether the task's goal has been achieved. Your answer is:",
+                "images_path": [
+                    "vacuuming_floors_1.jpg"
+                ]
+            },
+            "response": "No",
+            "task_instruction_id": 2
+        }
+    ]
+}

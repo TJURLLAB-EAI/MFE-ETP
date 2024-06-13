@@ -1,0 +1,3410 @@
+{
+    "metadata": {
+        "dataset": "property",
+        "split": "core",
+        "num_sample": 154,
+        "task_instruction": [
+            "I will give you a picture, and each picture will correspond to a question, which requires you to identify the possible property of a given object. If the object doesn't have any property, output 'None.'. The explanation of the properties (property name, annotation, and example objects which have this property) are in json format and delimited by triple quotes.  '''{\n\t\"breakable\":{\n\t\t\"annotation\": \"Mark if the object can be broken into smaller pieces by a human dropping it on the floor without a tool.\",\n\t\t\"example_objects\": [\"wine_bottle\", \"room_light\"]\n\t},\n\t\"cleaningTool\":{\n\t\t\"annotation\": \"Is a [object] designed to clean things?\",\n\t\t\"example_objects\": [\"scrub_brush\", \"pipe_cleaner\"]\n\t},\n\t\"cookable\":{\n\t\t\"annotation\": \"Can a [object] be cooked?\",\n\t\t\"example_objects\": [\"biscuit\", \"pizza\", \"apple\"]\n\t},\n\t\"grabbable\":{\n\t\t\"annotation\": \"If an object has this attribute, it is usually lightweight and can be potentially grabbed and picked up by the robot.\",\n\t\t\"example_objects\": [\"apple\", \"bottle\", \"rag\", \"plate\"]\n\t},\n\t\"openable\":{\n\t\t\"annotation\": \"Mark if the object is designed to be opened.\",\n\t\t\"example_objects\": [\"mixer\", \"keg\"]\n\t},\n\t\"sliceable\":{\n\t\t\"annotation\": \"Can a [object] be sliced easily by a human with a knife?\",\n\t\t\"example_objects\": [\"sweet_corn\", \"sandwich\"]\n\t},\n\t\"slicingTool\":{\n\t\t\"annotation\": \"Can a [object] slice an apple?\",\n\t\t\"example_objects\": [\"blade\", \"razor\"]\n\t},\n\t\"toggleable\":{\n\t\t\"annotation\": \"The object can be switched between a finite number of discrete states and is designed to do so.\",\n\t\t\"example_objects\": [\"hot_tub \", \"light_bulb\"]\n\t},\n\t\"waterSource\":{\n\t\t\"annotation\": \"where you can get water\",\n\t\t\"example_objects\": [\"sink\"]\n\t}\n}''' Neglect the robot, robot arm, and robot hand when answering. ",
+            "I'll provide you with a picture, and each picture will be linked to a question that necessitates identifying the possible property of a specified object. If the object lacks any property, please output 'None.' The property details, including property name, annotation, and examples of objects with this property, are presented in JSON format enclosed within triple quotes. '''{\n\t\"breakable\":{\n\t\t\"annotation\": \"Mark if the object can be broken into smaller pieces by a human dropping it on the floor without a tool.\",\n\t\t\"example_objects\": [\"wine_bottle\", \"room_light\"]\n\t},\n\t\"cleaningTool\":{\n\t\t\"annotation\": \"Is a [object] designed to clean things?\",\n\t\t\"example_objects\": [\"scrub_brush\", \"pipe_cleaner\"]\n\t},\n\t\"cookable\":{\n\t\t\"annotation\": \"Can a [object] be cooked?\",\n\t\t\"example_objects\": [\"biscuit\", \"pizza\", \"apple\"]\n\t},\n\t\"grabbable\":{\n\t\t\"annotation\": \"If an object has this attribute, it is usually lightweight and can be potentially grabbed and picked up by the robot.\",\n\t\t\"example_objects\": [\"apple\", \"bottle\", \"rag\", \"plate\"]\n\t},\n\t\"openable\":{\n\t\t\"annotation\": \"Mark if the object is designed to be opened.\",\n\t\t\"example_objects\": [\"mixer\", \"keg\"]\n\t},\n\t\"sliceable\":{\n\t\t\"annotation\": \"Can a [object] be sliced easily by a human with a knife?\",\n\t\t\"example_objects\": [\"sweet_corn\", \"sandwich\"]\n\t},\n\t\"slicingTool\":{\n\t\t\"annotation\": \"Can a [object] slice an apple?\",\n\t\t\"example_objects\": [\"blade\", \"razor\"]\n\t},\n\t\"toggleable\":{\n\t\t\"annotation\": \"The object can be switched between a finite number of discrete states and is designed to do so.\",\n\t\t\"example_objects\": [\"hot_tub \", \"light_bulb\"]\n\t},\n\t\"waterSource\":{\n\t\t\"annotation\": \"where you can get water\",\n\t\t\"example_objects\": [\"sink\"]\n\t}\n}''' Please disregard the robot, robot arm, and robot hand when responding.",
+            "I'm going to provide you with a picture, and each picture will be associated with a question that requires you to ascertain the potential property of a specified object. In case the object lacks any properties, your response should be 'None.' The property information, including property name, annotation, and examples of objects with this property, is presented in JSON format within triple quotes. '''{\n\t\"breakable\":{\n\t\t\"annotation\": \"Mark if the object can be broken into smaller pieces by a human dropping it on the floor without a tool.\",\n\t\t\"example_objects\": [\"wine_bottle\", \"room_light\"]\n\t},\n\t\"cleaningTool\":{\n\t\t\"annotation\": \"Is a [object] designed to clean things?\",\n\t\t\"example_objects\": [\"scrub_brush\", \"pipe_cleaner\"]\n\t},\n\t\"cookable\":{\n\t\t\"annotation\": \"Can a [object] be cooked?\",\n\t\t\"example_objects\": [\"biscuit\", \"pizza\", \"apple\"]\n\t},\n\t\"grabbable\":{\n\t\t\"annotation\": \"If an object has this attribute, it is usually lightweight and can be potentially grabbed and picked up by the robot.\",\n\t\t\"example_objects\": [\"apple\", \"bottle\", \"rag\", \"plate\"]\n\t},\n\t\"openable\":{\n\t\t\"annotation\": \"Mark if the object is designed to be opened.\",\n\t\t\"example_objects\": [\"mixer\", \"keg\"]\n\t},\n\t\"sliceable\":{\n\t\t\"annotation\": \"Can a [object] be sliced easily by a human with a knife?\",\n\t\t\"example_objects\": [\"sweet_corn\", \"sandwich\"]\n\t},\n\t\"slicingTool\":{\n\t\t\"annotation\": \"Can a [object] slice an apple?\",\n\t\t\"example_objects\": [\"blade\", \"razor\"]\n\t},\n\t\"toggleable\":{\n\t\t\"annotation\": \"The object can be switched between a finite number of discrete states and is designed to do so.\",\n\t\t\"example_objects\": [\"hot_tub \", \"light_bulb\"]\n\t},\n\t\"waterSource\":{\n\t\t\"annotation\": \"where you can get water\",\n\t\t\"example_objects\": [\"sink\"]\n\t}\n}''' Please exclude the robot, robot arm, and robot hand from your considerations when responding.",
+            "You'll receive a picture from me, and each picture will correspond to a question that involves identifying the potential property of a given object. If the object does not possess any properties, your response should be 'None.' The explanations of the properties, comprising property name, annotation, and instances of objects with the property, are formatted in JSON and enclosed in triple quotes. '''{\n\t\"breakable\":{\n\t\t\"annotation\": \"Mark if the object can be broken into smaller pieces by a human dropping it on the floor without a tool.\",\n\t\t\"example_objects\": [\"wine_bottle\", \"room_light\"]\n\t},\n\t\"cleaningTool\":{\n\t\t\"annotation\": \"Is a [object] designed to clean things?\",\n\t\t\"example_objects\": [\"scrub_brush\", \"pipe_cleaner\"]\n\t},\n\t\"cookable\":{\n\t\t\"annotation\": \"Can a [object] be cooked?\",\n\t\t\"example_objects\": [\"biscuit\", \"pizza\", \"apple\"]\n\t},\n\t\"grabbable\":{\n\t\t\"annotation\": \"If an object has this attribute, it is usually lightweight and can be potentially grabbed and picked up by the robot.\",\n\t\t\"example_objects\": [\"apple\", \"bottle\", \"rag\", \"plate\"]\n\t},\n\t\"openable\":{\n\t\t\"annotation\": \"Mark if the object is designed to be opened.\",\n\t\t\"example_objects\": [\"mixer\", \"keg\"]\n\t},\n\t\"sliceable\":{\n\t\t\"annotation\": \"Can a [object] be sliced easily by a human with a knife?\",\n\t\t\"example_objects\": [\"sweet_corn\", \"sandwich\"]\n\t},\n\t\"slicingTool\":{\n\t\t\"annotation\": \"Can a [object] slice an apple?\",\n\t\t\"example_objects\": [\"blade\", \"razor\"]\n\t},\n\t\"toggleable\":{\n\t\t\"annotation\": \"The object can be switched between a finite number of discrete states and is designed to do so.\",\n\t\t\"example_objects\": [\"hot_tub \", \"light_bulb\"]\n\t},\n\t\"waterSource\":{\n\t\t\"annotation\": \"where you can get water\",\n\t\t\"example_objects\": [\"sink\"]\n\t}\n}''' When answering, please ignore the robot, robot arm, and robot hand.",
+            "For each image I present, your task is to identify the potential property of a given object. If the object does not have any properties, please respond with 'None.' The property explanations, such as property name, annotation, and examples of objects with the property, are available in JSON format enclosed within triple quotes. '''{\n\t\"breakable\":{\n\t\t\"annotation\": \"Mark if the object can be broken into smaller pieces by a human dropping it on the floor without a tool.\",\n\t\t\"example_objects\": [\"wine_bottle\", \"room_light\"]\n\t},\n\t\"cleaningTool\":{\n\t\t\"annotation\": \"Is a [object] designed to clean things?\",\n\t\t\"example_objects\": [\"scrub_brush\", \"pipe_cleaner\"]\n\t},\n\t\"cookable\":{\n\t\t\"annotation\": \"Can a [object] be cooked?\",\n\t\t\"example_objects\": [\"biscuit\", \"pizza\", \"apple\"]\n\t},\n\t\"grabbable\":{\n\t\t\"annotation\": \"If an object has this attribute, it is usually lightweight and can be potentially grabbed and picked up by the robot.\",\n\t\t\"example_objects\": [\"apple\", \"bottle\", \"rag\", \"plate\"]\n\t},\n\t\"openable\":{\n\t\t\"annotation\": \"Mark if the object is designed to be opened.\",\n\t\t\"example_objects\": [\"mixer\", \"keg\"]\n\t},\n\t\"sliceable\":{\n\t\t\"annotation\": \"Can a [object] be sliced easily by a human with a knife?\",\n\t\t\"example_objects\": [\"sweet_corn\", \"sandwich\"]\n\t},\n\t\"slicingTool\":{\n\t\t\"annotation\": \"Can a [object] slice an apple?\",\n\t\t\"example_objects\": [\"blade\", \"razor\"]\n\t},\n\t\"toggleable\":{\n\t\t\"annotation\": \"The object can be switched between a finite number of discrete states and is designed to do so.\",\n\t\t\"example_objects\": [\"hot_tub \", \"light_bulb\"]\n\t},\n\t\"waterSource\":{\n\t\t\"annotation\": \"where you can get water\",\n\t\t\"example_objects\": [\"sink\"]\n\t}\n}''' It's essential to neglect the robot, robot arm, and robot hand when answering.",
+            "I will supply you with pictures, and each picture will correspond to a question that requires you to identify the possible attribute of a given object. If the object lacks any properties, your answer should be 'None.' The property descriptions, which include property name, annotation, and instances of objects with the property, are formatted in JSON and enclosed within triple quotes. '''{\n\t\"breakable\":{\n\t\t\"annotation\": \"Mark if the object can be broken into smaller pieces by a human dropping it on the floor without a tool.\",\n\t\t\"example_objects\": [\"wine_bottle\", \"room_light\"]\n\t},\n\t\"cleaningTool\":{\n\t\t\"annotation\": \"Is a [object] designed to clean things?\",\n\t\t\"example_objects\": [\"scrub_brush\", \"pipe_cleaner\"]\n\t},\n\t\"cookable\":{\n\t\t\"annotation\": \"Can a [object] be cooked?\",\n\t\t\"example_objects\": [\"biscuit\", \"pizza\", \"apple\"]\n\t},\n\t\"grabbable\":{\n\t\t\"annotation\": \"If an object has this attribute, it is usually lightweight and can be potentially grabbed and picked up by the robot.\",\n\t\t\"example_objects\": [\"apple\", \"bottle\", \"rag\", \"plate\"]\n\t},\n\t\"openable\":{\n\t\t\"annotation\": \"Mark if the object is designed to be opened.\",\n\t\t\"example_objects\": [\"mixer\", \"keg\"]\n\t},\n\t\"sliceable\":{\n\t\t\"annotation\": \"Can a [object] be sliced easily by a human with a knife?\",\n\t\t\"example_objects\": [\"sweet_corn\", \"sandwich\"]\n\t},\n\t\"slicingTool\":{\n\t\t\"annotation\": \"Can a [object] slice an apple?\",\n\t\t\"example_objects\": [\"blade\", \"razor\"]\n\t},\n\t\"toggleable\":{\n\t\t\"annotation\": \"The object can be switched between a finite number of discrete states and is designed to do so.\",\n\t\t\"example_objects\": [\"hot_tub \", \"light_bulb\"]\n\t},\n\t\"waterSource\":{\n\t\t\"annotation\": \"where you can get water\",\n\t\t\"example_objects\": [\"sink\"]\n\t}\n}''' When responding, please exclude the robot, robot arm, and robot hand from your considerations."
+        ],
+        "question_type": "open-ended",
+        "task_type": "Understanding",
+        "task_intro": "identify property, emphasize object in the image"
+    },
+    "data": [
+        {
+            "sample_id": 0,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What properties does the refrigerator in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "bottling_fruit_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "openable"
+        },
+        {
+            "sample_id": 1,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: What properties does the peach in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "bottling_fruit_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, cookable, sliceable"
+        },
+        {
+            "sample_id": 2,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: What properties does the pot in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "bottling_fruit_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, openable"
+        },
+        {
+            "sample_id": 3,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: What properties does the faucet in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "bottling_fruit_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "toggleable, waterSource"
+        },
+        {
+            "sample_id": 4,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What properties does the window in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "bottling_fruit_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "openable"
+        },
+        {
+            "sample_id": 5,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: What properties does the refrigerator in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_freezer_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, cleaningTool"
+        },
+        {
+            "sample_id": 6,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: What properties does the stove in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_freezer_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "openable, toggleable"
+        },
+        {
+            "sample_id": 7,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: What properties does the bottle in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_freezer_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, openable"
+        },
+        {
+            "sample_id": 8,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: What properties does the oven in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_oven_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "openable"
+        },
+        {
+            "sample_id": 9,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: What properties does the scrub_brush in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_oven_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, cleaningTool"
+        },
+        {
+            "sample_id": 10,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: What properties does the bottle in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_oven_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "breakable, grabbable"
+        },
+        {
+            "sample_id": 11,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: What properties does the rag in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_oven_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cleaningTool, grabbable"
+        },
+        {
+            "sample_id": 12,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: What properties does the basket in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "assembling_gift_baskets_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 13,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: What properties does the bow in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "assembling_gift_baskets_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 14,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: What properties does the cheese in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "assembling_gift_baskets_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable, sliceable"
+        },
+        {
+            "sample_id": 15,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: What properties does the cookie in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "assembling_gift_baskets_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabble, cookable"
+        },
+        {
+            "sample_id": 16,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: What properties does the candle in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "assembling_gift_baskets_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 17,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: What properties does the book in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "boxing_books_up_for_storage_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, openable"
+        },
+        {
+            "sample_id": 18,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: What properties does the carton in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "boxing_books_up_for_storage_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, openable"
+        },
+        {
+            "sample_id": 19,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: What properties does the shelf in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "boxing_books_up_for_storage_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "None."
+        },
+        {
+            "sample_id": 20,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: What properties does the dish in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "chopping_vegetables_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "breakable, grabbable"
+        },
+        {
+            "sample_id": 21,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What properties does the tomato in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "chopping_vegetables_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable, sliceable"
+        },
+        {
+            "sample_id": 22,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: What properties does the onion in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "chopping_vegetables_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, sliceable"
+        },
+        {
+            "sample_id": 23,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: What properties does the knife in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "chopping_vegetables_3.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, slicingTool"
+        },
+        {
+            "sample_id": 24,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: What properties does the scrub_brush in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_barbecue_grill_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cleaningTool, grabbable"
+        },
+        {
+            "sample_id": 25,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What properties does the sink in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_barbecue_grill_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "waterSource"
+        },
+        {
+            "sample_id": 26,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What properties does the grill in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_barbecue_grill_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, openable"
+        },
+        {
+            "sample_id": 27,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: What properties does the bathhub in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_bathrooms_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "openable, waterSource"
+        },
+        {
+            "sample_id": 28,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: What properties does the toilet in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_bathrooms_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "openable"
+        },
+        {
+            "sample_id": 29,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What properties does the sweater in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_bedroom_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 30,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: What properties does the perfume in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_bedroom_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "breakable, grabbable, openable"
+        },
+        {
+            "sample_id": 31,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: What properties does the washing machine in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_carpets_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cleaningTool, openable, toggleable"
+        },
+        {
+            "sample_id": 32,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: What properties does the sandal in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_closet_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 33,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: What properties does the hat in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_closet_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 34,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: What properties does the umbrella in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_closet_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, openable"
+        },
+        {
+            "sample_id": 35,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What properties does the pen in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_cupboards_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 36,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: What properties does the screwdriver in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_cupboards_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 37,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What properties does the bin in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_cupboards_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "openable"
+        },
+        {
+            "sample_id": 38,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: What properties does the broom in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_floors_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cleaningTool, grabbable"
+        },
+        {
+            "sample_id": 39,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: What properties does the dustpan in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_floors_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 40,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What properties does the microwave in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_microwave_oven_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "openable, toggleable"
+        },
+        {
+            "sample_id": 41,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: What properties does the stove in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_stove_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "openable"
+        },
+        {
+            "sample_id": 42,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: What properties does the plate in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_up_after_a_meal_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "breakable, grabbable"
+        },
+        {
+            "sample_id": 43,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_up_after_a_meal_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, sliceable, grabbable"
+        },
+        {
+            "sample_id": 44,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: What properties does the sack in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_up_after_a_meal_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, sliceable"
+        },
+        {
+            "sample_id": 45,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_up_refrigerator_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cleaningTool, grabbable"
+        },
+        {
+            "sample_id": 46,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_up_refrigerator_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cleaningTool, grabbable"
+        },
+        {
+            "sample_id": 47,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_up_refrigerator_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "openable"
+        },
+        {
+            "sample_id": 48,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_up_refrigerator_3.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "openable"
+        },
+        {
+            "sample_id": 49,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_up_refrigerator_4.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 50,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_up_refrigerator_5.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "breakable, grabbable"
+        },
+        {
+            "sample_id": 51,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_up_refrigerator_6.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "waterSource"
+        },
+        {
+            "sample_id": 52,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_up_the_kitchen_only_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cleaningTool, grabbable"
+        },
+        {
+            "sample_id": 53,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_up_the_kitchen_only_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cleaningTool, grabbable"
+        },
+        {
+            "sample_id": 54,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_up_the_kitchen_only_7.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cleaningTool, grabbable"
+        },
+        {
+            "sample_id": 55,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_up_the_kitchen_only_3.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, openable"
+        },
+        {
+            "sample_id": 56,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_up_the_kitchen_only_4.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "openable"
+        },
+        {
+            "sample_id": 57,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_up_the_kitchen_only_5.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "openable"
+        },
+        {
+            "sample_id": 58,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_up_the_kitchen_only_6.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "breakable, grabbable"
+        },
+        {
+            "sample_id": 59,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_windows_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "openable"
+        },
+        {
+            "sample_id": 60,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_windows_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cleaningTool, grabbable"
+        },
+        {
+            "sample_id": 61,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_windows_3.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "breakable, openable"
+        },
+        {
+            "sample_id": 62,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "clearing_the_table_after_dinner_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "breakable, grabbable"
+        },
+        {
+            "sample_id": 63,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "clearing_the_table_after_dinner_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 64,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "clearing_the_table_after_dinner_3.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, openable"
+        },
+        {
+            "sample_id": 65,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "clearing_the_table_after_dinner_4.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "breakable, grabbable"
+        },
+        {
+            "sample_id": 66,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "clearing_the_table_after_dinner_5.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, openable"
+        },
+        {
+            "sample_id": 67,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "collect_misplaced_items_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "openable"
+        },
+        {
+            "sample_id": 68,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "collect_misplaced_items_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 69,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "collect_misplaced_items_6.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 70,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "collect_misplaced_items_3.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 71,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "collect_misplaced_items_5.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 72,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "defrosting_freezer_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cleaningTool, grabbable"
+        },
+        {
+            "sample_id": 73,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "defrosting_freezer_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "waterSource"
+        },
+        {
+            "sample_id": 74,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "defrosting_freezer_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cleaningTool, grabbable"
+        },
+        {
+            "sample_id": 75,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "defrosting_freezer_3.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 76,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "defrosting_freezer_4.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cleaningTool, grabbable"
+        },
+        {
+            "sample_id": 77,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "defrosting_freezer_5.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "openable"
+        },
+        {
+            "sample_id": 78,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "defrosting_freezer_6.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable, sliceable"
+        },
+        {
+            "sample_id": 79,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: What properties does the object marked with '2' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "defrosting_freezer_6.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable, sliceable"
+        },
+        {
+            "sample_id": 80,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "filling_a_Christmas_stocking_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 81,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "filling_a_Christmas_stocking_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 82,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "filling_a_Christmas_stocking_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 83,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "filling_a_Christmas_stocking_3.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "openable"
+        },
+        {
+            "sample_id": 84,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "filling_a_Christmas_stocking_4.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 85,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "filling_a_Christmas_stocking_5.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 86,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "filling_a_Christmas_stocking_6.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 87,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "filling_an_Easter_basket_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 88,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "filling_an_Easter_basket_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 89,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "filling_an_Easter_basket_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 90,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "filling_an_Easter_basket_3.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "openable"
+        },
+        {
+            "sample_id": 91,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "filling_an_Easter_basket_4.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 92,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "filling_an_Easter_basket_5.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 93,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "filling_an_Easter_basket_6.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "breakable, grabbable"
+        },
+        {
+            "sample_id": 94,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "loading_the_dishwasher_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "openable"
+        },
+        {
+            "sample_id": 95,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "loading_the_dishwasher_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "breakable, grabbable"
+        },
+        {
+            "sample_id": 96,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "loading_the_dishwasher_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "breakable, grabbable"
+        },
+        {
+            "sample_id": 97,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "loading_the_dishwasher_3.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "breakable, grabbable"
+        },
+        {
+            "sample_id": 98,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "making_tea_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "breakable, grabbable"
+        },
+        {
+            "sample_id": 99,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "making_tea_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, slicingTool"
+        },
+        {
+            "sample_id": 100,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "making_tea_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "openable"
+        },
+        {
+            "sample_id": 101,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: In these three pictures, the same object is boxed in red. What properties does the object have? Answer with its name only, like 'Apple'. Your answer is:",
+                "images_path": [
+                    "making_tea_3.jpg",
+                    "making_tea_6.jpg",
+                    "making_tea_7.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable"
+        },
+        {
+            "sample_id": 102,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "making_tea_4.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "openable, toggleable"
+        },
+        {
+            "sample_id": 103,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "making_tea_5.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable, sliceable"
+        },
+        {
+            "sample_id": 104,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "mopping_floors_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cleaningTool, grabbable"
+        },
+        {
+            "sample_id": 105,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "mopping_floors_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 106,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "mopping_floors_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "waterSource"
+        },
+        {
+            "sample_id": 107,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "mopping_floors_3.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cleaningTool, grabbable"
+        },
+        {
+            "sample_id": 108,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "packing_adult_s_bags_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, openable"
+        },
+        {
+            "sample_id": 109,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "packing_adult_s_bags_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 110,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "packing_adult_s_bags_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, sliceable"
+        },
+        {
+            "sample_id": 111,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "packing_adult_s_bags_3.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 112,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "packing_car_for_trip_5.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, openable"
+        },
+        {
+            "sample_id": 113,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "packing_food_for_work_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "breakable, grabbable"
+        },
+        {
+            "sample_id": 114,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '2' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "packing_food_for_work_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable, sliceable"
+        },
+        {
+            "sample_id": 115,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "packing_food_for_work_3.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cleaningTool"
+        },
+        {
+            "sample_id": 116,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '2' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "packing_picnics_7.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "breakable, grabbable"
+        },
+        {
+            "sample_id": 117,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '3' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "preparing_salad_3.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable, sliceable"
+        },
+        {
+            "sample_id": 118,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '4' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "preserving_food_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, slicingTool"
+        },
+        {
+            "sample_id": 119,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "preserving_food_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable, sliceable"
+        },
+        {
+            "sample_id": 120,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "putting_leftovers_away_4.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable, openable"
+        },
+        {
+            "sample_id": 121,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "serving_a_meal_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable"
+        },
+        {
+            "sample_id": 122,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "serving_a_meal_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable, sliceable"
+        },
+        {
+            "sample_id": 123,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "serving_a_meal_3.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, openable"
+        },
+        {
+            "sample_id": 124,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "serving_a_meal_4.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable, sliceable"
+        },
+        {
+            "sample_id": 125,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "serving_a_meal_5.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable"
+        },
+        {
+            "sample_id": 126,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "serving_a_meal_6.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "breakable, grabbable"
+        },
+        {
+            "sample_id": 127,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "serving_a_meal_7.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 128,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "serving_hors_d_oeuvres_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable, sliceable"
+        },
+        {
+            "sample_id": 129,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "serving_hors_d_oeuvres_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable"
+        },
+        {
+            "sample_id": 130,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "sorting_books_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, openable"
+        },
+        {
+            "sample_id": 131,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "sorting_groceries_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable, openable"
+        },
+        {
+            "sample_id": 132,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "sorting_groceries_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable, openable"
+        },
+        {
+            "sample_id": 133,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "sorting_groceries_3.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable, sliceable"
+        },
+        {
+            "sample_id": 134,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "sorting_groceries_4.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable, openable"
+        },
+        {
+            "sample_id": 135,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "sorting_mail_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, openable"
+        },
+        {
+            "sample_id": 136,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "sorting_mail_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, openable"
+        },
+        {
+            "sample_id": 137,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "storing_food_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, openable"
+        },
+        {
+            "sample_id": 138,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "storing_food_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable, openable"
+        },
+        {
+            "sample_id": 139,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "storing_food_3.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable, openable"
+        },
+        {
+            "sample_id": 140,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "thawing_frozen_food_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable, sliceable"
+        },
+        {
+            "sample_id": 141,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "thawing_frozen_food_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cookable, grabbable, sliceable"
+        },
+        {
+            "sample_id": 142,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "vacuuming_floors_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cleaningTool, grabbable, openable"
+        },
+        {
+            "sample_id": 143,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "re-shelving_library_books_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, openable"
+        },
+        {
+            "sample_id": 144,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: What properties does the book in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "re-shelving_library_books_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, openable"
+        },
+        {
+            "sample_id": 145,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: What properties does the object in red box in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "re-shelving_library_books_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "None"
+        },
+        {
+            "sample_id": 146,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Question: What properties does the bucket in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_bathtub_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        },
+        {
+            "sample_id": 147,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Question: What properties does the bucket in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_table_after_clearing_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cleaningTool, grabbable"
+        },
+        {
+            "sample_id": 148,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Question: What properties does the toilet in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "cleaning_toilet_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "None"
+        },
+        {
+            "sample_id": 149,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": " Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "mopping_floors_4.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "cleaningTool, grabbable"
+        },
+        {
+            "sample_id": 150,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": " Question: What properties does the object marked with '1' in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "packing_bags_or_suitcase_0.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, openable"
+        },
+        {
+            "sample_id": 151,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": " Question: What properties does the carton in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "packing_boxes_for_household_move_or_trip_1.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable, openable"
+        },
+        {
+            "sample_id": 152,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": " Question: What properties does the sunglass in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "packing_child_s_bag_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "breakable, grabbable"
+        },
+        {
+            "sample_id": 153,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": " Question: What properties does the cookies in the image have? Answer with the properties only, like 'grabbable, openable.'. Do not include other words. Your answer is:",
+                "images_path": [
+                    "packing_lunches_2.jpg"
+                ],
+                "choice_list": [
+                    "breakable",
+                    "cleaningTool",
+                    "cookable",
+                    "grabbable",
+                    "openable",
+                    "sliceable",
+                    "slicingTool",
+                    "toggleable",
+                    "waterSource"
+                ]
+            },
+            "response": "grabbable"
+        }
+    ]
+}

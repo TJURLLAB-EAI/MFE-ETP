@@ -1,0 +1,1499 @@
+{
+    "metadata": {
+        "dataset": "sequential_planning",
+        "split": "core",
+        "num_sample": 92,
+        "task_instruction": [
+            "You are a dual armed household robot. You will receive a sequence of images in chronological order, illustrating the progression of a task you are currently executing, with the last image representing your current observation. You will also receive a text task description. You will be provided with four options, each of which is a subsequent task plan. Your task is to choose the appropriate sequence(s) of actions based on the provided task description. ",
+            "As a household robot with dual arms, you'll receive a sequence of images showcasing the task's chronological progression. The final image represents your current observation. In addition, you'll receive a textual task description. You'll be given four potential task plans, and your objective is to select the suitable sequence(s) of actions according to the provided task description.",
+            "You function as a dual-armed household robot. You'll be presented with a series of images depicting the task's step-by-step evolution, with the last image showing your current view. Simultaneously, you'll be given a written task description. Your responsibility is to pick the fitting action sequence(s) among four options, aligning with the provided task description.",
+            "Operating as a dual-armed household robot, you will be given a sequence of images illustrating the task's progression, in chronological order, concluding with your current observation. Additionally, a text-based task description will be provided. Your task is to select the appropriate sequence(s) of actions from four options, in accordance with the provided task description.",
+            "You are a household robot equipped with dual arms. Your task involves reviewing a sequence of images depicting the task's evolution in chronological order, culminating in your current observation. Concurrently, a written task description will be given. Your objective is to choose the suitable sequence(s) of actions from four options, in accordance with the provided task description.",
+            "In your role as a dual-armed household robot, you'll be presented with a sequence of images that chronicle the progression of a task. The final image will reflect your current perspective. Additionally, you will receive a textual task description. Your responsibility is to determine the appropriate sequence(s) of actions from four options, aligning with the given task description."
+        ],
+        "question_type": "open-ended",
+        "prompt_type": "multi_img_text",
+        "task_type": "Embodied Reasoning",
+        "task_intro": "sequential planning"
+    },
+    "data": [
+        {
+            "sample_id": 0,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Task description: Slice two strawberries and place them in the pan; Finally, put the pot into the microwave. The options are:\n A.Grasp knife, grasp(knife) \nB.Grasp strawberrie.1, grasp(strawberrie.1) \nC.Grasp strawberrie.2, grasp(strawberrie.2) \nD.Navigate to the knife, navigate_to(knife)\n Answer with the option letters only, like 'A'.",
+                "images_path": [
+                    "preserving_food_0.jpg"
+                ],
+                "choice_list": [
+                    "A.Grasp knife, grasp(knife)",
+                    "B.Grasp strawberrie.1, grasp(strawberrie.1)",
+                    "C.Grasp strawberrie.2, grasp(strawberrie.2)",
+                    "D.Navigate to the knife, navigate_to(knife)"
+                ]
+            },
+            "response": "D"
+        },
+        {
+            "sample_id": 1,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Task description: Slice two strawberries and place them in the pan; Finally, put the pot into the microwave. The options are:\n A.Grasp knife, grasp(knife) \nB.Grasp strawberrie.1, grasp(strawberrie.1) \nC.Grasp strawberrie.2, grasp(strawberrie.2) \nD.Place pan inside of trash microwave\n Answer with the option letters only, like 'A'.",
+                "images_path": [
+                    "preserving_food_3.jpg"
+                ],
+                "choice_list": [
+                    "A.Grasp knife, grasp(knife)",
+                    "B.Grasp strawberrie.1, grasp(strawberrie.1)",
+                    "C.Grasp strawberrie.2, grasp(strawberrie.2)",
+                    "D.Place pan inside of trash microwave"
+                ]
+            },
+            "response": "D"
+        },
+        {
+            "sample_id": 2,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Task description: Put the dishes in the refrigerator on the table, then take out the cutlery from the kitchen drawer and put them on the table. The options are:\n A.Open refrigerator, open(refrigerator) \nB.Place salad on top of table \nC.Grasp fork, grasp(fork) \nD.Navigate to the table, navigate_to(table)\n Answer with the option letters only, like 'A'.",
+                "images_path": [
+                    "serving_a_meal_0.jpg",
+                    "serving_a_meal_1.jpg"
+                ],
+                "choice_list": [
+                    "A.Open refrigerator, open(refrigerator)",
+                    "B.Place salad on top of table.",
+                    "C.Grasp fork, grasp(fork)",
+                    "D.Navigate to the table, navigate_to(table)"
+                ]
+            },
+            "response": "A"
+        },
+        {
+            "sample_id": 3,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Task description: Put the dishes in the refrigerator on the table, then take out the cutlery from the kitchen drawer and put them on the table. The options are:\n A.Open refrigerator, open(refrigerator) \nB.Place salad on top of table \nC.Grasp fork, grasp(fork) \nD.Navigate to the table, navigate_to(table)\n Answer with the option letters only, like 'A'.",
+                "images_path": [
+                    "serving_a_meal_2.jpg"
+                ],
+                "choice_list": [
+                    "A.Open refrigerator, open(refrigerator)",
+                    "B.Place salad on top of table.",
+                    "C.Grasp fork, grasp(fork)",
+                    "D.Navigate to the table, navigate_to(table)"
+                ]
+            },
+            "response": "D"
+        },
+        {
+            "sample_id": 4,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Task description: Put the dishes in the refrigerator on the table, then take out the cutlery from the kitchen drawer and put them on the table. The options are:\n A.Open refrigerator, open(refrigerator) \nB.Place salad in right hand on top of table \nC.Grasp fork, grasp(fork) \nD.Navigate to the table, navigate_to(table)\n Answer with the option letters only, like 'A'.",
+                "images_path": [
+                    "serving_a_meal_3.jpg"
+                ],
+                "choice_list": [
+                    "A.Open refrigerator, open(refrigerator)",
+                    "B.Place salad in right hand on top of table.",
+                    "C.Grasp fork, grasp(fork)",
+                    "D.Navigate to the table, navigate_to(table)"
+                ]
+            },
+            "response": "B"
+        },
+        {
+            "sample_id": 5,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Task description: Put the dishes in the refrigerator on the table, then take out the cutlery from the kitchen drawer and put them on the table. The options are:\n A.Open drawer, open(drawer) \nB.Place salad in right hand on top of table \nC.Grasp fork, grasp(fork) \nD.Navigate to the table, navigate_to(table)\n Answer with the option letters only, like 'A'.",
+                "images_path": [
+                    "serving_a_meal_4.jpg",
+                    "serving_a_meal_5.jpg"
+                ],
+                "choice_list": [
+                    "A.Open drawer, open(drawer)",
+                    "B.Place salad in right hand on top of table.",
+                    "C.Grasp fork, grasp(fork)",
+                    "D.Navigate to the table, navigate_to(table)"
+                ]
+            },
+            "response": "A"
+        },
+        {
+            "sample_id": 6,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Task description: Pick up the bow on the table, put it into the basket. The options are:\n A.Navigate to the basket, navigate_to(basket) \nB.Place bow into the basket. \nC.Grasp bow, grasp(bow) \nD.Navigate to the table, navigate_to(table)\n Answer with the option letters only, like 'A'.",
+                "images_path": [
+                    "assembling_gift_baskets_0.jpg",
+                    "assembling_gift_baskets_1.jpg"
+                ],
+                "choice_list": [
+                    "A.Navigate to the basket, navigate_to(basket)",
+                    "B.Place bow into the basket.",
+                    "C.Grasp bow, grasp(bow)",
+                    "D.Navigate to the table, navigate_to(table)"
+                ]
+            },
+            "response": "D"
+        },
+        {
+            "sample_id": 7,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Task description: Pick up the bow on the table, put it into the basket. The options are:\n A.Navigate to the basket, navigate_to(basket) \nB.Place bow into the basket. \nC.Grasp bow, grasp(bow) \nD.Navigate to the table, navigate_to(table)\n Answer with the option letters only, like 'A'.",
+                "images_path": [
+                    "assembling_gift_baskets_2.jpg"
+                ],
+                "choice_list": [
+                    "A.Navigate to the basket, navigate_to(basket)",
+                    "B.Place bow into the basket.",
+                    "C.Grasp bow, grasp(bow)",
+                    "D.Navigate to the table, navigate_to(table)"
+                ]
+            },
+            "response": "C"
+        },
+        {
+            "sample_id": 8,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Task description: Pick up the bow on the table, put it into the basket. The options are:\n A.Navigate to the basket, navigate_to(basket) \nB.Place bow into the basket. \nC.Grasp bow, grasp(bow) \nD.Navigate to the table, navigate_to(table)\n Answer with the option letters only, like 'A'.",
+                "images_path": [
+                    "assembling_gift_baskets_2.jpg",
+                    "assembling_gift_baskets_3.jpg"
+                ],
+                "choice_list": [
+                    "A.Navigate to the basket, navigate_to(basket)",
+                    "B.Place bow into the basket.",
+                    "C.Grasp bow, grasp(bow)",
+                    "D.Navigate to the table, navigate_to(table)"
+                ]
+            },
+            "response": "A"
+        },
+        {
+            "sample_id": 9,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Task description: Pick up the bow on the table, put it into the basket. The options are:\n A.Navigate to the basket, navigate_to(basket) \nB.Place bow into the basket. \nC.Grasp bow, grasp(bow) \nD.Navigate to the table, navigate_to(table)\n Answer with the option letters only, like 'A'.",
+                "images_path": [
+                    "assembling_gift_baskets_4.jpg"
+                ],
+                "choice_list": [
+                    "A.Navigate to the basket, navigate_to(basket)",
+                    "B.Place bow into the basket.",
+                    "C.Grasp bow, grasp(bow)",
+                    "D.Navigate to the table, navigate_to(table)"
+                ]
+            },
+            "response": "B"
+        },
+        {
+            "sample_id": 10,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Task description: Take the strawberry and peach from the refrigerator to the kitchen counter, slice them with the knife on the table, and put them in two separate jars. The options are:\n A.Open the refrigerator, open(refrigerator) \nB.Grasp the strawberry and peach, grasp(strawberry and peach) \nC.Navigate to the kitchen counter, navigate_to(kitchen counter) \nD.Grasp the knife, grasp(knife)\n Answer with the option letters only, like 'A'.",
+                "images_path": [
+                    "bottling_fruit_0.jpg"
+                ],
+                "choice_list": [
+                    "A.Open the refrigerator, open(refrigerator)",
+                    "B.Grasp the strawberry and peach, grasp(strawberry and peach)",
+                    "C.Navigate to the kitchen counter, navigate_to(kitchen counter)",
+                    "D.Grasp the knife, grasp(knife)"
+                ]
+            },
+            "response": "A"
+        },
+        {
+            "sample_id": 11,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Task description: Take the strawberry and peach from the refrigerator to the kitchen counter, slice them with the knife on the table, and put them in two separate jars. The options are:\n A.Open the refrigerator, open(refrigerator) \nB.Grasp the strawberry and peach, grasp(strawberry and peach) \nC.Navigate to the kitchen counter, navigate_to(kitchen counter) \nD.Grasp the knife, grasp(knife)\n Answer with the option letters only, like 'A'.",
+                "images_path": [
+                    "bottling_fruit_1.jpg"
+                ],
+                "choice_list": [
+                    "A.Open the refrigerator, open(refrigerator)",
+                    "B.Grasp the strawberry and peach, grasp(strawberry and peach)",
+                    "C.Navigate to the kitchen counter, navigate_to(kitchen counter)",
+                    "D.Grasp the knife, grasp(knife)"
+                ]
+            },
+            "response": "B"
+        },
+        {
+            "sample_id": 12,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Task description: Take the strawberry and peach from the refrigerator to the kitchen counter, slice them with the knife on the table, and put them in two separate jars. The options are:\n A.Open the refrigerator, open(refrigerator) \nB.Grasp the strawberry and peach, grasp(strawberry and peach) \nC.Navigate to the kitchen counter, navigate_to(kitchen counter) \nD.Grasp the knife, grasp(knife)\n Answer with the option letters only, like 'A'.",
+                "images_path": [
+                    "bottling_fruit_1.jpg",
+                    "bottling_fruit_2.jpg"
+                ],
+                "choice_list": [
+                    "A.Open the refrigerator, open(refrigerator)",
+                    "B.Grasp the strawberry and peach, grasp(strawberry and peach)",
+                    "C.Navigate to the kitchen counter, navigate_to(kitchen counter)",
+                    "D.Grasp the knife, grasp(knife)"
+                ]
+            },
+            "response": "C"
+        },
+        {
+            "sample_id": 13,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Take the strawberry and peach from the refrigerator to the kitchen counter, slice them with the knife on the table, and put them in two separate jars. The options are:\n A.Open the refrigerator, open(refrigerator) \nB.Place the strawberry in the jar \nC.Slice the strawberry, slice(strawberry) \nD.Grasp the knife, grasp(knife)\n Answer with the option letters only, like 'A'.",
+                "images_path": [
+                    "bottling_fruit_3.jpg",
+                    "bottling_fruit_4.jpg"
+                ],
+                "choice_list": [
+                    "A.Open the refrigerator, open(refrigerator)",
+                    "B.Place the strawberry in the jar",
+                    "C.Slice the strawberry, slice(strawberry)",
+                    "D.Grasp the knife, grasp(knife)"
+                ]
+            },
+            "response": "D"
+        },
+        {
+            "sample_id": 14,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Task description: Take the strawberry and peach from the refrigerator to the kitchen counter, slice them with the knife on the table, and put them in two separate jars. The options are:\n A.Open the refrigerator, open(refrigerator) \nB.Place the strawberry in the jar \nC.Slice the strawberry, slice(strawberry) \nD.Grasp the knife, grasp(knife)\n Answer with the option letters only, like 'A'.",
+                "images_path": [
+                    "bottling_fruit_5.jpg"
+                ],
+                "choice_list": [
+                    "A.Open the refrigerator, open(refrigerator)",
+                    "B.Place the strawberry in the jar",
+                    "C.Slice the strawberry, slice(strawberry)",
+                    "D.Grasp the knife, grasp(knife)"
+                ]
+            },
+            "response": "C"
+        },
+        {
+            "sample_id": 15,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Put the books in the carton. The options are:\n A.Grasp book, grasp(book) \nB.Open carton, open(carton) \nC.Place the book in the carton \nD.Navigate to the carton, navigate_to(carton)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "boxing_books_up_for_storage_0.jpg",
+                    "boxing_books_up_for_storage_1.jpg"
+                ]
+            },
+            "response": "D"
+        },
+        {
+            "sample_id": 16,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Chop vegetables. The options are:\n A.Grasp knife, grasp(knife) \nB.Grasp tomato, grasp(tomato) \nC.Slice the tomato, slice(tomato) \nD.Navigate to the tomato, navigate_to(tomato)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "chopping_vegetables_0.jpg",
+                    "chopping_vegetables_1.jpg"
+                ]
+            },
+            "response": "C"
+        },
+        {
+            "sample_id": 17,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Get the rag and wash it, then wipe the grill using it. The options are:\n A.Grasp rag, grasp(rag) \nB.Wipe grill, wipe(grill) \nC.Navigate to sink, navigate_to(sink) \nD.Navigate to the grill, navigate_to(grill)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_barbecue_grill_0.jpg",
+                    "cleaning_barbecue_grill_1.jpg",
+                    "cleaning_barbecue_grill_2.jpg"
+                ]
+            },
+            "response": "B"
+        },
+        {
+            "sample_id": 18,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Get the rag and wash it, then wipe the bathroom using it. The options are:\n A.Grasp rag, grasp(rag) \nB.Wipe bathroom, wipe(bathroom) \nC.Navigate to sink, navigate_to(sink) \nD.Navigate to the grill, navigate_to(grill)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_bathrooms_0.jpg",
+                    "cleaning_bathrooms_1.jpg",
+                    "cleaning_bathrooms_2.jpg"
+                ]
+            },
+            "response": "B"
+        },
+        {
+            "sample_id": 19,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Get the rag and wash it, then wipe the bathroom using it. The options are:\n A.Grasp rag, grasp(rag) \nB.Wipe bathtub, wipe(bathtub) \nC.Navigate to sink, navigate_to(sink) \nD.Navigate to the grill, navigate_to(grill)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_bathtub_0.jpg",
+                    "cleaning_bathtub_1.jpg",
+                    "cleaning_bathtub_2.jpg"
+                ]
+            },
+            "response": "B"
+        },
+        {
+            "sample_id": 20,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Put the scattered clothing in the cabinet. The options are:\n A.Grasp trousers, grasp(trousers) \nB.Open cabinet, open(cabinet) \nC.Place the trousers in the cabinet, place_inside(trousers,cabinet) \nD.Navigate to the cabinet, navigate_to(cabinet)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_bedroom_0.jpg",
+                    "cleaning_bedroom_1.jpg",
+                    "cleaning_bedroom_2.jpg"
+                ]
+            },
+            "response": "C"
+        },
+        {
+            "sample_id": 21,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Pick up the rag and wash it, then wipe the carpet using it. The options are:\n A.Grasp rag, grasp(rag) \nB.Navigate to sink, navigate_to(sink) \nC.Wipe the carpet, wipe(carpet) \nD.Navigate to the carpet, navigate_to(carpet)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_carpets_0.jpg",
+                    "cleaning_carpets_1.jpg",
+                    "cleaning_carpets_2.jpg",
+                    "cleaning_carpets_3.jpg"
+                ]
+            },
+            "response": "C"
+        },
+        {
+            "sample_id": 22,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Pick up the hat and place it in the closet. The options are:\n A.Grasp hat, grasp(hat) \nB.Navigate to closet, navigate_to(closet) \nC.Place the hat into closet, place_inside(hat,closet) \nD.Navigate to the hat, navigate_to(hat)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_closet_0.jpg",
+                    "cleaning_closet_1.jpg",
+                    "cleaning_closet_2.jpg"
+                ]
+            },
+            "response": "C"
+        },
+        {
+            "sample_id": 23,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Pick up the pens and place them in the bucket. The options are:\n A.Grasp pen, grasp(pen) \nB.Navigate to bucket, navigate_to(bucket) \nC.Place the pen into bucket, place_inside(pen,bucket) \nD.Navigate to the pen, navigate_to(pen)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_cupboards_0.jpg",
+                    "cleaning_cupboards_1.jpg",
+                    "cleaning_cupboards_2.jpg"
+                ]
+            },
+            "response": "C"
+        },
+        {
+            "sample_id": 24,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Pick up the brush and wash it, then clean the floor using it. The options are:\n A.Grasp brush, grasp(brush) \nB.Navigate to sink, navigate_to(sink) \nC.Wipe floor, wipe(floor) \nD.Navigate to the brush, navigate_to(brush)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_floors_0.jpg",
+                    "cleaning_floors_1.jpg",
+                    "cleaning_floors_2.jpg"
+                ]
+            },
+            "response": "C"
+        },
+        {
+            "sample_id": 25,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Clean up the freezer inside. The options are:\n A.Grasp brush, grasp(brush) \nB.Navigate to sink, navigate_to(sink) \nC.Wipe freezer, wipe(freezer) \nD.Open freezer, open(freezer)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_freezer_0.jpg"
+                ]
+            },
+            "response": "D"
+        },
+        {
+            "sample_id": 26,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Pick up the rag, then clean the microwave using it. The options are:\n A.Grasp rag, grasp(rag) \nB.Navigate to microwave, navigate_to(microwave) \nC.Wipe microwave, wipe(microwave) \nD.Navigate to the sink, navigate_to(sink)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_microwave_oven_0.jpg",
+                    "cleaning_microwave_oven_1.jpg",
+                    "cleaning_microwave_oven_2.jpg"
+                ]
+            },
+            "response": "C"
+        },
+        {
+            "sample_id": 27,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Pick up the brush and wash it, then clean the oven. The options are:\n A.Open drawer, open(drawer) \nB.Navigate to oven, navigate_to(oven) \nC.Wipe oven, wipe(oven) \nD.Navigate to the sink, navigate_to(sink)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_oven_0.jpg",
+                    "cleaning_oven_1.jpg",
+                    "cleaning_oven_2.jpg",
+                    "cleaning_oven_3.jpg"
+                ]
+            },
+            "response": "C"
+        },
+        {
+            "sample_id": 28,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Pick up the rag and wash it, then clean the stove using it. The options are:\n A.Open faucet, open(faucet) \nB.Grasp rag, grasp(rag) \nC.Wipe stove, wipe(stove) \nD.Navigate to the sink, navigate_to(sink)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_stove_0.jpg",
+                    "cleaning_stove_1.jpg",
+                    "cleaning_stove_2.jpg"
+                ]
+            },
+            "response": "C"
+        },
+        {
+            "sample_id": 29,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Please clean the table with the dishcloth next to the sink. The options are:\"A.Grasp the dishcloth\",\n\"B.Wipe the table\",\n\"C.Go to the sink\",\n\"D.move the chair\"\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_table_after_clearing_0.jpg",
+                    "cleaning_table_after_clearing_1.jpg",
+                    "cleaning_table_after_clearing_2.jpg"
+                ],
+                "choice_list": [
+                    "A.Grasp the dishcloth",
+                    "B.Wipe the table",
+                    "C.Go to the sink",
+                    "D.move the chair"
+                ]
+            },
+            "response": "B"
+        },
+        {
+            "sample_id": 30,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Please clean the table with the dishcloth next to the sink. The options are:\"A.Grasp the dishcloth\",\n\"B.Wipe the table\",\n\"C.Go to the sink\",\n\"D.move the chair\"\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_table_after_clearing_0.jpg",
+                    "cleaning_table_after_clearing_1.jpg"
+                ],
+                "choice_list": [
+                    "A.Grasp the dishcloth and wet it in the sink",
+                    "B.Navigate to the table",
+                    "C.Open the cabinet",
+                    "D.move the chair"
+                ]
+            },
+            "response": "A"
+        },
+        {
+            "sample_id": 31,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Please clean the toilet with the scrub brush on the floor. The options are:\"A.navigate to the sink, wet the scrub brush\",\n\"B.Grasp the scrub brush, navigate to the sink\",\n\"C.wipe the toilet\",\n\"D.navigate to the toilet\"\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_toilet_0.jpg",
+                    "cleaning_toilet_1.jpg"
+                ],
+                "choice_list": [
+                    "A.navigate to the sink, wet the scrub brush",
+                    "B.Grasp the scrub brush, navigate to the sink",
+                    "C.wipe the toilet",
+                    "D.navigate to the toilet"
+                ]
+            },
+            "response": "B"
+        },
+        {
+            "sample_id": 32,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Please clean the windows. The options are:\"A.navigate to the rag, and grasp it\",\n\"B.wipe the window\",\n\"C.navigate to the sink\",\n\"D.navigate to the window\"\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_windows_0.jpg"
+                ],
+                "choice_list": [
+                    "A.navigate to the rag, and grasp it",
+                    "B.wipe the window",
+                    "C.navigate to the sink",
+                    "D.navigate to the window"
+                ]
+            },
+            "response": "A"
+        },
+        {
+            "sample_id": 33,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Task description: Please defrost the freezer with the scraper on the countertop. The options are:\n \"A. Grasp the scraper, navigate to the freezer\",\n\"B. Open the cabinet\",\n\"C. Navigate to the scraper, and grasp it\",\n\"D. Navigate to the freezer\"\nAnswer with the option letters only, like 'B, D'.",
+                "images_path": [
+                    "defrosting_freezer_0.jpg"
+                ],
+                "choice_list": [
+                    "A. Grasp the scraper, navigate to the freezer",
+                    "B. Open the cabinet",
+                    "C. Navigate to the scraper, and grasp it",
+                    "D. Navigate to the freezer"
+                ]
+            },
+            "response": "A"
+        },
+        {
+            "sample_id": 34,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Prepare tea for boiling with the tea bag and the teapot. The options are:\n A.Navigate to the teapot, navigate_to(teapot)\nB.Grasp the tea bag, grasp(tea bag) \nC.Place tea bag inside of teapot, place_inside(tea_bag, teapot) \nD.Open the teapot, open(teapot)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "making_tea_1.jpg"
+                ],
+                "choice_list": [
+                    "A.Navigate to the teapot, navigate_to(teapot)",
+                    "B.Grasp the tea bag, grasp(tea bag)",
+                    "C.Place tea bag inside of teapot, place_inside(tea_bag, teapot)",
+                    "D.Open the teapot, open(teapot)"
+                ]
+            },
+            "response": "B,A,D,C"
+        },
+        {
+            "sample_id": 35,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Use the cleaning cloth to clean the stained floors. The options are:\n A.Navigate to the teapot, navigate_to(teapot)\nB.Grasp the tea bag, grasp(tea bag) \nC.Place tea bag inside of teapot, place_inside(tea_bag, teapot) \nD.Open the teapot, open(teapot)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "mopping_floors_0.jpg",
+                    "mopping_floors_1.jpg"
+                ],
+                "choice_list": [
+                    "A.Navigate to the cleaning cloth, navigate_to(cleaning cloth)",
+                    "B.Grasp the cleaning cloth, grasp(cleaning cloth)",
+                    "C.Navigate to the toilet, navigate_to(toilet)",
+                    "D.Navigate to the stained floors, navigate_to(stained floors)"
+                ]
+            },
+            "response": "A,B,D"
+        },
+        {
+            "sample_id": 36,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Put the mouse in the backpack. The options are:\n A.Open the backpack, open(backpack)\n B.Grasp the mouse, grasp(mouse) \nC.Navigate to the backpack, navigate_to(backpack)\n D.Place the mouse inside the backpack, place_inside(mouse, backpack)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "pair_packing_adult_s_bags_1.jpg"
+                ],
+                "choice_list": [
+                    "A.Open the backpack, open(backpack)",
+                    "B.Grasp the mouse, grasp(mouse)",
+                    "C.Navigate to the backpack, navigate_to(backpack)",
+                    "D.Place the mouse inside the backpack, place_inside(mouse, backpack)"
+                ]
+            },
+            "response": "A,B,D"
+        },
+        {
+            "sample_id": 37,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Pack the underwares on the bed into the backpack. The options are:\n A.Open the backpack, open(backpack)\n B.Grasp the underwares, grasp(underwares) \nC.Navigate to the backpack, navigate_to(backpack)\n D.Place the underwares inside the backpack, place_inside(underwares, backpack)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "packing_bags_or_suitcase_0.jpg"
+                ],
+                "choice_list": [
+                    "A.Open the backpack, open(backpack)",
+                    "B.Grasp the underwares, grasp(underwares)",
+                    "C.Navigate to the backpack, navigate_to(backpack)",
+                    "D.Place the underwares inside the backpack, place_inside(underwares, backpack)"
+                ]
+            },
+            "response": "B,D"
+        },
+        {
+            "sample_id": 38,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Pack the sweater and the shirts into the carton. The options are:\n A.Open the carton, open(carton)\n B.Grasp the shirts, grasp(shirts) \nC.Navigate to the shirts, navigate_to(shirts)\n D.Place the shirts inside the carton, place_inside(shirts, carton)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "pair_packing_boxes_for_household_move_or_trip_1.jpg"
+                ],
+                "choice_list": [
+                    "A.Open the carton, open(carton)",
+                    "B.Grasp the shirts, grasp(shirts)",
+                    "C.Navigate to the shirts, navigate_to(shirts)",
+                    "D.Place the shirts inside the carton, place_inside(shirts, carton)"
+                ]
+            },
+            "response": "C,B,D"
+        },
+        {
+            "sample_id": 39,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Pack the duffel bag and the headset into the car. The options are:\n A.Open the duffel bag, open(duffel bag) \n B.Grasp the headset, grasp(headset) \nC.Navigate to the car, navigate_to(car)\n D.Place the headset inside the duffel bag, place_inside(headset, duffel bag)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "packing_car_for_trip_1.jpg"
+                ],
+                "choice_list": [
+                    "A.Open the duffel bag, open(duffel bag)",
+                    "B.Grasp the headset, grasp(headset)",
+                    "C.Navigate to the car, navigate_to(car)",
+                    "D.Place the headset inside the duffel bag, place_inside(headset, duffel bag)"
+                ]
+            },
+            "response": "C"
+        },
+        {
+            "sample_id": 40,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Pack the earphone into the backpack. The options are:\n A.Open the backpack, open(backpack) \n B.Grasp the earphone, grasp(earphone) \nC.Navigate to the backpack, navigate_to(backpack)\n D.Place the earphone inside the backpack, place_inside(earphone, backpack)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "packing_child_s_bag_3.jpg"
+                ],
+                "choice_list": [
+                    "A.Open the backpack, open(backpack)",
+                    "B.Grasp the earphone, grasp(earphone)",
+                    "C.Navigate to the backpack, navigate_to(backpack)",
+                    "D.Place the earphone inside the backpack, place_inside(earphone, backpack)"
+                ]
+            },
+            "response": "C,D"
+        },
+        {
+            "sample_id": 41,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Pack the snack_food into the carton. The options are:\n A.open the cabinet, open(cabinet) \n B.Grasp the snack_food, grasp(snack_food) \nC.Navigate to the carton, navigate_to(carton)\n D.Place the snack_food inside the carton, place_inside(snack_food, carton)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "packing_food_for_work_2.jpg"
+                ],
+                "choice_list": [
+                    "A.open the cabinet, open(cabinet)",
+                    "B.Grasp the snack_food, grasp(snack_food)",
+                    "C.Navigate to the carton, navigate_to(carton)",
+                    "D.Place the snack_food inside the carton, place_inside(snack_food, carton)"
+                ]
+            },
+            "response": "B,C,D"
+        },
+        {
+            "sample_id": 42,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Pack the apple and banana into the carton. The options are:\n A.open the carton, open(carton) \n B.Grasp the carton, grasp(carton) \nC.Navigate to the carton, navigate_to(carton)\n D.Place the apple and the banana inside the carton, place_inside(apple and the banana, carton)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "packing_lunches_6.jpg"
+                ],
+                "choice_list": [
+                    "A.open the carton, open(carton)",
+                    "B.Grasp the carton, grasp(carton)",
+                    "C.Navigate to the carton, navigate_to(carton)",
+                    "D.Place the apple and the banana inside the carton, place_inside(apple and the banana, carton)"
+                ]
+            },
+            "response": "C,D"
+        },
+        {
+            "sample_id": 43,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Pack the fruits into the carton. The options are:\n A.Place the fruits inside the refrigerator, place_inside(fruits, refrigerator) \n B.Navigate to the refrigerator, navigate_to(refrigerator) \nC.Navigate to the carton, navigate_to(carton)\n D.Place the fruits inside the carton, place_inside(fruits, carton)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "packing_picnics_8.jpg"
+                ],
+                "choice_list": [
+                    "A.Place the fruits inside the refrigerator, place_inside(fruits, refrigerator)",
+                    "B.Navigate to the refrigerator, navigate_to(refrigerator)",
+                    "C.Navigate to the carton, navigate_to(carton)",
+                    "D.Place the fruits inside the carton, place_inside(fruits, carton)"
+                ]
+            },
+            "response": "C,D"
+        },
+        {
+            "sample_id": 44,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: place books on bookshelf. The options are:\n A.Grasp book.1, grasp(book.1) \nB.Navigate to the book.1, navigate_to(book.1) \nC.place the book.1 into the bookshelf \nD. Navigate to the bookshelf, navigate_to(bookshelf)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "re-shelving_library_books_1.jpg",
+                    "re-shelving_library_books_2.jpg"
+                ],
+                "choice_list": [
+                    "A.Grasp book.1, grasp(book.1)",
+                    "B.Navigate to the book.1, navigate_to(book.1)",
+                    "C.place the book.1 into the bookshelf",
+                    "D.Navigate to the bookshelf, navigate_to(bookshelf)"
+                ]
+            },
+            "response": "B"
+        },
+        {
+            "sample_id": 45,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: take the chair off the bed. The options are:\n A.Grasp chair, grasp(chair) \nB.Navigate to the chair, navigate_to(chair) \nC.place the chair ontop the floor \nD. Navigate to the bed, navigate_to(bed)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "storing_food_1.jpg"
+                ],
+                "choice_list": [
+                    "A.Grasp chair, grasp(chair)",
+                    "B.Navigate to the chair, navigate_to(chair)",
+                    "C.place the chair ontop the floor",
+                    "D.Navigate to the bed, navigate_to(bed)"
+                ]
+            },
+            "response": "B"
+        },
+        {
+            "sample_id": 46,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Clean the floor with a vacuum cleaner. The options are:\n A.Grasp vacuum cleaner, grasp(vacuum cleaner) \nB.Navigate to the vacuum cleaner, navigate_to(vacuum cleaner) \nC.place the vacuum cleaner ontop the floor \nD. Navigate to the bed, navigate_to(bed)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "storing_food_1.jpg"
+                ],
+                "choice_list": [
+                    "A.Grasp vacuum cleaner, grasp(vacuum cleaner)",
+                    "B.Navigate to the vacuum cleaner, navigate_to(vacuum cleaner)",
+                    "C.place the vacuum cleaner ontop the floor",
+                    "D.Navigate to the bed, navigate_to(bed)"
+                ]
+            },
+            "response": "B"
+        },
+        {
+            "sample_id": 47,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Take food out of the refrigerator and put it on the table. The options are:\n A.A.Grasp salad, grasp(salad) \nB.Navigate to the salad, navigate_to(salad) \nC.place salad ontop the table \nD. Navigate to the table, navigate_to(table)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "serving_hors_d_oeuvres_1.jpg",
+                    "serving_hors_d_oeuvres_2.jpg"
+                ],
+                "choice_list": [
+                    "A.Grasp salad, grasp(salad)",
+                    "B.Navigate to the salad, navigate_to(salad)",
+                    "C.place salad ontop the table",
+                    "D.Navigate to the table, navigate_to(table)"
+                ]
+            },
+            "response": "A"
+        },
+        {
+            "sample_id": 48,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Put books on the shelf. The options are:\n A.Grasp Book, grasp(Book) \nB.Navigate to the Book, navigate_to(Book) \nC.place the Book ontop the shelf \nD. Navigate to the shelf, navigate_to(shelf)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "sorting_books_1.jpg"
+                ],
+                "choice_list": [
+                    "A.Grasp Book, grasp(Book)",
+                    "B.Navigate to the Book, navigate_to(Book)",
+                    "C.place the Book ontop the shelf",
+                    "D.Navigate to the shelf, navigate_to(shelf)"
+                ]
+            },
+            "response": "B"
+        },
+        {
+            "sample_id": 49,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Task description: Store food in refrigerator. The options are:\n A.Grasp food, grasp(food) \nB.Open refrigerator1, open(refrigerator) \nC.place the food into the refrigerator \nD. Navigate to the refrigerator, navigate_to(refrigerator)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "sorting_groceries_1.jpg"
+                ],
+                "choice_list": [
+                    "A.Grasp food, grasp(food)",
+                    "B.Open refrigerator, open(refrigerator)",
+                    "C.place the food into the refrigerator",
+                    "D.Navigate to the refrigerator, navigate_to(refrigerator)"
+                ]
+            },
+            "response": "C"
+        },
+        {
+            "sample_id": 50,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Task description: Take out the food from the refrigerator and defrost it in the sink. The options are:\n A.Grasp food, grasp(food) \nB.Open refrigerator1, open(refrigerator) \nC.place the food into the refrigerator \nD. Navigate to the refrigerator, navigate_to(refrigerator)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "thawing_frozen_food_1.jpg"
+                ],
+                "choice_list": [
+                    "A.Grasp food, grasp(food)",
+                    "B.Open refrigerator, open(refrigerator)",
+                    "C.place the food into the refrigerator",
+                    "D.Navigate to the refrigerator, navigate_to(refrigerator)"
+                ]
+            },
+            "response": "B"
+        },
+        {
+            "sample_id": 51,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Use a vacuum cleaner to clean the floor. The options are:\n A.Grasp vacuum cleaner, grasp(vacuum cleaner) \nB.toggle vacuum cleaner, toggle(vacuum cleaner) \nC.place the vacuum cleaner ontop the floor \nD. Navigate to the vacuum cleaner, navigate_to(vacuum cleaner)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "vacuuming_floors_1.jpg"
+                ],
+                "choice_list": [
+                    "A.Grasp vacuum cleaner, grasp(vacuum cleaner)",
+                    "B.toggle vacuum cleaner, toggle(vacuum cleaner)",
+                    "C.place the vacuum cleaner ontop the floor",
+                    "D.Navigate to the vacuum cleaner, navigate_to(vacuum cleaner)"
+                ]
+            },
+            "response": "A"
+        },
+        {
+            "sample_id": 52,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Slice two strawberries and place them in the pan, Finally, put the pot into the microwave. The options are:\n A.Grasp knife, grasp(knife) \nB.Grasp strawberrie.1, grasp(strawberrie.1) \nC.Grasp strawberrie.2, grasp(strawberrie.2) \nD.Navigate to the knife, navigate_to(knife)\n Answer with the option letters only, like 'A, B'.",
+                "images_path": [
+                    "preserving_food_1.jpg"
+                ],
+                "choice_list": [
+                    "A.Grasp knife, grasp(knife)",
+                    "B.Grasp strawberrie.1, grasp(strawberrie.1)",
+                    "C.Grasp strawberrie.2, grasp(strawberrie.2)",
+                    "D.Navigate to the knife, navigate_to(knife)"
+                ]
+            },
+            "response": "B, C"
+        },
+        {
+            "sample_id": 53,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Task description: Slice two strawberries and place them in the pan; Finally, put the pot into the microwave. The options are:\n A.Grasp knife, grasp(knife) \nB.slice strawberrie.1, slice(strawberrie.1) \nC.slice strawberrie.2, slice(strawberrie.2) \nD.Navigate to the knife, navigate_to(knife)\n Answer with the option letters only, like 'A, B'.",
+                "images_path": [
+                    "preserving_food_2.jpg"
+                ],
+                "choice_list": [
+                    "A.Grasp knife, grasp(knife)",
+                    "B.slice strawberrie.1, slice(strawberrie.1)",
+                    "C.slice strawberrie.2, slice(strawberrie.2)",
+                    "D.Navigate to the knife, navigate_to(knife)"
+                ]
+            },
+            "response": "B, C"
+        },
+        {
+            "sample_id": 54,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Task description: Please clean the microwave oven. The options are:\n \"A. Wipe the microwave oven, and close it\",\n\"B. Grasp the cloth, and wipe the microwave oven\",\n\"C. Close the microwave oven\",\n\"D. Wipe the microwave oven, and place the cloth on the countertop\"\nAnswer with the option letters only, like 'B, D'.",
+                "images_path": [
+                    "cleaning_microwave_oven_3.jpg",
+                    "cleaning_microwave_oven_4.jpg",
+                    "cleaning_microwave_oven_5.jpg"
+                ],
+                "choice_list": [
+                    "A. Wipe the microwave oven, and close it",
+                    "B. Grasp the cloth, and wipe the microwave oven",
+                    "C. Close the microwave oven",
+                    "D. Wipe the microwave oven, and place the cloth on the countertop"
+                ]
+            },
+            "response": "A, D"
+        },
+        {
+            "sample_id": 55,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Task description: Please clean the microwave oven. The options are:\n \"A. 1.open the microwave oven 2.grasp the cleaning cloth 3.wipe the microwave 4.place the cloth 5.close the microwave oven\",\n\"B. 1.grasp the cleaning cloth 2.open the microwave oven 3.wipe the microwave 4.close the microwave oven 5.place the cloth\",\n\"C. 1.wipe the microwave 2.grasp the cleaning cloth 3.open the microwave oven 4.close the microwave oven 5.place the cloth\",\n \"D. 1.grasp the cleaning cloth 2.open the microwave oven 3.close the microwave oven 4.wipe the microwave 5.place the cloth\"\nAnswer with the option letters only, like 'B, D'.",
+                "images_path": [
+                    "cleaning_microwave_oven_3.jpg"
+                ],
+                "choice_list": [
+                    "A. 1.open the microwave oven 2.grasp the cleaning cloth 3.wipe the microwave 4.place the cloth 5.close the microwave oven",
+                    "B. 1.grasp the cleaning cloth 2.open the microwave oven 3.wipe the microwave 4.close the microwave oven 5.place the cloth",
+                    "C. 1.wipe the microwave 2.grasp the cleaning cloth 3.open the microwave oven 4.close the microwave oven 5.place the cloth",
+                    "D. 1.grasp the cleaning cloth 2.open the microwave oven 3.close the microwave oven 4.wipe the microwave 5.place the cloth"
+                ]
+            },
+            "response": "A, B"
+        },
+        {
+            "sample_id": 56,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Task description: Fetch two bows and two pieces of cheese from the table, two cookies and two candles from the dining table, then put them into the basket. The options are:\n \"A. Navigate to table, navigate_to(table)\",\n\"B. Navigate to dining table, navigate_to(dining table)\",\n\"C. Grasp bow, grasp(bow)\",\n \"D. Grasp cheese, grasp(cheese)\"\nAnswer with the option letters only, like 'B, D'.",
+                "images_path": [
+                    "assembling_gift_baskets_5.jpg"
+                ],
+                "choice_list": [
+                    "A. Navigate to table, navigate_to(table)",
+                    "B. Navigate to dining table, navigate_to(dining table)",
+                    "C. Grasp bow, grasp(bow)",
+                    "D. Grasp cheese, grasp(cheese)"
+                ]
+            },
+            "response": "A, B"
+        },
+        {
+            "sample_id": 57,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Task description: Fetch two bows and two pieces of cheese from the table, two cookies and two candles from the dining table, then put them into the basket. The options are:\n \"A. Grasp two bows, grasp(bow.1) grasp(bow.2)\",\n\"B. Grasp two pieces of cheese, grasp(cheese.1) grasp(cheese.2)\",\n\"C. Grasp one bow and grasp one piece of cheese, grasp(bow.1) grasp(cheese.1)\",\n \"D. Grasp two cookies, grasp(cookie.1) grasp(cookie.2)\"\nAnswer with the option letters only, like 'B, D'.",
+                "images_path": [
+                    "assembling_gift_baskets_6.jpg"
+                ],
+                "choice_list": [
+                    "A. Grasp two bows, grasp(bow.1) grasp(bow.2)",
+                    "B. Grasp two pieces of cheese, grasp(cheese.1) grasp(cheese.2)",
+                    "C. Grasp one bow and grasp one piece of cheese, grasp(bow.1) grasp(cheese.1)",
+                    "D. Grasp two cookies, grasp(cookie.1) grasp(cookie.2)"
+                ]
+            },
+            "response": "A, B, C"
+        },
+        {
+            "sample_id": 58,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Task description: Fetch two bows and two pieces of cheese from the table, two cookies and two candles from the dining table, then put them into the basket. The options are:\n \"A. Grasp two bows, grasp(bow.1) grasp(bow.2)\",\n\"B. Grasp two candles, grasp(candle.1) grasp(candle.2)\",\n\"C. Grasp one candle and grasp one cookie, grasp(candle.1) grasp(cookie.1)\",\n \"D. Grasp two cookies, grasp(cookie.1) grasp(cookie.2)\"\nAnswer with the option letters only, like 'B, D'.",
+                "images_path": [
+                    "assembling_gift_baskets_7.jpg"
+                ],
+                "choice_list": [
+                    "A. Grasp two bows, grasp(bow.1) grasp(bow.2)",
+                    "B. Grasp two candles, grasp(candle.1) grasp(candle.2)",
+                    "C. Grasp one candle and grasp one cookie, grasp(candle.1) grasp(cookie.1)",
+                    "D. Grasp two cookies, grasp(cookie.1) grasp(cookie.2)"
+                ]
+            },
+            "response": "B, C, D"
+        },
+        {
+            "sample_id": 59,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Task description: Take the strawberry and peach from the refrigerator to the kitchen counter, slice them with the knife on the table, and put them in two separate jars. The options are:\n \"A. Grasp peach, grasp(peach)\",\n\"B. Grasp strawberry, grasp(strawberry)\",\n\"C. Navigate to kitchen counter, navigate_to(kitchen_counter)\",\n \"D. Navigate to table, navigate_to(table)\"\nAnswer with the option letters only, like 'B, D'.",
+                "images_path": [
+                    "bottling_fruit_6.jpg",
+                    "bottling_fruit_7.jpg"
+                ],
+                "choice_list": [
+                    "A. Grasp peach, grasp(peach)",
+                    "B. Grasp strawberry, grasp(strawberry)",
+                    "C. Navigate to kitchen counter, navigate_to(kitchen_counter)",
+                    "D. Navigate to table, navigate_to(table)"
+                ]
+            },
+            "response": "A, B"
+        },
+        {
+            "sample_id": 60,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Task description: Take the strawberry and peach from the refrigerator to the kitchen counter, slice them with the knife on the table, and put them in two separate jars. The options are:\n \"A. Place the peach on the kitchen counter\",\n\"B. Place the strawberry on the kitchen counter\",\n\"C. Navigate to kitchen counter, navigate_to(kitchen_counter)\",\n \"D. Navigate to table, navigate_to(table)\"\nAnswer with the option letters only, like 'B, D'.",
+                "images_path": [
+                    "bottling_fruit_8.jpg",
+                    "bottling_fruit_9.jpg"
+                ],
+                "choice_list": [
+                    "A. Place the peach on the kitchen counter",
+                    "B. Place the strawberry on the kitchen counter",
+                    "C. Navigate to kitchen counter, navigate_to(kitchen_counter)",
+                    "D. Navigate to table, navigate_to(table)"
+                ]
+            },
+            "response": "A, B"
+        },
+        {
+            "sample_id": 61,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Task description: Take the strawberry and peach from the refrigerator to the kitchen counter, slice them with the knife on the table, and put them in two separate jars. The options are:\n \"A. Place the peach on the kitchen counter\",\n\"B. Place the strawberry on the kitchen counter\",\n\"C. Navigate to kitchen counter, navigate_to(kitchen_counter)\",\n \"D. Navigate to table, navigate_to(table)\"\nAnswer with the option letters only, like 'B, D'.",
+                "images_path": [
+                    "bottling_fruit_8.jpg",
+                    "bottling_fruit_9.jpg"
+                ],
+                "choice_list": [
+                    "A. Place the peach on the kitchen counter",
+                    "B. Place the strawberry on the kitchen counter",
+                    "C. Navigate to kitchen counter, navigate_to(kitchen_counter)",
+                    "D. Navigate to table, navigate_to(table)"
+                ]
+            },
+            "response": "A, B"
+        },
+        {
+            "sample_id": 62,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Take the strawberry and peach from the refrigerator to the kitchen counter, slice them with the knife on the table, and put them in two separate jars. The options are:\n \"A. Grasp the jar.1\",\n\"B. Grasp yhe jar.2\",\n\"C. Grasp knife\",\n \"D. Place the knife on the kitchen counter\"\nAnswer with the option letters only, like 'B, D'.",
+                "images_path": [
+                    "bottling_fruit_10.jpg"
+                ],
+                "choice_list": [
+                    "A. Grasp the jar.1",
+                    "B. Grasp yhe jar.2",
+                    "C. Grasp knife",
+                    "D. Place the knife on the kitchen counter"
+                ]
+            },
+            "response": "A, B, C"
+        },
+        {
+            "sample_id": 63,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Task description: Take the strawberry and peach from the refrigerator to the kitchen counter, slice them with the knife on the table, and put them in two separate jars. The options are:\n \"A. Slice strawberry\",\n\"B. Slice peach\",\n\"C. Grasp knife\",\n \"D. Place the knife on the kitchen counter\"\nAnswer with the option letters only, like 'B, D'.",
+                "images_path": [
+                    "bottling_fruit_11.jpg"
+                ],
+                "choice_list": [
+                    "A. Slice strawberry",
+                    "B. Slice peach",
+                    "C. Grasp knife",
+                    "D. Place the knife on the kitchen counter"
+                ]
+            },
+            "response": "A, B"
+        },
+        {
+            "sample_id": 64,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Task description: Take the strawberry and peach from the refrigerator to the kitchen counter, slice them with the knife on the table, and put them in two separate jars. The options are:\n \"A. Grasp peach\",\n\"B. Grasp strawberry\",\n\"C. Open jar.1\",\n \"D. Open jar.2\"\nAnswer with the option letters only, like 'B, D'.",
+                "images_path": [
+                    "bottling_fruit_12.jpg"
+                ],
+                "choice_list": [
+                    "A. Grasp peach",
+                    "B. Grasp strawberry",
+                    "C. Open jar.1",
+                    "D. Open jar.2"
+                ]
+            },
+            "response": "C, D"
+        },
+        {
+            "sample_id": 65,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "Task description: Take the strawberry and peach from the refrigerator to the kitchen counter, slice them with the knife on the table, and put them in two separate jars. The options are:\n \"A. Place the sliced peach in the jar.1\",\n\"B. Place the sliced strawberry in the jar.1\",\n\"C. Open jar.1\",\n \"D. Open jar.2\"\nAnswer with the option letters only, like 'B, D'.",
+                "images_path": [
+                    "bottling_fruit_13.jpg"
+                ],
+                "choice_list": [
+                    "A. Place the sliced peach in the jar.1",
+                    "B. Place the sliced strawberry in the jar.2",
+                    "C. Open jar.1",
+                    "D. Open jar.2"
+                ]
+            },
+            "response": "A,D"
+        },
+        {
+            "sample_id": 66,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "Task description: Take the strawberry and peach from the refrigerator to the kitchen counter, slice them with the knife on the table, and put them in two separate jars. The options are:\n \"A. Place the sliced peach in the jar.1\",\n\"B. Place the sliced strawberry in the jar.1\",\n\"C. Close jar.1\",\n \"D. Open jar.2\"\nAnswer with the option letters only, like 'B, D'.",
+                "images_path": [
+                    "bottling_fruit_14.jpg"
+                ],
+                "choice_list": [
+                    "A. Place the sliced peach in the jar.2",
+                    "B. Place the sliced strawberry in the jar.2",
+                    "C. Close jar.1",
+                    "D. Open jar.2"
+                ]
+            },
+            "response": "C,D"
+        },
+        {
+            "sample_id": 67,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Put two books in the carton. The options are:\n A.Navigate to book_2, navigate_to(book_2) \nB.Open carton, open(carton) \nC.Place the book in the carton \nD.Navigate to the carton, navigate_to(carton)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "boxing_books_up_for_storage_2.jpg",
+                    "boxing_books_up_for_storage_3.jpg"
+                ]
+            },
+            "response": "A, D"
+        },
+        {
+            "sample_id": 68,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Chop two tomatoes. The options are:\n A.Grasp knife, grasp(knife) \nB.Grasp tomato, grasp(tomato) \nC.Slice the tomato_1, slice(tomato_1) \nD.Slice the tomato_2, slice(tomato_2)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "chopping_vegetables_2.jpg",
+                    "chopping_vegetables_3.jpg"
+                ]
+            },
+            "response": "C, D"
+        },
+        {
+            "sample_id": 69,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Get the rag and wash it, then wipe the grill using it. The options are:\n A.Open faucet, open(faucet) \nB.Wipe grill, wipe(grill) \nC.Place the rag into sink, place_inside(rag,sink) \nD.Navigate to the grill, navigate_to(grill)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_barbecue_grill_3.jpg",
+                    "cleaning_barbecue_grill_4.jpg"
+                ]
+            },
+            "response": "A, C"
+        },
+        {
+            "sample_id": 70,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Get the rag and wash it, then wipe the bathroom using it. The options are:\n A.Grasp rag, grasp(rag) \nB.Wipe toilet, wipe(toilet) \nC.Wipe bathtub, wipe(bathtub) \nD.Wipe floor, wipe(floor)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_bathrooms_3.jpg",
+                    "cleaning_bathrooms_4.jpg"
+                ]
+            },
+            "response": "B, C, D"
+        },
+        {
+            "sample_id": 71,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Get the rag and wash it, then wipe the bathroom using it. The options are:\n A.Open faucet, open(faucet) \nB.Wipe bathtub, wipe(bathtub) \nC.Place the rag into sink, place_inside(rag,sink) \nD.Navigate to the grill, navigate_to(grill)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_bathtub_3.jpg",
+                    "cleaning_bathtub_4.jpg"
+                ]
+            },
+            "response": "A, C"
+        },
+        {
+            "sample_id": 72,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Put the two scattered trouseres in the cabinet. The options are:\n A.Grasp trousers_1, grasp(trousers_1) \nB.Open cabinet, open(cabinet) \nC.Grasp trousers_2, grasp(trousers_2) \nD.Navigate to the cabinet, navigate_to(cabinet)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_bedroom_3.jpg",
+                    "cleaning_bedroom_4.jpg"
+                ]
+            },
+            "response": "A, C"
+        },
+        {
+            "sample_id": 73,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Pick up the rag and wash it, then wipe the carpet and the floor using it. The options are:\n A.Grasp rag, grasp(rag) \nB.Wipe the floor, wipe(floor) \nC.Wipe the carpet, wipe(carpet) \nD.Navigate to the carpet, navigate_to(carpet)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_carpets_4.jpg",
+                    "cleaning_carpets_5.jpg",
+                    "cleaning_carpets_6.jpg",
+                    "cleaning_carpets_7.jpg"
+                ]
+            },
+            "response": "B, C"
+        },
+        {
+            "sample_id": 74,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Pick up the hat and umbrella, place them in the closet. The options are:\n A.Grasp hat, grasp(hat) \nB.Navigate to closet, navigate_to(closet) \nC.Place the hat into closet, place_inside(hat,closet) \nD.Grasp umbrella, grasp(umbrella)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_closet_3.jpg"
+                ]
+            },
+            "response": "A, D"
+        },
+        {
+            "sample_id": 75,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Pick up the pens and place them in the bucket. The options are:\n A.Grasp pen, grasp(pen) \nB.Navigate to bucket, navigate_to(bucket) \nC.Place the pen_1 into bucket, place_inside(pen_1,bucket) \nD.Place the pen_2 into bucket, place_inside(pen_2,bucket)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_cupboards_3.jpg",
+                    "cleaning_cupboards_4.jpg",
+                    "cleaning_cupboards_5.jpg"
+                ]
+            },
+            "response": "C, D"
+        },
+        {
+            "sample_id": 76,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Pick up the brush and wash it, then clean the floor using it. The options are:\n A.Grasp brush, grasp(brush) \nB.Open faucet, open(faucet) \nC.Wipe floor, wipe(floor) \nD.Put the brush in the sink, place_inside(brush,sink)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_floors_3.jpg",
+                    "cleaning_floors_4.jpg"
+                ]
+            },
+            "response": "B, D"
+        },
+        {
+            "sample_id": 77,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Clean up the freezer inside. The options are:\n A.Navigate to rag, navigate_to(rag) \nB.Grasp bottle, grasp(bottle) \nC.Wipe freezer, wipe(freezer) \nD.Close freezer, close(freezer)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_floors_3.jpg",
+                    "cleaning_floors_4.jpg"
+                ]
+            },
+            "response": "A,B"
+        },
+        {
+            "sample_id": 78,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Pick up the rag, then clean the microwave using it. The options are:\n A.Grasp rag, grasp(rag) \nB.Navigate to microwave, navigate_to(microwave) \nC.Wipe the outside of microwave, wipe(microwave) \nD.Open and Wipe the inside of microwave, wipe(microwave)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_microwave_oven_3.jpg",
+                    "cleaning_microwave_oven_4.jpg",
+                    "cleaning_microwave_oven_5.jpg"
+                ]
+            },
+            "response": "C, D"
+        },
+        {
+            "sample_id": 79,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Pick up the brush and wash it, then clean the oven. The options are:\n A.Open drawer, open(drawer) \nB.Navigate to oven, navigate_to(oven) \nC.Wipe the outside of oven, wipe(oven) \nD.Wipe the inside of oven, wipe(oven)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_oven_4.jpg",
+                    "cleaning_oven_5.jpg",
+                    "cleaning_oven_6.jpg",
+                    "cleaning_oven_7.jpg"
+                ]
+            },
+            "response": "C, D"
+        },
+        {
+            "sample_id": 80,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Task description: Pick up the rag and wash it, then clean the stove using the rag. The options are:\n A.Open faucet, open(faucet) \nB.Navigate to stove, navigate_to(stove) \nC.Wipe the outside of stove, wipe(stove) \nD.Wipe the inside of stove, wipe(stove)\n Answer with the option letters only, like 'B'.",
+                "images_path": [
+                    "cleaning_stove_3.jpg",
+                    "cleaning_stove_4.jpg",
+                    "cleaning_stove_5.jpg"
+                ]
+            },
+            "response": "C, D"
+        },
+        {
+            "sample_id": 81,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Task description: Please clean up after a meal. Put all the hamburgers in the sack, clean the stain on the chiars, table, and tableware. The options are:\n \"A.wipe the plates\",\n\"B.wipe the table\",\n\"C.grasp the hamburger\",\n\"D.navigate to the sack\"\n Answer with the option letters only, like 'A, B'.",
+                "images_path": [
+                    "cleaning_up_after_a_meal_0.jpg",
+                    "cleaning_up_after_a_meal_1.jpg",
+                    "cleaning_up_after_a_meal_2.jpg"
+                ],
+                "choice_list": [
+                    "A.wipe the plates",
+                    "B.wipe the table",
+                    "C.grasp the hamburger",
+                    "D.navigate to the sack"
+                ]
+            },
+            "response": "A, B, C"
+        },
+        {
+            "sample_id": 82,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Task description: Please clean up after a meal. Put all the hamburgers in the sack, clean the stain on the chiars, table, and tableware. The options are:\n \"A.wipe the tray\",\n\"B.wipe the refrigerator\",\n\"C.take out the tray\",\n\"D.close the refrigerator\"\n Answer with the option letters only, like 'A, B'.",
+                "images_path": [
+                    "cleaning_up_refrigerator_0.jpg",
+                    "cleaning_up_refrigerator_1.jpg",
+                    "cleaning_up_refrigerator_2.jpg",
+                    "cleaning_up_refrigerator_3.jpg"
+                ],
+                "choice_list": [
+                    "A.wipe the tray",
+                    "B.wipe the refrigerator",
+                    "C.take out the tray",
+                    "D.close the refrigerator"
+                ]
+            },
+            "response": "A, B, C"
+        },
+        {
+            "sample_id": 83,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Task description: Clean up the kitchen, i.e. cleaning the kitchen floor and closet. The options are:\n \"A.grasp the broom, and sweep the floor\",\n\"B.grasp the rag, and navigate to the closet\",\n\"C.sweep the floor\",\n\"D.clean the closet\"\n Answer with the option letters only, like 'A, B'.",
+                "images_path": [
+                    "cleaning_up_the_kitchen_only_0.jpg"
+                ],
+                "choice_list": [
+                    "A.grasp the broom, and sweep the floor",
+                    "B.grasp the rag, and navigate to the closet",
+                    "C.sweep the floor",
+                    "D.clean the closet"
+                ]
+            },
+            "response": "A, B"
+        },
+        {
+            "sample_id": 84,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Task description: Put everything on the table into the bucket. The options are:\n \"A.grasp the yellow plate and the catsup, and put them in the bucket\",\n\"B.navigate to the bucket and grasp it\",\n\"C.grasp the two cups and put them in the bucket\",\n\"D.grasp the blue bowl and the green bowl, and put them in the bucket\"\n Answer with the option letters only, like 'A, B'.",
+                "images_path": [
+                    "clearing_the_table_after_dinner_0.jpg"
+                ],
+                "choice_list": [
+                    "A.grasp the yellow plate and the catsup, and put them in the bucket",
+                    "B.navigate to the bucket and grasp it",
+                    "C.grasp the two cups and put them in the bucket",
+                    "D.grasp the blue bowl and the green bowl, and put them in the bucket"
+                ]
+            },
+            "response": "A, C"
+        },
+        {
+            "sample_id": 85,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Task description: Please collect misplaced items onto the dining table, including necklace in the cabinet, 2 pairs of socks on the sofa and floor, respectively, a sneaker on the dining room floor, and a notebook under the dining table. The options are:\n \"A.grasp the notebook and put it onto the dining table\",\n\"B.navigate to the pair of socks on the floor, grasp it\",\n\"C.navigate to the pair of socks on the sofa, grasp it\",\n\"D.navigate to the dining table, put the notebook on it\"\n Answer with the option letters only, like 'A, B'.",
+                "images_path": [
+                    "collect_misplaced_items_0.jpg",
+                    "collect_misplaced_items_1.jpg",
+                    "collect_misplaced_items_2.jpg",
+                    "collect_misplaced_items_3.jpg",
+                    "collect_misplaced_items_4.jpg",
+                    "collect_misplaced_items_5.jpg",
+                    "collect_misplaced_items_6.jpg"
+                ],
+                "choice_list": [
+                    "A.grasp the notebook and put it onto the dining table",
+                    "B.navigate to the pair of socks on the floor, grasp it",
+                    "C.navigate to the pair of socks on the sofa, grasp it",
+                    "D.navigate to the dining table, put the notebook on it"
+                ]
+            },
+            "response": "A, B"
+        },
+        {
+            "sample_id": 86,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Task description: Please fill the Christmas stocking with pens and candies from the cabinet. The options are:\n \"A.grasp a pen and a candy, navigate to the Christmas stocking, and put them inside\",\n\"B.put the pens and candies into the bucket, grasp the bucket, and navigate to the Christmas stocking\",\n\"C.put the pen in the bucket back to the cabinet\",\n\"D.close the cabinet drawer\"\n Answer with the option letters only, like 'A, B'.",
+                "images_path": [
+                    "filling_a_Christmas_stocking_0.jpg",
+                    "filling_a_Christmas_stocking_1.jpg",
+                    "filling_a_Christmas_stocking_2.jpg"
+                ],
+                "choice_list": [
+                    "A.grasp a pen and a candy, navigate to the Christmas stocking, and put them inside",
+                    "B.put the pens and candies into the bucket, grasp the bucket, and navigate to the Christmas stocking",
+                    "C.put the pen in the bucket back to the cabinet",
+                    "D.close the cabinet drawer"
+                ]
+            },
+            "response": "A, B"
+        },
+        {
+            "sample_id": 87,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Task description: Put the ball, eggs, bows, and candies equally into the two baskets. The options are:\n \"A.grasp and put 2 candies equally into the two baskets\",\n\"B.grasp and put 2 put eggs equally into the two baskets\",\n\"C.grasp and put 2 put bows into one basket\",\n\"D.grasp a bow and a candy and put them into one basket \"\n Answer with the option letters only, like 'A, B'.",
+                "images_path": [
+                    "filling_an_Easter_basket_0.jpg",
+                    "filling_an_Easter_basket_1.jpg",
+                    "filling_an_Easter_basket_2.jpg",
+                    "filling_an_Easter_basket_3.jpg"
+                ],
+                "choice_list": [
+                    "A.grasp and put 2 candies equally into the two baskets",
+                    "B.grasp and put 2 put eggs equally into the two baskets",
+                    "C.grasp and put 2 put bows into one basket",
+                    "D.grasp a bow and a candy and put them into one basket "
+                ]
+            },
+            "response": "A, B, D"
+        },
+        {
+            "sample_id": 88,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Task description: Please load the dishwasher. The options are:\n \"A.grasp two bowls, and put them into the dishwasher\",\n\"B.grasp two plates, and put them into the dishwasher\",\n\"C.grasp three plates, and put them into the dishwasher\",\n\"D.grasp two cups, and put them into the dishwasher\"\n Answer with the option letters only, like 'A, B'.",
+                "images_path": [
+                    "loading_the_dishwasher_0.jpg",
+                    "loading_the_dishwasher_1.jpg"
+                ],
+                "choice_list": [
+                    "A.grasp two bowls, and put them into the dishwasher",
+                    "B.grasp two plates, and put them into the dishwasher",
+                    "C.grasp three plates, and put them into the dishwasher",
+                    "D.grasp two cups, and put them into the dishwasher"
+                ]
+            },
+            "response": "A, B"
+        },
+        {
+            "sample_id": 89,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "Task description: Please prepare two salads with tomatoes, radishes, apples, and lettuce. The options are:\n \"A. Fetch the tomatoes\",\n\"B. Slice the radishes\",\n\"C. Slice the apples\",\n\"D. Slice the lettuce\"\nAnswer with the option letters only, like 'B, D'.",
+                "images_path": [
+                    "preparing_salad_0.jpg"
+                ],
+                "choice_list": [
+                    "A. Fetch the tomatoes",
+                    "B. Slice the radishes",
+                    "C. Slice the apples",
+                    "D. Slice the lettuce"
+                ]
+            },
+            "response": "A, B, C, D"
+        },
+        {
+            "sample_id": 90,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "Task description: Put cans and bagged noodles in the refrigerator. The options are:\n A.open can, open(cans) \nB.Navigate to the can, navigate_to(can) \nC.Navigate to the bagged noodle, navigate_to(bagged noodles) \nD.Navigate to the refrigerator, navigate_to(refrigerator)\nAnswer with the option letters only, like 'A, B'.",
+                "images_path": [
+                    "putting_leftovers_away_1.jpg",
+                    "putting_leftovers_away_2.jpg"
+                ],
+                "choice_list": [
+                    "A.open can, open(cans)",
+                    "B.Navigate to the can, navigate_to(can)",
+                    "C.Navigate to the bagged noodle, navigate_to(bagged noodles)",
+                    "D.Navigate to the refrigerator, navigate_to(refrigerator)"
+                ]
+            },
+            "response": "B, C"
+        },
+        {
+            "sample_id": 91,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "Task description: Stack envelopes together. The options are:\n A.Grasp envelope.1, grasp(envelope.1) \nB.Grasp envelope.2, grasp(envelope.2) \nC.Navigate to the envelope.1, navigate_to(envelope.1) \nD.Navigate to the envelope.2, navigate_to(envelope.2) \nAnswer with the option letters only, like 'A, B'.",
+                "images_path": [
+                    "sorting_mail_1.jpg"
+                ],
+                "choice_list": [
+                    "A.Grasp envelope.1, grasp(envelope.1)",
+                    "B.Grasp envelope.2, grasp(envelope.2)",
+                    "C.Navigate to the envelope.1, navigate_to(envelope.1)",
+                    "D.Navigate to the envelope.2, navigate_to(envelope.2)"
+                ]
+            },
+            "response": "C, D"
+        }
+    ]
+}

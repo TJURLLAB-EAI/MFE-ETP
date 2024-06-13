@@ -1,0 +1,650 @@
+{
+    "metadata": {
+        "dataset": "operation",
+        "split": "core",
+        "num_sample": 52,
+        "task_instruction": [
+            "You are a dual armed household robot. You will receive a series of images representing a task and a specific question to test your ability to choose the right action. Note you should choose the best action in the action list delimited by triple quotes below. '''\nnavigate_to, \ngrasp, \nplace_onTop,\nplace_inside,\nopen,\nclose,\nslice,\nwipe,\nwait,\nplace_under,\ntoggle'''Answer with the action name only, like 'Navigate_to' or 'Grasp'. Answer according to the requirements of the question.",
+            "You are an advanced household robot equipped with dual arms. Your tasks will involve evaluating a sequence of images that depict a specific task, accompanied by a targeted question designed to assess your decision-making capabilities. Please respond by selecting the most appropriate action from the provided list, enclosed within triple quotes: '''\nnavigate_to, \ngrasp, \nplace_onTop,\nplace_inside,\nopen,\nclose,\nslice,\nwipe,\nwait,\nplace_under,\ntoggle'''. Provide your response solely as the action name, such as 'Navigate_to' or 'Grasp', and ensure it aligns with the question's requirements.",
+            "As a highly advanced household robot with dual arms, your responsibilities will encompass the assessment of a series of images illustrating a particular task, paired with a precise question intended to gauge your decision-making prowess. Your response should consist solely of the chosen action name, such as 'Navigate_to' or 'Grasp,' enclosed within triple quotes ('''\nnavigate_to, \ngrasp, \nplace_onTop,\nplace_inside,\nopen,\nclose,\nslice,\nwipe,\nwait,\nplace_under,\ntoggle'''), adhering to the question's specifications.",
+            "You operate as an advanced household robot, boasting dual arms for enhanced functionality. Your duties will revolve around the examination of sequential images portraying specific tasks, accompanied by a targeted question crafted to evaluate your decision-making abilities. When responding, please select the most suitable action from the provided list, enclosed within triple quotes ('''navigate_to, \ngrasp, \nplace_onTop,\nplace_inside,\nopen,\nclose,\nslice,\nwipe,\nwait,\nplace_under,\ntoggle'''), using only the action name, such as 'Navigate_to' or 'Grasp,' in accordance with the question's criteria.",
+            "In your role as a cutting-edge household robot, equipped with dual arms, you will engage in tasks that entail analyzing a sequence of images depicting specific activities. These tasks will be accompanied by focused questions designed to assess your decision-making capabilities. Your responses should consist exclusively of the chosen action name, such as 'Navigate_to' or 'Grasp,' enclosed within triple quotes ('''navigate_to, \ngrasp, \nplace_onTop,\nplace_inside,\nopen,\nclose,\nslice,\nwipe,\nwait,\nplace_under,\ntoggle'''). Ensure your choice aligns with the question's requirements.",
+            "You function as a state-of-the-art household robot, featuring dual arms for enhanced capabilities. Your tasks will entail the assessment of sequential images illustrating specific activities, complemented by focused questions devised to gauge your decision-making acumen. When providing your response, choose the most appropriate action from the supplied list, enclosed within triple quotes ('''navigate_to, \ngrasp, \nplace_onTop,\nplace_inside,\nopen,\nclose,\nslice,\nwipe,\nwait,\nplace_under,\ntoggle'''), and express it solely as the action name, such as 'Navigate_to' or 'Grasp,' adhering to the question's stipulations."
+        ],
+        "question_type": "open-ended",
+        "task_type": "Planning",
+        "task_intro": "task planning, long term task decomposition"
+    },
+    "data": [
+        {
+            "sample_id": 0,
+            "task_instance": {
+                "task_name": "assembling_gift_baskets",
+                "context": "What action should you take to go to the location to gather items like candles, cookies, cheese, and bows for assembling gift baskets?",
+                "images_path": [
+                    "assembling_gift_baskets_0.jpg",
+                    "assembling_gift_baskets_1.jpg"
+                ]
+            },
+            "response": "Navigate_to",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 1,
+            "task_instance": {
+                "task_name": "bottling_fruit",
+                "context": "What action should you take to cut strawberries and peaches from the fridge with a knife?",
+                "images_path": [
+                    "bottling_fruit_0.jpg"
+                ]
+            },
+            "response": "Slice",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 2,
+            "task_instance": {
+                "task_name": "boxing_books_up_for_storage",
+                "context": "What action should you take to lift the books?",
+                "images_path": [
+                    "boxing_books_up_for_storage_0.jpg"
+                ]
+            },
+            "response": "Grasp",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 3,
+            "task_instance": {
+                "task_name": "chopping_vegetables",
+                "context": "What action should you take to do with mushrooms, tomatoes, chestnuts, and onions on the table using a knife?",
+                "images_path": [
+                    "chopping_vegetables_0.jpg"
+                ]
+            },
+            "response": "Slice",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 4,
+            "task_instance": {
+                "task_name": "cleaning_barbecue_grill",
+                "context": "What action should you take to clean the barbecue grill with a wet rag?",
+                "images_path": [
+                    "cleaning_barbecue_grill_0.jpg"
+                ]
+            },
+            "response": "Wipe",
+            "task_instruction_id": 2
+        },
+        {
+            "sample_id": 5,
+            "task_instance": {
+                "task_name": "cleaning_bathrooms",
+                "context": "What action should you take to clean the bathroom using a wet brush?",
+                "images_path": [
+                    "cleaning_bathrooms_0.jpg"
+                ]
+            },
+            "response": "Wipe",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 6,
+            "task_instance": {
+                "task_name": "cleaning_bathtub",
+                "context": "What action should you take to clean the bathtub with the brush inside it?",
+                "images_path": [
+                    "cleaning_bathtub_0.jpg"
+                ]
+            },
+            "response": "Wipe",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 7,
+            "task_instance": {
+                "task_name": "cleaning_bedroom",
+                "context": "What action should you take to put apparel, jewelry, and paintings into cabinet?",
+                "images_path": [
+                    "cleaning_bedroom_0.jpg"
+                ]
+            },
+            "response": "Place_inside",
+            "task_instruction_id": 2
+        },
+        {
+            "sample_id": 8,
+            "task_instance": {
+                "task_name": "cleaning_carpets",
+                "context": "What action should you take to remove stains from the carpets using a wet hand towel?",
+                "images_path": [
+                    "cleaning_carpets_0.jpg"
+                ]
+            },
+            "response": "Wipe",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 9,
+            "task_instance": {
+                "task_name": "cleaning_closet",
+                "context": "What action should you take to put items into the opened closets?",
+                "images_path": [
+                    "cleaning_closet_0.jpg"
+                ]
+            },
+            "response": "Place_inside",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 10,
+            "task_instance": {
+                "task_name": "cleaning_cupboards",
+                "context": "What action should you take to put items into the cupboard and nightstand, including markers, books, and other items?",
+                "images_path": [
+                    "cleaning_cupboards_0.jpg"
+                ]
+            },
+            "response": "Place_inside",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 11,
+            "task_instance": {
+                "task_name": "cleaning_floors",
+                "context": "What action should you take to clean the floors?",
+                "images_path": [
+                    "cleaning_floors_0.jpg"
+                ]
+            },
+            "response": "Wipe",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 12,
+            "task_instance": {
+                "task_name": "cleaning_freezer",
+                "context": "What action should you take to cleanse the freezer using the rag?",
+                "images_path": [
+                    "cleaning_freezer_0.jpg"
+                ]
+            },
+            "response": "Wipe",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 13,
+            "task_instance": {
+                "task_name": "cleaning_microwave_oven",
+                "context": "What action is required to clean the microwave oven using a wet rag?",
+                "images_path": [
+                    "cleaning_microwave_oven_0.jpg"
+                ]
+            },
+            "response": "Wipe",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 14,
+            "task_instance": {
+                "task_name": "cleaning_oven",
+                "context": "What action should you take to make the oven spotless and hygienic with a brush?",
+                "images_path": [
+                    "cleaning_oven_0.jpg"
+                ]
+            },
+            "response": "Wipe",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 15,
+            "task_instance": {
+                "task_name": "cleaning_stove",
+                "context": "What action should you take to clean the stove using the rag?",
+                "images_path": [
+                    "cleaning_stove_0.jpg"
+                ]
+            },
+            "response": "Wipe",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 16,
+            "task_instance": {
+                "task_name": "cleaning_table_after_clearing",
+                "context": "What action should you take to clean the table with the towel?",
+                "images_path": [
+                    "cleaning_table_after_clearing_1.jpg"
+                ]
+            },
+            "response": "Wipe",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 17,
+            "task_instance": {
+                "task_name": "cleaning_toilet",
+                "context": "What action is needed to scrub and clean the toilet using the brush available on the floor?",
+                "images_path": [
+                    "cleaning_toilet_0.jpg"
+                ]
+            },
+            "response": "Wipe",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 18,
+            "task_instance": {
+                "task_name": "cleaning_up_after_a_meal",
+                "context": "What action should you take to place the dishes into the cabinet?",
+                "images_path": [
+                    "cleaning_up_after_a_meal_1.jpg"
+                ]
+            },
+            "response": "Place_inside",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 19,
+            "task_instance": {
+                "task_name": "cleaning_up_refrigerator",
+                "context": "What action should you take to cleanse the refrigerator interior using a damp rag?",
+                "images_path": [
+                    "cleaning_up_refrigerator_3.jpg"
+                ]
+            },
+            "response": "Wipe",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 20,
+            "task_instance": {
+                "task_name": "cleaning_up_the_kitchen_only",
+                "context": "What action should you take to complete the arranging task after open the cabinet and put items into it?",
+                "images_path": [
+                    "cleaning_up_the_kitchen_only_4.jpg"
+                ]
+            },
+            "response": "Close",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 21,
+            "task_instance": {
+                "task_name": "cleaning_windows",
+                "context": "What action should you take to clean the windows using the rag?",
+                "images_path": [
+                    "cleaning_windows_2.jpg"
+                ]
+            },
+            "response": "Wipe",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 22,
+            "task_instance": {
+                "task_name": "clearing_the_table_after_dinner",
+                "context": "What action should you take to collect all items from the dinner table into the bucket?",
+                "images_path": [
+                    "clearing_the_table_after_dinner_0.jpg"
+                ]
+            },
+            "response": "Place_inside",
+            "task_instruction_id": 2
+        },
+        {
+            "sample_id": 23,
+            "task_instance": {
+                "task_name": "collect_misplaced_items",
+                "context": "What action is needed to place misplaced items onto the dining table?",
+                "images_path": [
+                    "collect_misplaced_items_5.jpg"
+                ]
+            },
+            "response": "place_onTop",
+            "task_instruction_id": 2
+        },
+        {
+            "sample_id": 24,
+            "task_instance": {
+                "task_name": "defrosting_freezer",
+                "context": "What action should you take to do with the refrigerator after having fetched out all the items?",
+                "images_path": [
+                    "defrosting_freezer_2.jpg"
+                ]
+            },
+            "response": "Close",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 25,
+            "task_instance": {
+                "task_name": "filling_a_Christmas_stocking",
+                "context": "What action should you take to fill the Christmas stocking with pens and candies",
+                "images_path": [
+                    "filling_a_Christmas_stocking_0.jpg"
+                ]
+            },
+            "response": "Place_inside",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 26,
+            "task_instance": {
+                "task_name": "filling_an_Easter_basket",
+                "context": "What action is required to arrange eggs into each basket?",
+                "images_path": [
+                    "filling_an_Easter_basket_0.jpg"
+                ]
+            },
+            "response": "Place_inside",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 27,
+            "task_instance": {
+                "task_name": "loading_the_dishwasher",
+                "context": "What action should you take after loading and starting the dishwasher to get the dishes clean?",
+                "images_path": [
+                    "loading_the_dishwasher_0.jpg",
+                    "loading_the_dishwasher_1.jpg",
+                    "loading_the_dishwasher_2.jpg"
+                ]
+            },
+            "response": "Wait",
+            "task_instruction_id": 2
+        },
+        {
+            "sample_id": 28,
+            "task_instance": {
+                "task_name": "making_tea",
+                "context": "What action should you take to start the stove to boil tea?",
+                "images_path": [
+                    "making_tea_3.jpg"
+                ]
+            },
+            "response": "Toggle",
+            "task_instruction_id": 2
+        },
+        {
+            "sample_id": 29,
+            "task_instance": {
+                "task_name": "mopping_floors",
+                "context": "What action should you take to use the cloth to mop the floor?",
+                "images_path": [
+                    "mopping_floors_2.jpg"
+                ]
+            },
+            "response": "Wipe",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 30,
+            "task_instance": {
+                "context": "What action should you take to store the beef into the refrigerator?",
+                "images_path": [
+                    "preserving_food_0.jpg"
+                ]
+            },
+            "response": "place_inside",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 31,
+            "task_instance": {
+                "context": "What action should you take to cut the apples up?",
+                "images_path": [
+                    "preparing_salad_0.jpg"
+                ]
+            },
+            "response": "slice",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 32,
+            "task_instance": {
+                "task_name": "making_tea",
+                "context": "What action should you put the tea bag into the teapot?",
+                "images_path": [
+                    "making_tea_4.jpg"
+                ]
+            },
+            "response": "place_inside",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 33,
+            "task_instance": {
+                "task_name": "packing_adult_s_bags",
+                "context": "What is the action you should take to pick the makeup up from the bed?",
+                "images_path": [
+                    "packing_adult_s_bags_2.jpg"
+                ]
+            },
+            "response": "grasp",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 34,
+            "task_instance": {
+                "task_name": "packing_car_for_trip",
+                "context": "What is the action you should take to get close to the briefcase?",
+                "images_path": [
+                    "packing_car_for_trip_1.jpg"
+                ]
+            },
+            "response": "navigate_to",
+            "task_instruction_id": 2
+        },
+        {
+            "sample_id": 35,
+            "task_instance": {
+                "task_name": "packing_food_for_work",
+                "context": "What is the action you should take to grab the pot?",
+                "images_path": [
+                    "packing_food_for_work_0.jpg"
+                ]
+            },
+            "response": "grasp",
+            "task_instruction_id": 2
+        },
+        {
+            "sample_id": 36,
+            "task_instance": {
+                "task_name": "packing_lunches",
+                "context": "What is the action you should take to put the cookies into the carton?",
+                "images_path": [
+                    "packing_lunches_4.jpg"
+                ]
+            },
+            "response": "place_inside",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 37,
+            "task_instance": {
+                "task_name": "packing_picnics",
+                "context": "What is the action you should take to get close to the snack food?",
+                "images_path": [
+                    "packing_picnics_4.jpg"
+                ]
+            },
+            "response": "navigate_to",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 38,
+            "task_instance": {
+                "task_name": "packing_picnics",
+                "context": "What is the action you should take to reach the snack_food?",
+                "images_path": [
+                    "packing_picnics_4.jpg"
+                ]
+            },
+            "response": "navigate_to",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 39,
+            "task_instance": {
+                "task_name": "packing_child_s_bag",
+                "context": "What is the action you should take to pick up the sunglasses?",
+                "images_path": [
+                    "packing_child_s_bag_2.jpg"
+                ]
+            },
+            "response": "grasp",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 40,
+            "task_instance": {
+                "task_name": "pair_packing_boxes_for_household_move_or_trip",
+                "context": "What is the action you should take to go to the carton?",
+                "images_path": [
+                    "pair_packing_boxes_for_household_move_or_trip_1.jpg"
+                ]
+            },
+            "response": "navigate_to",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 41,
+            "task_instance": {
+                "task_name": "packing_bags_or_suitcase",
+                "context": "What is the action you should take to navigate to the backpack?",
+                "images_path": [
+                    "packing_bags_or_suitcase_5.jpg"
+                ]
+            },
+            "response": "navigate_to",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 42,
+            "task_instance": {
+                "task_name": "serving_a_meal",
+                "context": "What action should you take to hold a fork?",
+                "images_path": [
+                    "serving_a_meal_1.jpg"
+                ]
+            },
+            "response": "Grasp",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 43,
+            "task_instance": {
+                "task_name": "serving_hors_d_oeuvres",
+                "context": "What action should you take to grasp a salad?",
+                "images_path": [
+                    "serving_hors_d_oeuvres_1.jpg"
+                ]
+            },
+            "response": "Grasp",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 44,
+            "task_instance": {
+                "task_name": "sorting_books",
+                "context": "What action should you take to get close to the books?",
+                "images_path": [
+                    "sorting_books_1.jpg",
+                    "sorting_books_2.jpg"
+                ]
+            },
+            "response": "Navigate_to",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 45,
+            "task_instance": {
+                "task_name": "sorting_groceries",
+                "context": "What action should you take to be closer to the food?",
+                "images_path": [
+                    "sorting_groceries_1.jpg",
+                    "sorting_groceries_2.jpg"
+                ]
+            },
+            "response": "Navigate_to",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 46,
+            "task_instance": {
+                "task_name": "sorting_mail",
+                "context": "What action should you take to get closer to newspaper to own them?",
+                "images_path": [
+                    "sorting_mail_1.jpg",
+                    "sorting_mail_2.jpg"
+                ]
+            },
+            "response": "Navigate_to",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 47,
+            "task_instance": {
+                "task_name": "storing_food",
+                "context": "What action should you take to get closer to food to own them?",
+                "images_path": [
+                    "storing_food_1.jpg",
+                    "storing_food_2.jpg"
+                ]
+            },
+            "response": "Navigate_to",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 48,
+            "task_instance": {
+                "task_name": "thawing_frozen_food",
+                "context": "What action should you take to open the refrigerator?",
+                "images_path": [
+                    "thawing_frozen_food_0.jpg"
+                ]
+            },
+            "response": "Open",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 49,
+            "task_instance": {
+                "task_name": "vacuuming_floors",
+                "context": "What action should you take to get closer to vacuum cleaner?",
+                "images_path": [
+                    "vacuuming_floors_1.jpg"
+                ]
+            },
+            "response": "Navigate_to",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 50,
+            "task_instance": {
+                "task_name": "putting_leftovers_away",
+                "context": "What action should you take to grasp the can?",
+                "images_path": [
+                    "putting_leftovers_away_1.jpg"
+                ]
+            },
+            "response": "Grasp",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 51,
+            "task_instance": {
+                "task_name": "re-shelving_library_books",
+                "context": "What action should you take to grasp books?",
+                "images_path": [
+                    "re-shelving_library_books_1.jpg",
+                    "re-shelving_library_books_2.jpg"
+                ]
+            },
+            "response": "Grasp",
+            "task_instruction_id": 3
+        }
+    ]
+}
