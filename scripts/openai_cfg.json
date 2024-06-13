@@ -1,0 +1,11 @@
+{
+    "apis": [
+        {
+            "name": "my_proxy",
+            "http_proxy": "http://127.0.0.1:7890",
+            "https_proxy": "http://127.0.0.1:7890",
+            "api_key": "sk-xxx",
+            "proxy": "xxx"
+        }
+    ]
+}
