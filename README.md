@@ -16,6 +16,34 @@
   </ol>
 </details>
 
+## Repository Structure
+<details>
+  <summary>Repository Structure</summary>
+  <ol>
+    <li>
+      <a>Benchmark data classified by capability aspect</a>
+    </li>
+    <li>
+      <a>scrpts</a>
+      <ul>
+        <li><a>benchmark_predict_blip: inference script for BLIP-2 and InstructBLIP</a></li>
+        <li><a>benchmark_predict_blip: inference script for BLIP-2 and InstructBLIP</a></li>
+        <li><a>benchmark_predict_blip: inference script for BLIP-2 and InstructBLIP</a></li>
+        <li><a>benchmark_predict_blip: inference script for BLIP-2 and InstructBLIP</a></li>
+        <li><a>benchmark_predict_blip: inference script for BLIP-2 and InstructBLIP</a></li>
+        <li><a>benchmark_predict_blip: inference script for BLIP-2 and InstructBLIP</a></li>
+        <li><a>benchmark_predict_blip: inference script for BLIP-2 and InstructBLIP</a></li>
+        <li><a>benchmark_predict_blip: inference script for BLIP-2 and InstructBLIP</a></li>
+        <li><a>benchmark_predict_blip: inference script for BLIP-2 and InstructBLIP</a></li>
+        <li><a>benchmark_predict_blip: inference script for BLIP-2 and InstructBLIP</a></li>
+        <li><a>benchmark_predict_blip: inference script for BLIP-2 and InstructBLIP</a></li>
+      </ul>
+    </li>
+    <li><a>License</a></li>
+    <li><a>README.md</a></li>
+  </ol>
+</details>
+
 ## Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
