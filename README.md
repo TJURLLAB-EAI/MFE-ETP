@@ -16,9 +16,9 @@
   </ol>
 </details>
 
-## Repository Structure
+## File Structure
 <details>
-  <summary>Repository Structure and Usage</summary>
+  <summary>File Structure and Usage</summary>
   <ol>
     <li>
       <a>**data**: benchmark data classified by capability aspect</a>
