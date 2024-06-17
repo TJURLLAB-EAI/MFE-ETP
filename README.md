@@ -1,6 +1,5 @@
-<a name="readme-top"></a>
 # MFE-ETP
-
+<a name="readme-top"></a>
 <details>
   <summary>Table of Contents</summary>
   <ol>
