@@ -21,7 +21,7 @@
   <summary>File Structure and Usage</summary>
   <ol>
     <li>
-      <a>*data*: benchmark data classified by capability aspect</a>
+      <a>data: benchmark data classified by capability aspect</a>
     </li>
     <li>
       <a>scrpts</a>
