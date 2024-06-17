@@ -18,25 +18,24 @@
 
 ## Repository Structure
 <details>
-  <summary>Repository Structure</summary>
+  <summary>Repository Structure and Usage</summary>
   <ol>
     <li>
-      <a>Benchmark data classified by capability aspect</a>
+      <a>**data**: benchmark data classified by capability aspect</a>
     </li>
     <li>
       <a>scrpts</a>
       <ul>
-        <li><a>benchmark_predict_blip: inference script for BLIP-2 and InstructBLIP</a></li>
-        <li><a>benchmark_predict_blip: inference script for BLIP-2 and InstructBLIP</a></li>
-        <li><a>benchmark_predict_blip: inference script for BLIP-2 and InstructBLIP</a></li>
-        <li><a>benchmark_predict_blip: inference script for BLIP-2 and InstructBLIP</a></li>
-        <li><a>benchmark_predict_blip: inference script for BLIP-2 and InstructBLIP</a></li>
-        <li><a>benchmark_predict_blip: inference script for BLIP-2 and InstructBLIP</a></li>
-        <li><a>benchmark_predict_blip: inference script for BLIP-2 and InstructBLIP</a></li>
-        <li><a>benchmark_predict_blip: inference script for BLIP-2 and InstructBLIP</a></li>
-        <li><a>benchmark_predict_blip: inference script for BLIP-2 and InstructBLIP</a></li>
-        <li><a>benchmark_predict_blip: inference script for BLIP-2 and InstructBLIP</a></li>
-        <li><a>benchmark_predict_blip: inference script for BLIP-2 and InstructBLIP</a></li>
+        <li><a>benchmark_predict_blip.py: inference script for BLIP-2 and InstructBLIP</a></li>
+        <li><a>chat_gpt_api.py: encapsulating ChatGPT inference</a></li>
+        <li><a>dataset_predict_gpt4v.py: inference script for ChatGPT(-4V)</a></li>
+        <li><a>dataset_predict_llava.py: inference script for llava</a></li>
+        <li><a>dataset_predict_minicpm.py: inference script for minicpm</a></li>
+        <li><a>dataset_predict_minigpt4.py: inference script for minigpt4</a></li>
+        <li><a>evaluate_gpt3.5_mp: using GPT-3.5 to evaluate prediction results with multithreading</a></li>
+        <li><a>minigpt4_eval.yaml.py: configuration file for Minigpt4</a></li>
+        <li><a>openai_cfg.json: configuration file for OpenAI api</a></li>
+        <li><a>task_planning.py: Embodied Reasoning with GPT-4V</a></li>
       </ul>
     </li>
     <li><a>License</a></li>
