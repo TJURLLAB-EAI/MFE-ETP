@@ -77,9 +77,9 @@ Our MFE-ETP benchmark is released under the MIT license. See the "LICENSE" file 
 
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Xian Fu - xianfu@tju.edu.cn
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Min Zhang - min_zhang@tju.edu.cn
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
