@@ -38,7 +38,7 @@
         <li><a>task_planning.py: Embodied Reasoning with GPT-4V</a></li>
       </ul>
     </li>
-    <li><a>License</a></li>
+    <li><a>LICENSE: MIT license file</a></li>
     <li><a>README.md</a></li>
   </ol>
 </details>
