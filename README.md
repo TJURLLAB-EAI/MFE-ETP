@@ -13,11 +13,11 @@
     </a>
 </p>
 
-This repo contains code for our NeurIPS Datasets and Benchmarks 2022 paper:
+This repo contains code for our NeurIPS Datasets and Benchmarks 2024 paper:
 
-[EgoTaskQA: Understanding Human Tasks in Egocentric Videos](https://buzz-beater.github.io/assets/publications/2022_egotaskqa_nips/paper.pdf)
+[MFE-ETP: A Comprehensive Evaluation Benchmark for Multi-modal Foundation Models on Embodied Task Planning](https://)
 
-[Baoxiong Jia](https://buzz-beater.github.io/), [Ting Lei](https://scholar.google.com/citations?user=Zk7Vxz0AAAAJ&hl=en), [Song-Chun Zhu](http://www.stat.ucla.edu/~sczhu/), [Siyuan Huang](https://siyuanhuang.com/)
+/*[Baoxiong Jia](https://buzz-beater.github.io/), [Ting Lei](https://scholar.google.com/citations?user=Zk7Vxz0AAAAJ&hl=en), [Song-Chun Zhu](http://www.stat.ucla.edu/~sczhu/), [Siyuan Huang](https://siyuanhuang.com/)*/
 
 <details>
   <summary>Table of Contents</summary>
