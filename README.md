@@ -88,7 +88,7 @@ This repo contains code for our NeurIPS Datasets and Benchmarks 2024 paper:
 1. Run prediction script
 
    ```sh
-   python benchmark_predict_blip.py
+   python benchmark_predict_blip.py --model blip2flant5xl --output-root "./benchmark-evaluation" --device'"cuda:0"
    ```
 
 ### evaluation
