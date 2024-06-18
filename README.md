@@ -16,7 +16,7 @@
   </ol>
 </details>
 
-## File Structure
+## File Structure and Usage
 <details>
   <summary>File Structure and Usage</summary>
   <ol>
