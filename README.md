@@ -66,11 +66,13 @@ This repo contains code for our NeurIPS Datasets and Benchmarks 2024 paper:
 
 ### Prerequisites
 
-We recommend building a standalone Conda environment for the model you want to use. For example if you want to use llava-1.5:
+We recommend building a standalone Conda environment for the model you want to use. For example if you want to use BLIP-2:
 
   ```sh
-  npm install npm@latest -g
+  pip install -r requirement.txt
   ```
+
+The requirement file of BLIP-2 is at [https://github.com/salesforce/LAVIS/blob/main/requirements.txt](https://github.com/salesforce/LAVIS/blob/main/requirements.txt)
 
 ### Installation
 
