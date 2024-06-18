@@ -24,10 +24,6 @@ This repo contains code for our NeurIPS Datasets and Benchmarks 2024 paper:
   <ol>
     <li>
       <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
     </li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -64,9 +60,9 @@ This repo contains code for our NeurIPS Datasets and Benchmarks 2024 paper:
 
 ## Getting Started
 
-### Prerequisites
+1. Build environment
 
-We recommend building a standalone Conda environment for the model you want to use. For example if you want to use BLIP-2:
+   We recommend building a standalone Conda environment for the model you want to use. For example if you want to use BLIP-2:
 
   ```sh
   pip install -r requirement.txt
@@ -74,25 +70,15 @@ We recommend building a standalone Conda environment for the model you want to u
 
 The requirement file of BLIP-2 is at [https://github.com/salesforce/LAVIS/blob/main/requirements.txt](https://github.com/salesforce/LAVIS/blob/main/requirements.txt)
 
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-
 2. Clone the repo
 
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/TJURLLAB-EAI/MFE-ETP
    ```
 
-3. Install NPM packages
+3. Run prediction
 
    ```sh
-   npm install
-   ```
-
-4. Enter your API in `config.js`
-
-   ```js
    const API_KEY = 'ENTER YOUR API';
    ```
 
