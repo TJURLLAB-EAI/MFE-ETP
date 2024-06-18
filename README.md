@@ -19,6 +19,8 @@ This repo contains code for our NeurIPS Datasets and Benchmarks 2024 paper:
 
 <!--[Baoxiong Jia](https://buzz-beater.github.io/), [Ting Lei](https://scholar.google.com/citations?user=Zk7Vxz0AAAAJ&hl=en), [Song-Chun Zhu](http://www.stat.ucla.edu/~sczhu/), [Siyuan Huang](https://siyuanhuang.com/)-->
 
+![./readme_material/data_example.png]
+
 <details>
   <summary>Table of Contents</summary>
   <ol>
