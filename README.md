@@ -38,19 +38,16 @@
         <li><a>task_planning.py: Embodied Reasoning with GPT-4V</a></li>
       </ul>
     </li>
-    <li><a>LICENSE: MIT license file</a></li>
+    <li><a>LICENSE: license file</a></li>
     <li><a>README.md</a></li>
   </ol>
 </details>
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
-We recommend building a standalone Conda environment for the model you want to use.
+We recommend building a standalone Conda environment for the model you want to use. For example if you want to use llava-1.5:
 
   ```sh
   npm install npm@latest -g
