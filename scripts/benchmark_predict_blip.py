@@ -163,7 +163,7 @@ def infer_dataset(dataset):
             json.dump(preds,f,indent=4,ensure_ascii=False)
 
 
-dataset_list = ["operation"]   #  ["object_type", "property", "time_perception", "spatial_perception", "operation", "goal", "sequential", "parallel"]
+dataset_list = ["object_type", "property", "time_perception", "spatial_perception", "relevant_object", "operation", "goal", "sequence"]
 for dataset in dataset_list:
     print(f"#############################\nInferring {dataset} dataset ...\n#############################\n")
     infer_dataset(dataset)

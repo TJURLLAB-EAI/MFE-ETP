@@ -235,7 +235,7 @@ def evaluate_model(args, model):
         evaluate_dataset(args, dataset, model)
         print(f"time:{time.time()-start}")
 
-model_list = ["MiniCPM-Llama3-V-2_5"]       # ["MiniCPM-Llama3-V-2_5", "instructblipflant5xl", "llava-v1.5-7b", "minigpt4-7b", "gpt-4-vision-preview", "blip2flant5xl"]
+model_list = ["blip2flant5xl"]       # ["MiniCPM-Llama3-V-2_5", "instructblipflant5xl", "llava-v1.5-7b", "minigpt4-7b", "gpt-4-vision-preview", "blip2flant5xl"]
 for model in model_list:
     print(f"Begin evaluating {model}")
     evaluate_model(args, model)
