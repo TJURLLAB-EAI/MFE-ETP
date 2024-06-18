@@ -75,7 +75,7 @@ This repo contains code for our NeurIPS Datasets and Benchmarks 2024 paper:
   pip install -r requirement.txt
   ```
 
-The requirement file of BLIP-2 is at [https://github.com/salesforce/LAVIS/blob/main/requirements.txt](https://github.com/salesforce/LAVIS/blob/main/requirements.txt)
+   The requirement file of BLIP-2 is at [https://github.com/salesforce/LAVIS/blob/main/requirements.txt](https://github.com/salesforce/LAVIS/blob/main/requirements.txt)
 
 2. Clone the repo
 
@@ -88,7 +88,7 @@ The requirement file of BLIP-2 is at [https://github.com/salesforce/LAVIS/blob/m
 1. Run prediction script
 
    ```sh
-   python benchmark_prediction_blip.py
+   python benchmark_predict_blip.py
    ```
 
 ### evaluation
@@ -96,7 +96,7 @@ The requirement file of BLIP-2 is at [https://github.com/salesforce/LAVIS/blob/m
 1. Run evaluation script
 
    ```sh
-   python evaluation_GPT-3.5_mp.py
+   python evaluation_gpt3.5_mp.py
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
