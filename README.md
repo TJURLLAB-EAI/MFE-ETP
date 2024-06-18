@@ -64,6 +64,11 @@ This repo contains code for our NeurIPS Datasets and Benchmarks 2024 paper:
 </details>
 
 ## Getting Started
+<li><a href="#installation">Installation</a></li>
+        <li><a href="#inference">Installation</a></li>
+        <li><a href="#evaluation">Installation</a></li>
+        
+### installation
 
 1. Build environment
 
@@ -81,10 +86,20 @@ The requirement file of BLIP-2 is at [https://github.com/salesforce/LAVIS/blob/m
    git clone https://github.com/TJURLLAB-EAI/MFE-ETP
    ```
 
-3. Run prediction
+### inference
+
+1. Run prediction script
 
    ```sh
-   const API_KEY = 'ENTER YOUR API';
+   python benchmark_prediction_blip.py
+   ```
+
+### evaluation
+
+1. Run evaluation script
+
+   ```sh
+   python evaluation_GPT-3.5_mp.py
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
