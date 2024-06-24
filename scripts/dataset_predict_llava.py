@@ -143,7 +143,7 @@ gpuid = args.gpuid
 batch_size = args.batch
 
 
-model_path = "./llava-v1.5-7b"
+model_path = "liuhaotian./llava-v1.5-7b"
 model_name = get_model_name_from_path(model_path)
 # print(model_name)
 tokenizer, model, image_processor, context_len = load_pretrained_model(model_path, None, model_name)
