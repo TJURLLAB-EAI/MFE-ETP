@@ -48,8 +48,8 @@ This repo contains code for our NeurIPS Datasets and Benchmarks 2024 paper:
     <li>
       <a>scrpts</a>
       <ul>
-        <li><a>benchmark_predict_blip.py: inference script for BLIP-2 and InstructBLIP</a></li>
         <li><a>chat_gpt_api.py: encapsulating ChatGPT inference</a></li>
+        <li><a>dataset_predict_blip.py: inference script for BLIP-2 and InstructBLIP</a></li>
         <li><a>dataset_predict_gpt4v.py: inference script for ChatGPT(-4V)</a></li>
         <li><a>dataset_predict_llava.py: inference script for llava</a></li>
         <li><a>dataset_predict_minicpm.py: inference script for minicpm</a></li>
