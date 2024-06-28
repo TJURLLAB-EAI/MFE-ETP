@@ -27,9 +27,9 @@ This repo contains code for our NeurIPS Datasets and Benchmarks 2024 paper:
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#inference">Installation</a></li>
-        <li><a href="#evaluation">Installation</a></li>
+        <li><a href="#installation">installation</a></li>
+        <li><a href="#inference">inference</a></li>
+        <li><a href="#evaluation">evaluation</a></li>
       </ul>
     </li>
     <li><a href="#contributing">Contributing</a></li>
