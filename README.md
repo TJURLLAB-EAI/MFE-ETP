@@ -75,6 +75,7 @@ This repo contains code for our NeurIPS Datasets and Benchmarks 2024 paper:
 
   ```sh
   conda create -n BLIP-2
+  conda activate BLIP-2
   pip install -r requirement.txt
   ```
 
