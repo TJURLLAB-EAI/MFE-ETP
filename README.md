@@ -74,7 +74,7 @@ This repo contains code for our NeurIPS Datasets and Benchmarks 2024 paper:
    We recommend building a standalone Conda environment for the model you want to use. For example if you want to use BLIP-2:
 
   ```sh
-  conda create -n BLIP-2
+  conda create -n BLIP-2 python=3.10
   conda activate BLIP-2
   pip install -r requirement.txt
   ```
