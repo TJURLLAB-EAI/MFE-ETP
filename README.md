@@ -13,7 +13,7 @@
     </a>
 </p>
 
-This repo contains code for our NeurIPS Datasets and Benchmarks 2024 paper:
+This repo contains benchmark data and code for our NeurIPS Datasets and Benchmarks 2024 paper:
 
 [MFE-ETP: A Comprehensive Evaluation Benchmark for Multi-modal Foundation Models on Embodied Task Planning](https://)
 
