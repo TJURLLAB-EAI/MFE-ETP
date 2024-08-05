@@ -15,7 +15,7 @@
 
 This repo contains benchmark data and code for our NeurIPS Datasets and Benchmarks 2024 paper:
 
-[MFE-ETP: A Comprehensive Evaluation Benchmark for Multi-modal Foundation Models on Embodied Task Planning](https://)
+[MFE-ETP: A Comprehensive Evaluation Benchmark for Multi-modal Foundation Models on Embodied Task Planning](https://mfe-etp.github.io/)
 
 <!--[Baoxiong Jia](https://buzz-beater.github.io/), [Ting Lei](https://scholar.google.com/citations?user=Zk7Vxz0AAAAJ&hl=en), [Song-Chun Zhu](http://www.stat.ucla.edu/~sczhu/), [Siyuan Huang](https://siyuanhuang.com/)-->
 
