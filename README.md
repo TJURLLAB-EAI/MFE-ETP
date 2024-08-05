@@ -5,7 +5,7 @@
     <a href='https://arxiv.org/pdf/2407.05047'>
       <img src='https://img.shields.io/badge/Paper-arXiv-green?style=plastic&logo=arXiv&logoColor=green' alt='Paper arXiv'>
     </a>
-    <a href='https://'>
+    <a href='https://arxiv.org/pdf/2407.05047'>
       <img src='https://img.shields.io/badge/Paper-PDF-red?style=plastic&logo=adobeacrobatreader&logoColor=red' alt='Paper PDF'>
     </a>
     <a href='https://mfe-etp.github.io/'>
