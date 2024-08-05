@@ -2,7 +2,7 @@
 <a name="readme-top"></a>
 
 <p align="left">
-    <a href='http://arxiv.org/abs/'>
+    <a href='https://arxiv.org/pdf/2407.05047'>
       <img src='https://img.shields.io/badge/Paper-arXiv-green?style=plastic&logo=arXiv&logoColor=green' alt='Paper arXiv'>
     </a>
     <a href='https://'>
