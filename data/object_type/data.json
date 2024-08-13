@@ -12,7 +12,7 @@
             "I will supply you with pictures. In each instance, your task is to determine the object's name based on the question's criteria. Ensure that you do not include the robot, robot arm, or robot hand in your responses."
         ],
         "question_type": "open-ended",
-        "task_type": "Understanding",
+        "task_type": "Object Understanding",
         "task_intro": "identify object name/type"
     },
     "data": [

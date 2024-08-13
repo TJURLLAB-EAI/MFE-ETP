@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "dataset": "Goal Undestanding",
+        "dataset": "task_completion_condition",
         "split": "core",
         "num_sample": 50,
         "task_instruction": [
@@ -12,7 +12,7 @@
             "You, functioning as a household robot with two arms, will observe a series of images displayed in the order they were taken. These images chronicle the steps of a task you are currently engaged in, with the last image depicting your most recent progress. There will also be a written explanation of the task. Your role is to evaluate if the task's objective has been reached, in line with the provided description. The answer you provide should be simply 'yes' or 'no'."
         ],
         "question_type": "open-ended",
-        "task_type": "Understanding",
+        "task_type": "Reasoning",
         "task_intro": "Goal understanding: infer whether the goal is achived"
     },
     "data": [

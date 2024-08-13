@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "dataset": "operation",
+        "dataset": "affordance",
         "split": "core",
         "num_sample": 52,
         "task_instruction": [
@@ -12,8 +12,8 @@
             "You function as a state-of-the-art household robot, featuring dual arms for enhanced capabilities. Your tasks will entail the assessment of sequential images illustrating specific activities, complemented by focused questions devised to gauge your decision-making acumen. When providing your response, choose the most appropriate action from the supplied list, enclosed within triple quotes ('''navigate_to, \ngrasp, \nplace_onTop,\nplace_inside,\nopen,\nclose,\nslice,\nwipe,\nwait,\nplace_under,\ntoggle'''), and express it solely as the action name, such as 'Navigate_to' or 'Grasp,' adhering to the question's stipulations."
         ],
         "question_type": "open-ended",
-        "task_type": "Planning",
-        "task_intro": "task planning, long term task decomposition"
+        "task_type": "Knowledge",
+        "task_intro": "Affordance"
     },
     "data": [
         {

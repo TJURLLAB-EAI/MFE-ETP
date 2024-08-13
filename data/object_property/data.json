@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "dataset": "property",
+        "dataset": "object_property",
         "split": "core",
         "num_sample": 154,
         "task_instruction": [
@@ -12,7 +12,7 @@
             "I will supply you with pictures, and each picture will correspond to a question that requires you to identify the possible attribute of a given object. If the object lacks any properties, your answer should be 'None.' The property descriptions, which include property name, annotation, and instances of objects with the property, are formatted in JSON and enclosed within triple quotes. '''{\n\t\"breakable\":{\n\t\t\"annotation\": \"Mark if the object can be broken into smaller pieces by a human dropping it on the floor without a tool.\",\n\t\t\"example_objects\": [\"wine_bottle\", \"room_light\"]\n\t},\n\t\"cleaningTool\":{\n\t\t\"annotation\": \"Is a [object] designed to clean things?\",\n\t\t\"example_objects\": [\"scrub_brush\", \"pipe_cleaner\"]\n\t},\n\t\"cookable\":{\n\t\t\"annotation\": \"Can a [object] be cooked?\",\n\t\t\"example_objects\": [\"biscuit\", \"pizza\", \"apple\"]\n\t},\n\t\"grabbable\":{\n\t\t\"annotation\": \"If an object has this attribute, it is usually lightweight and can be potentially grabbed and picked up by the robot.\",\n\t\t\"example_objects\": [\"apple\", \"bottle\", \"rag\", \"plate\"]\n\t},\n\t\"openable\":{\n\t\t\"annotation\": \"Mark if the object is designed to be opened.\",\n\t\t\"example_objects\": [\"mixer\", \"keg\"]\n\t},\n\t\"sliceable\":{\n\t\t\"annotation\": \"Can a [object] be sliced easily by a human with a knife?\",\n\t\t\"example_objects\": [\"sweet_corn\", \"sandwich\"]\n\t},\n\t\"slicingTool\":{\n\t\t\"annotation\": \"Can a [object] slice an apple?\",\n\t\t\"example_objects\": [\"blade\", \"razor\"]\n\t},\n\t\"toggleable\":{\n\t\t\"annotation\": \"The object can be switched between a finite number of discrete states and is designed to do so.\",\n\t\t\"example_objects\": [\"hot_tub \", \"light_bulb\"]\n\t},\n\t\"waterSource\":{\n\t\t\"annotation\": \"where you can get water\",\n\t\t\"example_objects\": [\"sink\"]\n\t}\n}''' When responding, please exclude the robot, robot arm, and robot hand from your considerations."
         ],
         "question_type": "open-ended",
-        "task_type": "Understanding",
+        "task_type": "Object Understanding",
         "task_intro": "identify property, emphasize object in the image"
     },
     "data": [

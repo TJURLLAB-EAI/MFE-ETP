@@ -12,7 +12,7 @@
             "An array of images showcasing a household task and a distinct question to evaluate your spatial perception will be given to you. Answer in accordance with the question's stipulations."
         ],
         "question_type": "open-ended",
-        "task_type": "Spatiotemporal Perception",
+        "task_type": "Spatio-temporal Perception",
         "task_intro": "spatial perception"
     },
     "data": [

@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "dataset": "sequential_planning",
+        "dataset": "closed-loop_planning",
         "split": "core",
         "num_sample": 92,
         "task_instruction": [
@@ -12,9 +12,8 @@
             "In your role as a dual-armed household robot, you'll be presented with a sequence of images that chronicle the progression of a task. The final image will reflect your current perspective. Additionally, you will receive a textual task description. Your responsibility is to determine the appropriate sequence(s) of actions from four options, aligning with the given task description."
         ],
         "question_type": "open-ended",
-        "prompt_type": "multi_img_text",
-        "task_type": "Embodied Reasoning",
-        "task_intro": "sequential planning"
+        "task_type": "Planning",
+        "task_intro": "closed-loop_planning"
     },
     "data": [
         {

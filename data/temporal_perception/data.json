@@ -12,7 +12,7 @@
             "You will receive a variety of images displaying a household task along with a specific question meant to assess your temporal perception. Respond according to the question's guidelines."
         ],
         "question_type": "open-ended",
-        "task_type": "Spatiotemporal Perception",
+        "task_type": "Spatio-temporal Perception",
         "task_intro": "time perception: Percept the time order of sequence images, or Predict the next state"
     },
     "data": [

@@ -1,6 +1,6 @@
 {
     "metadata": {
-        "dataset": "relevant_object",
+        "dataset": "task_related_object",
         "num_sample": 50,
         "task_instruction": [
             "I will provide you with a series of images and a corresponding question. In each image set, you will find numbered objects. Your task is to identify the most appropriate object number and name it according to the question's description. Please respond with only the number and the object name, such as '2. Garbage can.' Exclude any references to robots while answering the questions.",
@@ -9,7 +9,9 @@
             "Anticipate a collection of images paired with associated questions. In each group of images, numbered objects will be present. Your task is to discern the most appropriate object number and label it based on the question's description. Respond with just the number and the object's name, such as '2. Garbage can.' Exclude any references to robots in your responses.",
             "I will present you with a series of images and a question that corresponds to each set of images. In each image grouping, you will encounter objects marked with numbers. Your duty is to determine the most suitable object number and provide its name in accordance with the question's context. Your response should consist of the number and the object's name only, like '2. Garbage can.' Avoid mentioning robots when answering.",
             "You can expect to receive a set of images alongside a question related to each image set. Within these image sets, you will find objects labeled with numbers. Your task is to identify the most appropriate object number and assign it a name based on the question's description. Please respond by stating the number and the object's name only, as in '2. Garbage can.' Ensure that your answers do not include any references to robots."
-        ]
+        ],
+        "question_type": "open-ended",
+        "task_type": "Reasoning",
     },
     "data": [
         {
