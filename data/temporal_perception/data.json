@@ -2,7 +2,7 @@
     "metadata": {
         "dataset": "time_perception",
         "split": "core",
-        "num_sample": 60,
+        "num_sample": 100,
         "task_instruction": [
             "You will be given a sequence of images depicting a household chore and a specific question to assess your temporal perception skills. Respond according to the question's instructions.",
             "A set of images illustrating a household task and a particular question to evaluate your temporal perception will be provided to you. Answer in compliance with the question's criteria.",
@@ -58,6 +58,23 @@
         },
         {
             "sample_id": 2,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "The task is to pick up the towel on the kitchencounter and wash it under the faucet, then use the towel to clean the sneaker on the floor, and put the sneaker under the table. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_sneakers_0.jpg",
+                    "cleaning_sneakers_1.jpg",
+                    "cleaning_sneakers_2.jpg",
+                    "cleaning_sneakers_3.jpg",
+                    "cleaning_sneakers_4.jpg",
+                    "cleaning_sneakers_5.jpg",
+                    "cleaning_sneakers_6.jpg"
+                ]
+            },
+            "response": "1, 3, 2, 5, 6, 4, 7"
+        },
+        {
+            "sample_id": 3,
             "task_instruction_id": 0,
             "task_instance": {
                 "context": "The task is to open the refrigerator,remove the food from the refrigerator and put them on the table in the order of salad, chicken, cookies. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -74,7 +91,7 @@
             "response": "1, 5, 4, 3, 6, 7, 2"
         },
         {
-            "sample_id": 3,
+            "sample_id": 4,
             "task_instruction_id": 5,
             "task_instance": {
                 "context": "The task is to pick up the markers and go to put them into the basket, and pick up the screwdriver in the cabinet and go to throw it into the trashbin. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -90,7 +107,7 @@
             "response": "2, 6, 3, 4, 1, 5"
         },
         {
-            "sample_id": 4,
+            "sample_id": 5,
             "task_instruction_id": 5,
             "task_instance": {
                 "context": "The task is to pick up and put the hamburger into the pack, and use the rag to wipe the bowl, cup, plate and chair in order. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -106,7 +123,7 @@
             "response": "6, 2, 5, 4, 3, 1"
         },
         {
-            "sample_id": 5,
+            "sample_id": 6,
             "task_instruction_id": 3,
             "task_instance": {
                 "context": "The task is to open the cupboard, pick up the rag inside it and go to wash the rag, then wipe the cabinet using the rag. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -122,7 +139,7 @@
             "response": "4, 6, 1, 5, 3, 2"
         },
         {
-            "sample_id": 6,
+            "sample_id": 7,
             "task_instruction_id": 1,
             "task_instance": {
                 "context": "The task is to pack the food into the carton. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -141,7 +158,7 @@
             "response": "7, 6, 2, 4, 5, 1, 3, 8, 9"
         },
         {
-            "sample_id": 7,
+            "sample_id": 8,
             "task_instruction_id": 3,
             "task_instance": {
                 "context": "The task is to pick up the hat on the closet's floor and go to put it into the cabinet in the bedroom. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -157,7 +174,38 @@
             "response": "1, 3, 5, 6, 2, 4"
         },
         {
-            "sample_id": 8,
+            "sample_id": 9,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "The task is to pick up the rag on the kitchencounter and wash it, then wipe the pot using the rag and put the cleaned pot into the cabinet. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "washing_pots_and_pans_0.jpg",
+                    "washing_pots_and_pans_1.jpg",
+                    "washing_pots_and_pans_2.jpg",
+                    "washing_pots_and_pans_3.jpg",
+                    "washing_pots_and_pans_4.jpg"
+                ]
+            },
+            "response": "2, 4, 1, 5, 3"
+        },
+        {
+            "sample_id": 10,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is to fetch out the decorations from the box and put them on the table in the order of bow, wreath, candle. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "putting_up_Christmas_decorations_inside_0.jpg",
+                    "putting_up_Christmas_decorations_inside_1.jpg",
+                    "putting_up_Christmas_decorations_inside_2.jpg",
+                    "putting_up_Christmas_decorations_inside_3.jpg",
+                    "putting_up_Christmas_decorations_inside_4.jpg",
+                    "putting_up_Christmas_decorations_inside_5.jpg"
+                ]
+            },
+            "response": "5, 2, 3, 1, 4, 6"
+        },
+        {
+            "sample_id": 11,
             "task_instruction_id": 4,
             "task_instance": {
                 "context": "The task is to pick up the sweater and put it into the box, then pick up shirts and put them into the box. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -173,7 +221,7 @@
             "response": "4, 5, 3, 2, 6, 1"
         },
         {
-            "sample_id": 9,
+            "sample_id": 12,
             "task_instruction_id": 4,
             "task_instance": {
                 "context": "The task is to open the drawer, fetch out the rag and wash it, then open the refrigerator and wipe it using the rag, finally close the refrigerator. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -189,7 +237,7 @@
             "response": "6, 2, 1, 4, 3, 5"
         },
         {
-            "sample_id": 10,
+            "sample_id": 13,
             "task_instruction_id": 0,
             "task_instance": {
                 "context": "The task is to grab the pot and put it into the stove, then pick up the meat and put it into the refrigerator. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -203,7 +251,7 @@
             "response": "4, 3, 1, 2"
         },
         {
-            "sample_id": 11,
+            "sample_id": 14,
             "task_instruction_id": 3,
             "task_instance": {
                 "context": "The task is to put the newspapers together. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -218,7 +266,7 @@
             "response": "5, 2, 1, 3, 4"
         },
         {
-            "sample_id": 12,
+            "sample_id": 15,
             "task_instruction_id": 5,
             "task_instance": {
                 "context": "The task is to open the refrigerator and pick up the sauce and go to put them into the refrigerator. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -233,7 +281,7 @@
             "response": "4, 2, 3, 1, 5"
         },
         {
-            "sample_id": 13,
+            "sample_id": 16,
             "task_instruction_id": 0,
             "task_instance": {
                 "context": "The task is to move away the bucket and open the drawer, pick up the chips and put them into the drawer. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -248,7 +296,7 @@
             "response": "3, 4, 5, 1, 2"
         },
         {
-            "sample_id": 14,
+            "sample_id": 17,
             "task_instruction_id": 4,
             "task_instance": {
                 "context": "The task is to pick up the books on the table and go to put them on the bookshelf. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -262,7 +310,7 @@
             "response": "4, 1, 2, 3"
         },
         {
-            "sample_id": 15,
+            "sample_id": 18,
             "task_instruction_id": 2,
             "task_instance": {
                 "context": "The task is to clear the table, put the dishes into the bucket. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -280,7 +328,7 @@
             "response": "6, 8, 1, 5, 7, 4, 3, 2"
         },
         {
-            "sample_id": 16,
+            "sample_id": 19,
             "task_instruction_id": 2,
             "task_instance": {
                 "context": "The task is to open the bag and pack the mouse into the bag. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -294,7 +342,7 @@
             "response": "1, 4, 3, 2"
         },
         {
-            "sample_id": 17,
+            "sample_id": 20,
             "task_instruction_id": 0,
             "task_instance": {
                 "context": "Put the underwares, shampoo and hardback on the bed into the backpack. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -311,7 +359,23 @@
             "response": "6, 5, 4, 3, 7, 1, 2"
         },
         {
-            "sample_id": 18,
+            "sample_id": 21,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "The task is to pick up the pumpkin and put it into the drawer, next pick up the candles and put them into the drawer. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "putting_away_Halloween_decorations_0.jpg",
+                    "putting_away_Halloween_decorations_1.jpg",
+                    "putting_away_Halloween_decorations_2.jpg",
+                    "putting_away_Halloween_decorations_3.jpg",
+                    "putting_away_Halloween_decorations_4.jpg",
+                    "putting_away_Halloween_decorations_5.jpg"
+                ]
+            },
+            "response": "5, 4, 1, 2, 3, 6"
+        },
+        {
+            "sample_id": 22,
             "task_instruction_id": 5,
             "task_instance": {
                 "context": "The task is to open the refrigerator, fetch out the fish inside the refrigerator and put it beside the sink. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -325,7 +389,7 @@
             "response": "3, 1, 4, 2"
         },
         {
-            "sample_id": 19,
+            "sample_id": 23,
             "task_instruction_id": 4,
             "task_instance": {
                 "context": "The task is to open the dishwasher, put the cup and the plate into it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -341,7 +405,7 @@
             "response": "5, 4, 2, 1, 3, 6"
         },
         {
-            "sample_id": 20,
+            "sample_id": 24,
             "task_instruction_id": 3,
             "task_instance": {
                 "context": "The task is to pick up the backpack and open it, next pick up the book and put it into the backpack, then pick up the earphone and put it into the backpack. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -357,7 +421,7 @@
             "response": "3, 1, 2, 5, 4, 6"
         },
         {
-            "sample_id": 21,
+            "sample_id": 25,
             "task_instruction_id": 1,
             "task_instance": {
                 "context": "The task is to move away the chair, reach the book under the table and put it on the table. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -371,7 +435,7 @@
             "response": "3, 2, 4, 1"
         },
         {
-            "sample_id": 22,
+            "sample_id": 26,
             "task_instruction_id": 2,
             "task_instance": {
                 "context": "The task is to fetch out the chip from the closed cabinet and put it into the carton. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -387,7 +451,7 @@
             "response": "4, 3, 5, 1, 2, 6"
         },
         {
-            "sample_id": 23,
+            "sample_id": 27,
             "task_instruction_id": 5,
             "task_instance": {
                 "context": "The task is to pick up the books on the table and put them on the bookshelf. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -401,7 +465,7 @@
             "response": "2, 1, 3, 4"
         },
         {
-            "sample_id": 24,
+            "sample_id": 28,
             "task_instruction_id": 2,
             "task_instance": {
                 "context": "The task is to clean the stained floor. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -414,7 +478,7 @@
             "response": "2, 1, 3"
         },
         {
-            "sample_id": 25,
+            "sample_id": 29,
             "task_instruction_id": 0,
             "task_instance": {
                 "context": "The task is to pick up the duffel bag and the headset and go to put them into the car. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -429,7 +493,7 @@
             "response": "3, 4, 2, 5, 1"
         },
         {
-            "sample_id": 26,
+            "sample_id": 30,
             "task_instruction_id": 2,
             "task_instance": {
                 "context": "The task is to clean the stove. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -444,7 +508,7 @@
             "response": "4, 2, 3, 1, 5"
         },
         {
-            "sample_id": 27,
+            "sample_id": 31,
             "task_instruction_id": 0,
             "task_instance": {
                 "context": "The task is to open the drawer and pick up the rags in it, then wash the rags and use it to wipe the window. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -458,7 +522,7 @@
             "response": "3, 4, 1, 2"
         },
         {
-            "sample_id": 28,
+            "sample_id": 32,
             "task_instruction_id": 0,
             "task_instance": {
                 "context": "The task is to fetch out the bottle in the freezer, then pick up the rag on kitchencounter and wash it and wipe the freezer using it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -474,7 +538,22 @@
             "response": "6, 5, 3, 1, 4, 2"
         },
         {
-            "sample_id": 29,
+            "sample_id": 33,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is to fold up to close the box. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "moving_boxes_to_storage_0.jpg",
+                    "moving_boxes_to_storage_1.jpg",
+                    "moving_boxes_to_storage_2.jpg",
+                    "moving_boxes_to_storage_3.jpg",
+                    "moving_boxes_to_storage_4.jpg"
+                ]
+            },
+            "response": "5, 3, 2, 1, 4"
+        },
+        {
+            "sample_id": 34,
             "task_instruction_id": 1,
             "task_instance": {
                 "context": "The task is to fetch out the brush from the drawer and wash it under the faucet, then clean the oven with it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -488,7 +567,7 @@
             "response": "2, 3, 4, 1"
         },
         {
-            "sample_id": 30,
+            "sample_id": 35,
             "task_instruction_id": 5,
             "task_instance": {
                 "context": "The task is to pick up the grill on the floor and go to put it on the washing machine. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -502,7 +581,7 @@
             "response": "3, 2, 4, 1"
         },
         {
-            "sample_id": 31,
+            "sample_id": 36,
             "task_instruction_id": 4,
             "task_instance": {
                 "context": "The task is to wash the brush and clean the bathtub with it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -515,7 +594,7 @@
             "response": "1, 2, 3"
         },
         {
-            "sample_id": 32,
+            "sample_id": 37,
             "task_instruction_id": 3,
             "task_instance": {
                 "context": "The task is to open the microwave, pick up the rag and wipe the microwave using it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -528,7 +607,7 @@
             "response": "3, 2, 1"
         },
         {
-            "sample_id": 33,
+            "sample_id": 38,
             "task_instruction_id": 1,
             "task_instance": {
                 "context": "The task is to pick up the rag behind the faucet and wipe the table with it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -542,7 +621,7 @@
             "response": "3, 4, 2, 1"
         },
         {
-            "sample_id": 34,
+            "sample_id": 39,
             "task_instruction_id": 4,
             "task_instance": {
                 "context": "The task is to pick up the vacuum and vacuum using it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -554,7 +633,7 @@
             "response": "2, 1"
         },
         {
-            "sample_id": 35,
+            "sample_id": 40,
             "task_instruction_id": 3,
             "task_instance": {
                 "context": "The task is to get the bow from the table and put it in the box. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -567,7 +646,7 @@
             "response": "3, 2, 1"
         },
         {
-            "sample_id": 36,
+            "sample_id": 41,
             "task_instruction_id": 5,
             "task_instance": {
                 "context": "The task is to open the refrigerator door and take out the food inside and put it on the kitchencounter. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -582,7 +661,7 @@
             "response": "1, 4, 2, 5, 3"
         },
         {
-            "sample_id": 37,
+            "sample_id": 42,
             "task_instruction_id": 1,
             "task_instance": {
                 "context": "The task is to pick up the book on the bookshelf and put it into the box. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -595,7 +674,7 @@
             "response": "1, 3, 2"
         },
         {
-            "sample_id": 38,
+            "sample_id": 43,
             "task_instruction_id": 2,
             "task_instance": {
                 "context": "The task is to cut the tomato and pick it up and put it into the pot. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -609,7 +688,7 @@
             "response": "1, 2, 3, 4"
         },
         {
-            "sample_id": 39,
+            "sample_id": 44,
             "task_instruction_id": 4,
             "task_instance": {
                 "context": "The task is to pick up the rag and use it to wipe the stains on the bathtub. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -622,7 +701,7 @@
             "response": "2, 3, 1"
         },
         {
-            "sample_id": 40,
+            "sample_id": 45,
             "task_instruction_id": 5,
             "task_instance": {
                 "context": "The task is to pick up the cloth on the bed and put it into the cabinet. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -635,11 +714,10 @@
             "response": "1, 3, 2"
         },
         {
-            "sample_id": 41,
+            "sample_id": 46,
             "task_instruction_id": 2,
             "task_instance": {
                 "context": "The task is to put the ball, eggs, bows, and candies equally into the two baskets. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
-                "old_context": "The task is to pick up the ball on the table and put it into the basket. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
                 "images_path": [
                     "filling_an_Easter_basket_0.jpg",
                     "filling_an_Easter_basket_1.jpg",
@@ -649,7 +727,7 @@
             "response": "2, 1, 3"
         },
         {
-            "sample_id": 42,
+            "sample_id": 47,
             "task_instruction_id": 2,
             "task_instance": {
                 "context": "The task is to take the lollipop out of the bucket and put it in the stocking. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -662,7 +740,7 @@
             "response": "1, 3, 2"
         },
         {
-            "sample_id": 43,
+            "sample_id": 48,
             "task_instruction_id": 4,
             "task_instance": {
                 "context": "The task is to add the tea bag and water to the teapot and boil the tea. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -676,7 +754,7 @@
             "response": "2, 1, 3, 4"
         },
         {
-            "sample_id": 44,
+            "sample_id": 49,
             "task_instruction_id": 2,
             "task_instance": {
                 "context": "The task is to put the vegetables on the plate to make salad. There are more and more vegetables on the plate. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -690,120 +768,120 @@
             "response": "1, 3, 2, 4"
         },
         {
-            "sample_id": 45,
+            "sample_id": 50,
             "task_instruction_id": 5,
             "task_instance": {
-                "context": "Qustion: The robot are trying to open the door. Predict whether the door can be opened successfully. Your response should be a concise 'yes' or 'no', . Your answer is: yes",
+                "context": "The task is openning the door. Given the image, predict how the environment's state will change next. Focus on how the objects and surroundings may be altered as the robot continues its task.",
                 "images_path": [
                     "mopping_floors_3.jpg"
                 ]
             },
-            "response": "No."
+            "response": "The robot successfully opened the door."
         },
         {
-            "sample_id": 46,
+            "sample_id": 51,
             "task_instruction_id": 5,
             "task_instance": {
-                "context": "Qustion: The task is to open the drawer., Predict whether the drawer can be opened successfully? You need to assess if the action can be flawlessly executed, based on the current snapshot depicted in the image. Your response should be a concise 'yes' or 'no', focusing solely on the execution of the action and the interaction between the hand and objects, such as the appropriateness of the hand's grip. Other factors are to be disregarded. Your evaluation should be based on whether the action can be successfully completed in the immediate subsequent frame. Your answer is:",
+                "context": "The task is openning the drawer. Given the image, predict how the environment's state will change next. Focus on how the objects and surroundings may be altered as the robot continues its task.",
                 "images_path": [
                     "storing_food_5.jpg"
                 ]
             },
-            "response": "No."
+            "response": "The robot successfully opened the drawer."
         },
         {
-            "sample_id": 47,
+            "sample_id": 52,
             "task_instruction_id": 2,
             "task_instance": {
-                "context": "Qustion:  In the current image, the robot are trying to open the door. Predict whether the door can be opened successfully. Your response should be a concise 'yes' or 'no', Your answer is:",
+                "context": "The task is openning the car door. Given the image, predict how the environment's state will change next. Focus on how the objects and surroundings may be altered as the robot continues its task.",
                 "images_path": [
                     "packing_car_for_trip_5.jpg"
                 ]
             },
-            "response": "No."
+            "response": "The robot successfully opened the car door."
         },
         {
-            "sample_id": 48,
+            "sample_id": 53,
             "task_instruction_id": 2,
             "task_instance": {
-                "context": "Qustion: The task is wiping the beside cupboard. Predict whether the lamp will be knocked over? You need to assess if the action can be flawlessly executed, based on the current snapshot depicted in the image. Your response should be a concise 'yes' or 'no', focusing solely on the execution of the action and the interaction between the hand and objects, such as the appropriateness of the hand's grip. Other factors are to be disregarded. Your evaluation should be based on whether the action can be successfully completed in the immediate subsequent frame. Your answer is:",
+                "context": "The task is wiping the beside cupboard. Given the sequence of images, predict how the environment's state will change next. Focus on how the objects and surroundings may be altered as the robot continues its task.",
                 "images_path": [
                     "cleaning_cupboards_6.jpg",
                     "cleaning_cupboards_7.jpg"
                 ]
             },
-            "response": "Yes."
+            "response": "The robot accidentally knocked over the lamp while cleaning the cupboard."
         },
         {
-            "sample_id": 49,
+            "sample_id": 54,
             "task_instruction_id": 5,
             "task_instance": {
-                "context": "Qustion: The task is to open the stove. Predict whether the stove will be opened successfully? You need to assess if the action can be flawlessly executed, based on the current snapshot depicted in the image. Your response should be a concise 'yes' or 'no', focusing solely on the execution of the action and the interaction between the hand and objects, such as the appropriateness of the hand's grip. Other factors are to be disregarded. Your evaluation should be based on whether the action can be successfully completed in the immediate subsequent frame. Your answer is:",
+                "context": "The task is openning the stove. Given the sequence of images, predict how the environment's state will change next. Focus on how the objects and surroundings may be altered as the robot continues its task.",
                 "images_path": [
                     "cleaning_stove_5.jpg",
                     "cleaning_stove_6.jpg"
                 ]
             },
-            "response": "No."
+            "response": "The robot failed to open the stove because its hand failed to grasp the handle."
         },
         {
-            "sample_id": 50,
+            "sample_id": 55,
             "task_instruction_id": 5,
             "task_instance": {
-                "context": "Question: In the current image, the robot are trying to pull out the drawer. Predict whether the drawer will be pulled out successfully? Your response should be a concise 'yes' or 'no'. Your answer is:",
+                "context": "The task is openning the drawer. Given the image, predict how the environment's state will change next. Focus on how the objects and surroundings may be altered as the robot continues its task.",
                 "images_path": [
                     "cleaning_windows_5.jpg"
                 ]
             },
-            "response": "Yes."
+            "response": "The robot successfully opened the drawer."
         },
         {
-            "sample_id": 51,
+            "sample_id": 56,
             "task_instruction_id": 0,
             "task_instance": {
-                "context": "Question: In the current image, the robot are trying to throw the cup into the bucket. Predict whether the cup will be thrown into the bucket successfully? Your response should be a concise 'yes' or 'no'. Your answer is:",
+                "context": "The task is throwing the cup into the bucket. Given the image, predict how the environment's state will change next. Focus on how the objects and surroundings may be altered as the robot continues its task.",
                 "images_path": [
                     "clearing_the_table_after_dinner_8.jpg"
                 ]
             },
-            "response": "Yes."
+            "response": "The robot successfully threw the cup into the bucket."
         },
         {
-            "sample_id": 52,
+            "sample_id": 57,
             "task_instruction_id": 3,
             "task_instance": {
-                "context": "Qustion: In the current image, the robot are trying to open the refrigerator. Predict whether the refrigerator will be opened? Your response should be a concise 'yes' or 'no', Your answer is:",
+                "context": "The task is openning the fridge. Given the sequence of images, predict how the environment's state will change next. Focus on how the objects and surroundings may be altered as the robot continues its task.",
                 "images_path": [
                     "packing_food_for_work_6.jpg",
                     "packing_food_for_work_7.jpg"
                 ]
             },
-            "response": "No."
+            "response": "The robot failed to open the fridge because its hand failed to grasp the handle."
         },
         {
-            "sample_id": 53,
+            "sample_id": 58,
             "task_instruction_id": 3,
             "task_instance": {
-                "context": "Qustion: The task is holding the plate. Predict whether the plate will fall down? You need to assess if the action can be flawlessly executed, based on the current snapshot depicted in the image. Your response should be a concise 'yes' or 'no', focusing solely on the execution of the action and the interaction between the hand and objects, such as the appropriateness of the hand's grip. Other factors are to be disregarded. Your evaluation should be based on whether the action can be successfully completed in the immediate subsequent frame. Your answer is:",
+                "context": "The task is grabbing the plate and putting it into the oven. Given the image, predict how the environment's state will change next. Focus on how the objects and surroundings may be altered as the robot continues its task.",
                 "images_path": [
                     "preparing_salad_4.jpg"
                 ]
             },
-            "response": "Yes."
+            "response": "The robot will lose its grip on the plate and it will fall to the floor."
         },
         {
-            "sample_id": 54,
+            "sample_id": 59,
             "task_instruction_id": 2,
             "task_instance": {
-                "context": "Qustion: The task is to pull out the door. Predict whether the door will be opened suucessfully? You need to assess if the action can be flawlessly executed, based on the current snapshot depicted in the image. Your response should be a concise 'yes' or 'no', focusing solely on the execution of the action and the interaction between the hand and objects, such as the appropriateness of the hand's grip. Other factors are to be disregarded. Your evaluation should be based on whether the action can be successfully completed in the immediate subsequent frame. Your answer is:",
+                "context": "The task is openning the door. Given the image, predict how the environment's state will change next. Focus on how the objects and surroundings may be altered as the robot continues its task.",
                 "images_path": [
                     "vacuuming_floors_2.jpg"
                 ]
             },
-            "response": "No."
+            "response": "The robot successfully opened the door."
         },
         {
-            "sample_id": 55,
+            "sample_id": 60,
             "task_instruction_id": 1,
             "task_instance": {
                 "context": "The task is to pick up the rag on the floor and go to wash it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -816,7 +894,7 @@
             "response": "3,2,1"
         },
         {
-            "sample_id": 56,
+            "sample_id": 61,
             "task_instruction_id": 5,
             "task_instance": {
                 "context": "The task is to pick up the brush on the floor and go to wash it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -829,7 +907,7 @@
             "response": "3,1,2"
         },
         {
-            "sample_id": 57,
+            "sample_id": 62,
             "task_instruction_id": 5,
             "task_instance": {
                 "context": "The task is to clean the toilet with the scrub brush on the floor. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -844,7 +922,7 @@
             "response": "2, 1, 3, 4, 5"
         },
         {
-            "sample_id": 58,
+            "sample_id": 63,
             "task_instruction_id": 4,
             "task_instance": {
                 "context": "The task is to defrost the freezer with the scraper on the countertop. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -857,7 +935,7 @@
             "response": "2, 3, 1"
         },
         {
-            "sample_id": 59,
+            "sample_id": 64,
             "task_instruction_id": 2,
             "task_instance": {
                 "context": "The task is to Put the salad on the table. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
@@ -868,6 +946,461 @@
                 ]
             },
             "response": "3, 1, 2"
+        },
+        {
+            "sample_id": 65,
+            "task_instance": {
+                "task_name": "organize other misplaced items",
+                "images_path": [
+                    "re-shelving_books_4_t1.png",
+                    "re-shelving_books_4_t2.png"
+                ],
+                "context": "The task is to put the misplaced books back on the bookshelf, and organize other misplaced items on the floor. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot picked up the apple and the phone on the floor.",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 66,
+            "task_instance": {
+                "task_name": "organize other misplaced items",
+                "images_path": [
+                    "re-shelving_books_4_t1.png",
+                    "re-shelving_books_4_t3.png"
+                ],
+                "context": "The task is to put the misplaced books back on the bookshelf, and organize other misplaced items on the floor. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot picked up the apple, the phone and the book on the floor.",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 67,
+            "task_instance": {
+                "task_name": "organize other misplaced items",
+                "images_path": [
+                    "re-shelving_books_4_t1.png",
+                    "re-shelving_books_4_t4.png"
+                ],
+                "context": "The task is to put the misplaced books back on the bookshelf, and organize other misplaced items on the floor. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot picked up the apple, the phone and the book on the floor, and picked up the fallen book on the shelf.",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 68,
+            "task_instance": {
+                "task_name": "re-shelving_books",
+                "images_path": [
+                    "re-shelving_books_2_t1.png",
+                    "re-shelving_books_2_t2.png"
+                ],
+                "context": "The task is to put the misplaced books or folder back on the bookshelf. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot put the book and the folder onto the bookshelf.",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 69,
+            "task_instance": {
+                "task_name": "re-shelving_books",
+                "images_path": [
+                    "re-shelving_books_1_t1.png",
+                    "re-shelving_books_1_t2.png"
+                ],
+                "context": "The task is to put the misplaced books or folder back on the bookshelf. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot put the folder onto the bookshelf.",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 70,
+            "task_instance": {
+                "task_name": "organize_bedroom",
+                "images_path": [
+                    "organize_bedroom_1_t1.png",
+                    "organize_bedroom_1_t2.png"
+                ],
+                "context": "The task is to make the bed. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot put a pillow on the floor on the bed.",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 71,
+            "task_instance": {
+                "task_name": "organize_livingroom",
+                "images_path": [
+                    "organize_livingroom_1_t1.png",
+                    "organize_livingroom_1_t2_1.png"
+                ],
+                "context": "The task is to tidy up the room and put all misplaced items in their proper places. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot put the pillows on the sofa, picked up the book on the coffee table and picked up the remote control on the floor.",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 72,
+            "task_instance": {
+                "task_name": "organize_livingroom",
+                "images_path": [
+                    "organize_livingroom_1_t1.png",
+                    "organize_livingroom_1_t3_1.png"
+                ],
+                "context": "The task is to tidy up the room and put all misplaced items in their proper places. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot put the pillows on the floor on the sofa, picked up the books on the coffee table and put the fruit scattered on the coffee table in the fruit bowl, and picked up the remote control and mobile phone on the floor.",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 73,
+            "task_instance": {
+                "task_name": "prepare_afternoon_tea",
+                "images_path": [
+                    "prepare_afternoon_tea_1_t1.png",
+                    "prepare_afternoon_tea_1_t2.png"
+                ],
+                "context": "The task is to place the cream products and coffee on the coffee table in the bedroom. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot took a cake off the table.",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 74,
+            "task_instance": {
+                "task_name": "prepare_afternoon_tea",
+                "images_path": [
+                    "prepare_afternoon_tea_1_t1.png",
+                    "prepare_afternoon_tea_1_t3.png"
+                ],
+                "context": "The task is to place the cream products and coffee on the coffee table in the bedroom. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot took two cakes off the table.",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 75,
+            "task_instance": {
+                "task_name": "prepare_afternoon_tea",
+                "images_path": [
+                    "prepare_afternoon_tea_1_t1.png",
+                    "prepare_afternoon_tea_1_t4.png"
+                ],
+                "context": "The task is to place the cream products and coffee on the coffee table in the bedroom. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot took two cakes and a cup off the table.",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 76,
+            "task_instance": {
+                "task_name": "organize_washstand",
+                "images_path": [
+                    "organize_washstand_1_t1.png",
+                    "organize_washstand_1_t2.png"
+                ],
+                "context": "The task is to store everything on the sink except for the soap in the cabinet. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot opened the cabinet.",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 77,
+            "task_instance": {
+                "task_name": "clean_kitchen_appliances",
+                "images_path": [
+                    "clean_kitchen_appliances_1_t1.png",
+                    "clean_kitchen_appliances_1_t2.png"
+                ],
+                "context": "The task is to clean the microwave, and wipe it with the cleaning tool near it. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot took the pie from the microwave and the salmon from the microwave and cleaned the microwave.",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 78,
+            "task_instance": {
+                "task_name": "clean_table_after_dinner",
+                "images_path": [
+                    "clean_table_after_dinner_1_t1.png",
+                    "clean_table_after_dinner_1_t2.png"
+                ],
+                "context": "The task is to clean the dinner table, clean away the food into the trashcan and place the various utensils in the sink. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot took the fruit and snack boxe from the dining table.",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 79,
+            "task_instance": {
+                "task_name": "clean_table_after_dinner",
+                "images_path": [
+                    "clean_table_after_dinner_1_t1.png",
+                    "clean_table_after_dinner_1_t3.png"
+                ],
+                "context": "The task is to clean the dinner table, clean away the food into the trashcan and place the various utensils in the sink. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot took the fruit and snack boxe, knife and cup from the table.",
+            "task_instruction_id": 2
+        },
+        {
+            "sample_id": 80,
+            "task_instance": {
+                "task_name": "clean_table_after_dinner",
+                "images_path": [
+                    "clean_table_after_dinner_1_t1.png",
+                    "clean_table_after_dinner_1_t4.png"
+                ],
+                "context": "The task is to clean the dinner table, clean away the food into the trashcan and place the various utensils in the sink. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot took the fruit, snack boxe, knife, cup and fork from the table.",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 81,
+            "task_instance": {
+                "task_name": "clean_table_after_dinner",
+                "images_path": [
+                    "clean_table_after_dinner_1_t1.png",
+                    "clean_table_after_dinner_1_t5.png"
+                ],
+                "context": "The task is to clean the dinner table, clean away the food into the trashcan and place the various utensils in the sink. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot took the fruit, snack boxe, plate, knife, cup and fork from the table.",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 82,
+            "task_instance": {
+                "task_name": "clean_table_after_dinner",
+                "images_path": [
+                    "clean_table_after_dinner_2_t1.png",
+                    "clean_table_after_dinner_2_t2.png"
+                ],
+                "context": "The task is to tidy up the dinner table. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot took chips, cookies, cake boxes, chocolate sauce, pies, fruit from the table.",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 83,
+            "task_instance": {
+                "task_name": "preserve_food",
+                "images_path": [
+                    "preserve_food_1_t1.png",
+                    "preserve_food_1_t2.png"
+                ],
+                "context": "The task is to store the foods on the table. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot put the pie on the table in the microwave.",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 84,
+            "task_instance": {
+                "task_name": "preserve_food",
+                "images_path": [
+                    "preserve_food_1_t1.png",
+                    "preserve_food_1_t3.png"
+                ],
+                "context": "The task is to store the foods on the table. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot put the pie on the table on the microwave.",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 85,
+            "task_instance": {
+                "task_name": "preserve_food",
+                "images_path": [
+                    "preserve_food_2_t1.png",
+                    "preserve_food_2_t2.png"
+                ],
+                "context": "The task is to store the fruits and other food from the dinner table in the refrigerator and on top of the microwave respectively. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot put the pie on the table on the microwave.",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 86,
+            "task_instance": {
+                "task_name": "preserve_food",
+                "images_path": [
+                    "preserve_food_2_t1.png",
+                    "preserve_food_2_t3.png"
+                ],
+                "context": "The task is to store the fruits and other food from the dinner table in the refrigerator and on top of the microwave respectively. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot put the pie on the table on the microwave, and open the microwave.",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 87,
+            "task_instance": {
+                "task_name": "preserve_food",
+                "images_path": [
+                    "preserve_food_2_t1.png",
+                    "preserve_food_2_t4.png"
+                ],
+                "context": "The task is to store the fruits and other food from the dinner table in the refrigerator and on top of the microwave respectively. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot put the pie on the table on the microwave, open the microwave and open the refrigerator.",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 88,
+            "task_instance": {
+                "task_name": "put_plates_in_dishwasher",
+                "images_path": [
+                    "put_plates_in_dishwasher_1_t1.png",
+                    "put_plates_in_dishwasher_1_t2.png"
+                ],
+                "context": "The task is to put the plates into the dishwasher. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot loaded two dishes from the dining table into the dishwasher.",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 89,
+            "task_instance": {
+                "task_name": "put_plates_in_dishwasher",
+                "images_path": [
+                    "put_plates_in_dishwasher_1_t1.png",
+                    "put_plates_in_dishwasher_1_t3.png"
+                ],
+                "context": "The task is to put the plates into the dishwasher. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot loaded all four dishes from the dining table into the dishwasher.",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 90,
+            "task_instance": {
+                "task_name": "put_plates_in_dishwasher",
+                "images_path": [
+                    "put_plates_in_dishwasher_2_t1.png",
+                    "put_plates_in_dishwasher_2_t2.png"
+                ],
+                "context": "The task is to put the plates into the dishwasher. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot loaded a dishe from the dining table into the dishwasher.",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 91,
+            "task_instance": {
+                "task_name": "serve_a_meal",
+                "images_path": [
+                    "server_a_meal_1_t1.png",
+                    "server_a_meal_1_t2.png"
+                ],
+                "context": "The task is to take bread slices, bell peppers, apple, salmon and pie from the kitchen counter to the dinner table to make a meal for two person. In the sequence, one critical action frame is removed. Can you deduce the taskthe robot performed by comparing the preceding and following images? Pay attentionto the interaction with objects and the robot's positioning to make your inference."
+            },
+            "response": "The robot placed two slices of bread from the toaster on two separate plates.",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 92,
+            "task_instance": {
+                "task_name": "serve_a_meal",
+                "images_path": [
+                    "server_a_meal_1_t1.png",
+                    "server_a_meal_1_t3.png"
+                ],
+                "context": "The task is to take bread slices, bell peppers, apple, salmon and pie from the kitchen counter to the dinner table to make a meal for two person. In the sequence, one critical action frame is removed. Can you deduce the taskthe robot performed by comparing the preceding and following images? Pay attentionto the interaction with objects and the robot's positioning to make your inference."
+            },
+            "response": "The robot placed two slices of bread from the toaster on two separate plates, and put the pie on the table.",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 93,
+            "task_instance": {
+                "task_name": "serve_a_meal",
+                "images_path": [
+                    "server_a_meal_1_t1.png",
+                    "server_a_meal_1_t4.png"
+                ],
+                "context": "The task is to take bread slices, bell peppers, apple, salmon and pie from the kitchen counter to the dinner table to make a meal for two person. In the sequence, one critical action frame is removed. Can you deduce the taskthe robot performed by comparing the preceding and following images? Pay attentionto the interaction with objects and the robot's positioning to make your inference."
+            },
+            "response": "The robot placed two slices of bread from the toaster on two separate plates, and put a bell pepper on a plate, and put the pie on the table.",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 94,
+            "task_instance": {
+                "task_name": "serve_a_meal",
+                "images_path": [
+                    "server_a_meal_1_t1.png",
+                    "server_a_meal_1_t5.png"
+                ],
+                "context": "The task is to take bread slices, bell peppers, apple, salmon and pie from the kitchen counter to the dinner table to make a meal for two person. In the sequence, one critical action frame is removed. Can you deduce the taskthe robot performed by comparing the preceding and following images? Pay attentionto the interaction with objects and the robot's positioning to make your inference."
+            },
+            "response": "The robot placed two slices of bread from the toaster on two separate plates, and put a bell pepper on a plate, and put an apple on another plate, and put the pie on the table.",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 95,
+            "task_instance": {
+                "task_name": "set_up_table",
+                "images_path": [
+                    "set_up_table_1_t1.png",
+                    "set_up_table_1_t2.png"
+                ],
+                "context": "The task is to place the fork, plate, glass, and knife on the microwave onto the table and prepare one cutlery set for one person, which should comply with dining habits. In the sequence, one critical action frame is removed. Can you deduce the taskthe robot performed by comparing the preceding and following images? Pay attentionto the interaction with objects and the robot's positioning to make your inference."
+            },
+            "response": "The robot placed a knife and glass on the table.",
+            "task_instruction_id": 2
+        },
+        {
+            "sample_id": 96,
+            "task_instance": {
+                "task_name": "set_up_table",
+                "images_path": [
+                    "set_up_table_1_t1.png",
+                    "set_up_table_1_t3_1.png"
+                ],
+                "context": "The task is to place the fork, plate, glass, and knife on the microwave onto the table and prepare one cutlery set for one person, which should comply with dining habits. In the sequence, one critical action frame is removed. Can you deduce the taskthe robot performed by comparing the preceding and following images? Pay attentionto the interaction with objects and the robot's positioning to make your inference."
+            },
+            "response": "The robot placed a knife, fork, glass, plate on the table.",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 97,
+            "task_instance": {
+                "task_name": "set_up_table",
+                "images_path": [
+                    "set_up_table_1_t3_2.png",
+                    "set_up_table_1_t4.png"
+                ],
+                "context": "The task is to Take the fork, plate,glass,and knife from the top of microwave to the dinner table and prepare one cutlery set for one person, which should comply with dining habits. In the sequence, one critical action frame is removed. Can you deduce the taskthe robot performed by comparing the preceding and following images? Pay attentionto the interaction with objects and the robot's positioning to make your inference."
+            },
+            "response": "The robot placed a knife and glass on the table.",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 98,
+            "task_instance": {
+                "task_name": "set_up_table",
+                "images_path": [
+                    "set_up_table_1_t3_2.png",
+                    "set_up_table_1_t5.png"
+                ],
+                "context": "The task is to Take the fork, plate,glass,and knife from the top of microwave to the dinner table and prepare one cutlery set for one person, which should comply with dining habits. In the sequence, one critical action frame is removed. Can you deduce the taskthe robot performed by comparing the preceding and following images? Pay attentionto the interaction with objects and the robot's positioning to make your inference."
+            },
+            "response": "The robot placed a knife, fork, glass, plate on the table.",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 99,
+            "task_instance": {
+                "task_name": "clean_table",
+                "images_path": [
+                    "clean_table_1_t1.png",
+                    "clean_table_1_t2.png"
+                ],
+                "context": "The task is to clean and organize the table. In the sequence, one critical action frame is removed. Can you deduce the taskthe robot performed by comparing the preceding and following images? Pay attentionto the interaction with objects and the robot's positioning to make your inference."
+            },
+            "response": "The robot put the fruit on the table into the fruit bowl.",
+            "task_instruction_id": 1
         }
     ]
 }
