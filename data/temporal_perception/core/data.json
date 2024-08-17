@@ -1,0 +1,2013 @@
+{
+    "metadata": {
+        "dataset": "time_perception",
+        "split": "core",
+        "num_sample": 145,
+        "task_instruction": [
+            "You will be given a sequence of images depicting a household chore and a specific question to assess your temporal perception skills. Respond according to the question's instructions.",
+            "A set of images illustrating a household task and a particular question to evaluate your temporal perception will be provided to you. Answer in compliance with the question's criteria.",
+            "You shall receive a succession of images portraying a domestic activity, accompanied by a specific question designed to assess your temporal perception. Provide your response in line with the question's guidelines.",
+            "You will be presented with a series of images representing a household task, along with a specific question aimed at testing your temporal perception. Respond according to the question's requirements.",
+            "An array of images showcasing a household chore and a distinct question to evaluate your temporal perception will be given to you. Answer in accordance with the question's stipulations.",
+            "You will receive a variety of images displaying a household task along with a specific question meant to assess your temporal perception. Respond according to the question's guidelines."
+        ],
+        "question_type": "open-ended",
+        "task_type": "Spatio-temporal Perception",
+        "task_intro": "time perception: Percept the time order of sequence images, or Predict the next state"
+    },
+    "data": [
+        {
+            "sample_id": 0,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is openning the door. Given the image, predict how the environment's state will change next. Focus on how the objects and surroundings may be altered as the robot continues its task.",
+                "images_path": [
+                    "mopping_floors_3.jpg"
+                ]
+            },
+            "response": "The robot successfully opened the door."
+        },
+        {
+            "sample_id": 1,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is openning the drawer. Given the image, predict how the environment's state will change next. Focus on how the objects and surroundings may be altered as the robot continues its task.",
+                "images_path": [
+                    "storing_food_5.jpg"
+                ]
+            },
+            "response": "The robot successfully opened the drawer."
+        },
+        {
+            "sample_id": 2,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "The task is openning the car door. Given the image, predict how the environment's state will change next. Focus on how the objects and surroundings may be altered as the robot continues its task.",
+                "images_path": [
+                    "packing_car_for_trip_5.jpg"
+                ]
+            },
+            "response": "The robot successfully opened the car door."
+        },
+        {
+            "sample_id": 3,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "The task is wiping the beside cupboard. Given the sequence of images, predict how the environment's state will change next. Focus on how the objects and surroundings may be altered as the robot continues its task.",
+                "images_path": [
+                    "cleaning_cupboards_6.jpg",
+                    "cleaning_cupboards_7.jpg"
+                ]
+            },
+            "response": "The robot accidentally knocked over the lamp while cleaning the cupboard."
+        },
+        {
+            "sample_id": 4,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is openning the stove. Given the sequence of images, predict how the environment's state will change next. Focus on how the objects and surroundings may be altered as the robot continues its task.",
+                "images_path": [
+                    "cleaning_stove_5.jpg",
+                    "cleaning_stove_6.jpg"
+                ]
+            },
+            "response": "The robot failed to open the stove because its hand failed to grasp the handle."
+        },
+        {
+            "sample_id": 5,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is openning the drawer. Given the image, predict how the environment's state will change next. Focus on how the objects and surroundings may be altered as the robot continues its task.",
+                "images_path": [
+                    "cleaning_windows_5.jpg"
+                ]
+            },
+            "response": "The robot successfully opened the drawer."
+        },
+        {
+            "sample_id": 6,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "The task is throwing the cup into the bucket. Given the image, predict how the environment's state will change next. Focus on how the objects and surroundings may be altered as the robot continues its task.",
+                "images_path": [
+                    "clearing_the_table_after_dinner_8.jpg"
+                ]
+            },
+            "response": "The robot successfully threw the cup into the bucket."
+        },
+        {
+            "sample_id": 7,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "The task is openning the fridge. Given the sequence of images, predict how the environment's state will change next. Focus on how the objects and surroundings may be altered as the robot continues its task.",
+                "images_path": [
+                    "packing_food_for_work_6.jpg",
+                    "packing_food_for_work_7.jpg"
+                ]
+            },
+            "response": "The robot failed to open the fridge because its hand failed to grasp the handle."
+        },
+        {
+            "sample_id": 8,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "The task is grabbing the plate and putting it into the oven. Given the image, predict how the environment's state will change next. Focus on how the objects and surroundings may be altered as the robot continues its task.",
+                "images_path": [
+                    "preparing_salad_4.jpg"
+                ]
+            },
+            "response": "The robot will lose its grip on the plate and it will fall to the floor."
+        },
+        {
+            "sample_id": 9,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "The task is openning the door. Given the image, predict how the environment's state will change next. Focus on how the objects and surroundings may be altered as the robot continues its task.",
+                "images_path": [
+                    "vacuuming_floors_2.jpg"
+                ]
+            },
+            "response": "The robot successfully opened the door."
+        },
+        {
+            "sample_id": 10,
+            "task_instance": {
+                "task_name": "organize other misplaced items",
+                "images_path": [
+                    "re-shelving_books_4_t1.png",
+                    "re-shelving_books_4_t2.png"
+                ],
+                "context": "The task is to put the misplaced books back on the bookshelf, and organize other misplaced items on the floor. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot picked up the apple and the phone on the floor.",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 11,
+            "task_instance": {
+                "task_name": "organize other misplaced items",
+                "images_path": [
+                    "re-shelving_books_4_t1.png",
+                    "re-shelving_books_4_t3.png"
+                ],
+                "context": "The task is to put the misplaced books back on the bookshelf, and organize other misplaced items on the floor. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot picked up the apple, the phone and the book on the floor.",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 12,
+            "task_instance": {
+                "task_name": "organize other misplaced items",
+                "images_path": [
+                    "re-shelving_books_4_t1.png",
+                    "re-shelving_books_4_t4.png"
+                ],
+                "context": "The task is to put the misplaced books back on the bookshelf, and organize other misplaced items on the floor. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot picked up the apple, the phone and the book on the floor, and picked up the fallen book on the shelf.",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 13,
+            "task_instance": {
+                "task_name": "re-shelving_books",
+                "images_path": [
+                    "re-shelving_books_2_t1.png",
+                    "re-shelving_books_2_t2.png"
+                ],
+                "context": "The task is to put the misplaced books or folder back on the bookshelf. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot put the book and the folder onto the bookshelf.",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 14,
+            "task_instance": {
+                "task_name": "re-shelving_books",
+                "images_path": [
+                    "re-shelving_books_1_t1.png",
+                    "re-shelving_books_1_t2.png"
+                ],
+                "context": "The task is to put the misplaced books or folder back on the bookshelf. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot put the folder onto the bookshelf.",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 15,
+            "task_instance": {
+                "task_name": "organize_bedroom",
+                "images_path": [
+                    "organize_bedroom_1_t1.png",
+                    "organize_bedroom_1_t2.png"
+                ],
+                "context": "The task is to make the bed. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot put a pillow on the floor on the bed.",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 16,
+            "task_instance": {
+                "task_name": "organize_livingroom",
+                "images_path": [
+                    "organize_livingroom_1_t1.png",
+                    "organize_livingroom_1_t2_1.png"
+                ],
+                "context": "The task is to tidy up the room and put all misplaced items in their proper places. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot put the pillows on the sofa, picked up the book on the coffee table and picked up the remote control on the floor.",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 17,
+            "task_instance": {
+                "task_name": "organize_livingroom",
+                "images_path": [
+                    "organize_livingroom_1_t1.png",
+                    "organize_livingroom_1_t3_1.png"
+                ],
+                "context": "The task is to tidy up the room and put all misplaced items in their proper places. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot put the pillows on the floor on the sofa, picked up the books on the coffee table and put the fruit scattered on the coffee table in the fruit bowl, and picked up the remote control and mobile phone on the floor.",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 18,
+            "task_instance": {
+                "task_name": "prepare_afternoon_tea",
+                "images_path": [
+                    "prepare_afternoon_tea_1_t1.png",
+                    "prepare_afternoon_tea_1_t2.png"
+                ],
+                "context": "The task is to place the cream products and coffee on the coffee table in the bedroom. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot took a cake off the table.",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 19,
+            "task_instance": {
+                "task_name": "prepare_afternoon_tea",
+                "images_path": [
+                    "prepare_afternoon_tea_1_t1.png",
+                    "prepare_afternoon_tea_1_t3.png"
+                ],
+                "context": "The task is to place the cream products and coffee on the coffee table in the bedroom. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot took two cakes off the table.",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 20,
+            "task_instance": {
+                "task_name": "prepare_afternoon_tea",
+                "images_path": [
+                    "prepare_afternoon_tea_1_t1.png",
+                    "prepare_afternoon_tea_1_t4.png"
+                ],
+                "context": "The task is to place the cream products and coffee on the coffee table in the bedroom. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot took two cakes and a cup off the table.",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 21,
+            "task_instance": {
+                "task_name": "organize_washstand",
+                "images_path": [
+                    "organize_washstand_1_t1.png",
+                    "organize_washstand_1_t2.png"
+                ],
+                "context": "The task is to store everything on the sink except for the soap in the cabinet. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot opened the cabinet.",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 22,
+            "task_instance": {
+                "task_name": "clean_kitchen_appliances",
+                "images_path": [
+                    "clean_kitchen_appliances_1_t1.png",
+                    "clean_kitchen_appliances_1_t2.png"
+                ],
+                "context": "The task is to clean the microwave, and wipe it with the cleaning tool near it. Given the initial and final frames, with a key action missing in between, can you infer what action the robot performed? Analyze the differences in the scene to deduce the likely action."
+            },
+            "response": "The robot took the pie from the microwave and the salmon from the microwave and cleaned the microwave.",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 23,
+            "task_instance": {
+                "task_name": "clean_table_after_dinner",
+                "images_path": [
+                    "clean_table_after_dinner_1_t1.png",
+                    "clean_table_after_dinner_1_t2.png"
+                ],
+                "context": "The task is to clean the dinner table, clean away the food into the trashcan and place the various utensils in the sink. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot took the fruit and snack boxe from the dining table.",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 24,
+            "task_instance": {
+                "task_name": "clean_table_after_dinner",
+                "images_path": [
+                    "clean_table_after_dinner_1_t1.png",
+                    "clean_table_after_dinner_1_t3.png"
+                ],
+                "context": "The task is to clean the dinner table, clean away the food into the trashcan and place the various utensils in the sink. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot took the fruit and snack boxe, knife and cup from the table.",
+            "task_instruction_id": 2
+        },
+        {
+            "sample_id": 25,
+            "task_instance": {
+                "task_name": "clean_table_after_dinner",
+                "images_path": [
+                    "clean_table_after_dinner_1_t1.png",
+                    "clean_table_after_dinner_1_t4.png"
+                ],
+                "context": "The task is to clean the dinner table, clean away the food into the trashcan and place the various utensils in the sink. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot took the fruit, snack boxe, knife, cup and fork from the table.",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 26,
+            "task_instance": {
+                "task_name": "clean_table_after_dinner",
+                "images_path": [
+                    "clean_table_after_dinner_1_t1.png",
+                    "clean_table_after_dinner_1_t5.png"
+                ],
+                "context": "The task is to clean the dinner table, clean away the food into the trashcan and place the various utensils in the sink. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot took the fruit, snack boxe, plate, knife, cup and fork from the table.",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 27,
+            "task_instance": {
+                "task_name": "clean_table_after_dinner",
+                "images_path": [
+                    "clean_table_after_dinner_2_t1.png",
+                    "clean_table_after_dinner_2_t2.png"
+                ],
+                "context": "The task is to tidy up the dinner table. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot took chips, cookies, cake boxes, chocolate sauce, pies, fruit from the table.",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 28,
+            "task_instance": {
+                "task_name": "preserve_food",
+                "images_path": [
+                    "preserve_food_1_t1.png",
+                    "preserve_food_1_t2.png"
+                ],
+                "context": "The task is to store the foods on the table. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot put the pie on the table in the microwave.",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 29,
+            "task_instance": {
+                "task_name": "preserve_food",
+                "images_path": [
+                    "preserve_food_1_t1.png",
+                    "preserve_food_1_t3.png"
+                ],
+                "context": "The task is to store the foods on the table. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot put the pie on the table on the microwave.",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 30,
+            "task_instance": {
+                "task_name": "preserve_food",
+                "images_path": [
+                    "preserve_food_2_t1.png",
+                    "preserve_food_2_t2.png"
+                ],
+                "context": "The task is to store the fruits and other food from the dinner table in the refrigerator and on top of the microwave respectively. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot put the pie on the table on the microwave.",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 31,
+            "task_instance": {
+                "task_name": "preserve_food",
+                "images_path": [
+                    "preserve_food_2_t1.png",
+                    "preserve_food_2_t3.png"
+                ],
+                "context": "The task is to store the fruits and other food from the dinner table in the refrigerator and on top of the microwave respectively. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot put the pie on the table on the microwave, and open the microwave.",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 32,
+            "task_instance": {
+                "task_name": "preserve_food",
+                "images_path": [
+                    "preserve_food_2_t1.png",
+                    "preserve_food_2_t4.png"
+                ],
+                "context": "The task is to store the fruits and other food from the dinner table in the refrigerator and on top of the microwave respectively. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot put the pie on the table on the microwave, open the microwave and open the refrigerator.",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 33,
+            "task_instance": {
+                "task_name": "put_plates_in_dishwasher",
+                "images_path": [
+                    "put_plates_in_dishwasher_1_t1.png",
+                    "put_plates_in_dishwasher_1_t2.png"
+                ],
+                "context": "The task is to put the plates into the dishwasher. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot loaded two dishes from the dining table into the dishwasher.",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 34,
+            "task_instance": {
+                "task_name": "put_plates_in_dishwasher",
+                "images_path": [
+                    "put_plates_in_dishwasher_1_t1.png",
+                    "put_plates_in_dishwasher_1_t3.png"
+                ],
+                "context": "The task is to put the plates into the dishwasher. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot loaded all four dishes from the dining table into the dishwasher.",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 35,
+            "task_instance": {
+                "task_name": "put_plates_in_dishwasher",
+                "images_path": [
+                    "put_plates_in_dishwasher_2_t1.png",
+                    "put_plates_in_dishwasher_2_t2.png"
+                ],
+                "context": "The task is to put the plates into the dishwasher. Based on the changes between the before and after images, infer what therobot did during the missing frame. Focus on the objects' positions and any subtledifferences in the environment."
+            },
+            "response": "The robot loaded a dishe from the dining table into the dishwasher.",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 36,
+            "task_instance": {
+                "task_name": "serve_a_meal",
+                "images_path": [
+                    "server_a_meal_1_t1.png",
+                    "server_a_meal_1_t2.png"
+                ],
+                "context": "The task is to take bread slices, bell peppers, apple, salmon and pie from the kitchen counter to the dinner table to make a meal for two person. In the sequence, one critical action frame is removed. Can you deduce the taskthe robot performed by comparing the preceding and following images? Pay attentionto the interaction with objects and the robot's positioning to make your inference."
+            },
+            "response": "The robot placed two slices of bread from the toaster on two separate plates.",
+            "task_instruction_id": 0
+        },
+        {
+            "sample_id": 37,
+            "task_instance": {
+                "task_name": "serve_a_meal",
+                "images_path": [
+                    "server_a_meal_1_t1.png",
+                    "server_a_meal_1_t3.png"
+                ],
+                "context": "The task is to take bread slices, bell peppers, apple, salmon and pie from the kitchen counter to the dinner table to make a meal for two person. In the sequence, one critical action frame is removed. Can you deduce the taskthe robot performed by comparing the preceding and following images? Pay attentionto the interaction with objects and the robot's positioning to make your inference."
+            },
+            "response": "The robot placed two slices of bread from the toaster on two separate plates, and put the pie on the table.",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 38,
+            "task_instance": {
+                "task_name": "serve_a_meal",
+                "images_path": [
+                    "server_a_meal_1_t1.png",
+                    "server_a_meal_1_t4.png"
+                ],
+                "context": "The task is to take bread slices, bell peppers, apple, salmon and pie from the kitchen counter to the dinner table to make a meal for two person. In the sequence, one critical action frame is removed. Can you deduce the taskthe robot performed by comparing the preceding and following images? Pay attentionto the interaction with objects and the robot's positioning to make your inference."
+            },
+            "response": "The robot placed two slices of bread from the toaster on two separate plates, and put a bell pepper on a plate, and put the pie on the table.",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 39,
+            "task_instance": {
+                "task_name": "serve_a_meal",
+                "images_path": [
+                    "server_a_meal_1_t1.png",
+                    "server_a_meal_1_t5.png"
+                ],
+                "context": "The task is to take bread slices, bell peppers, apple, salmon and pie from the kitchen counter to the dinner table to make a meal for two person. In the sequence, one critical action frame is removed. Can you deduce the taskthe robot performed by comparing the preceding and following images? Pay attentionto the interaction with objects and the robot's positioning to make your inference."
+            },
+            "response": "The robot placed two slices of bread from the toaster on two separate plates, and put a bell pepper on a plate, and put an apple on another plate, and put the pie on the table.",
+            "task_instruction_id": 5
+        },
+        {
+            "sample_id": 40,
+            "task_instance": {
+                "task_name": "set_up_table",
+                "images_path": [
+                    "set_up_table_1_t1.png",
+                    "set_up_table_1_t2.png"
+                ],
+                "context": "The task is to place the fork, plate, glass, and knife on the microwave onto the table and prepare one cutlery set for one person, which should comply with dining habits. In the sequence, one critical action frame is removed. Can you deduce the taskthe robot performed by comparing the preceding and following images? Pay attentionto the interaction with objects and the robot's positioning to make your inference."
+            },
+            "response": "The robot placed a knife and glass on the table.",
+            "task_instruction_id": 2
+        },
+        {
+            "sample_id": 41,
+            "task_instance": {
+                "task_name": "set_up_table",
+                "images_path": [
+                    "set_up_table_1_t1.png",
+                    "set_up_table_1_t3_1.png"
+                ],
+                "context": "The task is to place the fork, plate, glass, and knife on the microwave onto the table and prepare one cutlery set for one person, which should comply with dining habits. In the sequence, one critical action frame is removed. Can you deduce the taskthe robot performed by comparing the preceding and following images? Pay attentionto the interaction with objects and the robot's positioning to make your inference."
+            },
+            "response": "The robot placed a knife, fork, glass, plate on the table.",
+            "task_instruction_id": 4
+        },
+        {
+            "sample_id": 42,
+            "task_instance": {
+                "task_name": "set_up_table",
+                "images_path": [
+                    "set_up_table_1_t3_2.png",
+                    "set_up_table_1_t4.png"
+                ],
+                "context": "The task is to Take the fork, plate,glass,and knife from the top of microwave to the dinner table and prepare one cutlery set for one person, which should comply with dining habits. In the sequence, one critical action frame is removed. Can you deduce the taskthe robot performed by comparing the preceding and following images? Pay attentionto the interaction with objects and the robot's positioning to make your inference."
+            },
+            "response": "The robot placed a knife and glass on the table.",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 43,
+            "task_instance": {
+                "task_name": "set_up_table",
+                "images_path": [
+                    "set_up_table_1_t3_2.png",
+                    "set_up_table_1_t5.png"
+                ],
+                "context": "The task is to Take the fork, plate,glass,and knife from the top of microwave to the dinner table and prepare one cutlery set for one person, which should comply with dining habits. In the sequence, one critical action frame is removed. Can you deduce the taskthe robot performed by comparing the preceding and following images? Pay attentionto the interaction with objects and the robot's positioning to make your inference."
+            },
+            "response": "The robot placed a knife, fork, glass, plate on the table.",
+            "task_instruction_id": 3
+        },
+        {
+            "sample_id": 44,
+            "task_instance": {
+                "task_name": "clean_table",
+                "images_path": [
+                    "clean_table_1_t1.png",
+                    "clean_table_1_t2.png"
+                ],
+                "context": "The task is to clean and organize the table. In the sequence, one critical action frame is removed. Can you deduce the taskthe robot performed by comparing the preceding and following images? Pay attentionto the interaction with objects and the robot's positioning to make your inference."
+            },
+            "response": "The robot put the fruit on the table into the fruit bowl.",
+            "task_instruction_id": 1
+        },
+        {
+            "sample_id": 45,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "The task is to pack picnic, pick up the food and put them into the box in the order of hamburgers, chips, water, beer, fruit. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "packing_picnics_0.jpg",
+                    "packing_picnics_1.jpg",
+                    "packing_picnics_2.jpg",
+                    "packing_picnics_3.jpg",
+                    "packing_picnics_4.jpg",
+                    "packing_picnics_5.jpg",
+                    "packing_picnics_6.jpg",
+                    "packing_picnics_7.jpg",
+                    "packing_picnics_8.jpg",
+                    "packing_picnics_9.jpg"
+                ]
+            },
+            "response": "4, 2, 5, 6, 3, 7, 9, 10, 1, 8"
+        },
+        {
+            "sample_id": 46,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "The task is to pick up the meat and cheese and put them into the refrigerator, pick up the milk and yogurr and put them into the refrigerator, pick up the soup and put it into the refrigerator,  pick up the carrots and put it into the refrigerator, pick up the bread and put it into the drawer. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "sorting_groceries_0.jpg",
+                    "sorting_groceries_1.jpg",
+                    "sorting_groceries_2.jpg",
+                    "sorting_groceries_3.jpg",
+                    "sorting_groceries_4.jpg",
+                    "sorting_groceries_5.jpg",
+                    "sorting_groceries_6.jpg",
+                    "sorting_groceries_7.jpg",
+                    "sorting_groceries_8.jpg",
+                    "sorting_groceries_9.jpg"
+                ]
+            },
+            "response": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
+        },
+        {
+            "sample_id": 47,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "The task is to pick up the towel on the kitchencounter and wash it under the faucet, then use the towel to clean the sneaker on the floor, and put the sneaker under the table. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_sneakers_0.jpg",
+                    "cleaning_sneakers_1.jpg",
+                    "cleaning_sneakers_2.jpg",
+                    "cleaning_sneakers_3.jpg",
+                    "cleaning_sneakers_4.jpg",
+                    "cleaning_sneakers_5.jpg",
+                    "cleaning_sneakers_6.jpg"
+                ]
+            },
+            "response": "1, 3, 2, 5, 6, 4, 7"
+        },
+        {
+            "sample_id": 48,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "The task is to open the refrigerator,remove the food from the refrigerator and put them on the table in the order of salad, chicken, cookies. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "serving_a_meal_0.jpg",
+                    "serving_a_meal_1.jpg",
+                    "serving_a_meal_2.jpg",
+                    "serving_a_meal_3.jpg",
+                    "serving_a_meal_4.jpg",
+                    "serving_a_meal_5.jpg",
+                    "serving_a_meal_6.jpg"
+                ]
+            },
+            "response": "1, 5, 4, 3, 6, 7, 2"
+        },
+        {
+            "sample_id": 49,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is to pick up the markers and go to put them into the basket, and pick up the screwdriver in the cabinet and go to throw it into the trashbin. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_cupboards_0.jpg",
+                    "cleaning_cupboards_1.jpg",
+                    "cleaning_cupboards_2.jpg",
+                    "cleaning_cupboards_3.jpg",
+                    "cleaning_cupboards_4.jpg",
+                    "cleaning_cupboards_5.jpg"
+                ]
+            },
+            "response": "2, 6, 3, 4, 1, 5"
+        },
+        {
+            "sample_id": 50,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "The task is to put the boxed cereal into the cabinet. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "storing_the_groceries_0.jpg",
+                    "storing_the_groceries_1.jpg",
+                    "storing_the_groceries_2.jpg",
+                    "storing_the_groceries_3.jpg",
+                    "storing_the_groceries_4.jpg",
+                    "storing_the_groceries_5.jpg",
+                    "storing_the_groceries_6.jpg"
+                ]
+            },
+            "response": "1, 7, 3, 4, 5, 6, 2"
+        },
+        {
+            "sample_id": 51,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is to pick up and put the hamburger into the pack, and use the rag to wipe the bowl, cup, plate and chair in order. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_up_after_a_meal_0.jpg",
+                    "cleaning_up_after_a_meal_1.jpg",
+                    "cleaning_up_after_a_meal_2.jpg",
+                    "cleaning_up_after_a_meal_3.jpg",
+                    "cleaning_up_after_a_meal_4.jpg",
+                    "cleaning_up_after_a_meal_5.jpg"
+                ]
+            },
+            "response": "6, 2, 5, 4, 3, 1"
+        },
+        {
+            "sample_id": 52,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "The task is to open the cupboard, pick up the rag inside it and go to wash the rag, then wipe the cabinet using the rag. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_up_the_kitchen_only_0.jpg",
+                    "cleaning_up_the_kitchen_only_1.jpg",
+                    "cleaning_up_the_kitchen_only_2.jpg",
+                    "cleaning_up_the_kitchen_only_3.jpg",
+                    "cleaning_up_the_kitchen_only_4.jpg",
+                    "cleaning_up_the_kitchen_only_5.jpg"
+                ]
+            },
+            "response": "4, 6, 1, 5, 3, 2"
+        },
+        {
+            "sample_id": 53,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "The task is to pack the food into the carton. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "packing_lunches_0.jpg",
+                    "packing_lunches_1.jpg",
+                    "packing_lunches_2.jpg",
+                    "packing_lunches_3.jpg",
+                    "packing_lunches_4.jpg",
+                    "packing_lunches_5.jpg",
+                    "packing_lunches_6.jpg",
+                    "packing_lunches_7.jpg",
+                    "packing_lunches_8.jpg"
+                ]
+            },
+            "response": "7, 6, 2, 4, 5, 1, 3, 8, 9"
+        },
+        {
+            "sample_id": 54,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "The task is to pick up the hat on the closet's floor and go to put it into the cabinet in the bedroom. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_closet_0.jpg",
+                    "cleaning_closet_1.jpg",
+                    "cleaning_closet_2.jpg",
+                    "cleaning_closet_3.jpg",
+                    "cleaning_closet_4.jpg",
+                    "cleaning_closet_5.jpg"
+                ]
+            },
+            "response": "1, 3, 5, 6, 2, 4"
+        },
+        {
+            "sample_id": 55,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "The task is to pick up the rag on the kitchencounter and wash it, then wipe the pot using the rag and put the cleaned pot into the cabinet. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "washing_pots_and_pans_0.jpg",
+                    "washing_pots_and_pans_1.jpg",
+                    "washing_pots_and_pans_2.jpg",
+                    "washing_pots_and_pans_3.jpg",
+                    "washing_pots_and_pans_4.jpg"
+                ]
+            },
+            "response": "2, 4, 1, 5, 3"
+        },
+        {
+            "sample_id": 56,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "The task is to pick up the sweater and put it into the box, then pick up shirts and put them into the box. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "packing_boxes_for_household_move_or_trip_0.jpg",
+                    "packing_boxes_for_household_move_or_trip_1.jpg",
+                    "packing_boxes_for_household_move_or_trip_2.jpg",
+                    "packing_boxes_for_household_move_or_trip_3.jpg",
+                    "packing_boxes_for_household_move_or_trip_4.jpg",
+                    "packing_boxes_for_household_move_or_trip_5.jpg"
+                ]
+            },
+            "response": "4, 5, 3, 2, 6, 1"
+        },
+        {
+            "sample_id": 57,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "The task is to open the drawer, fetch out the rag and wash it, then open the refrigerator and wipe it using the rag, finally close the refrigerator. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_up_refrigerator_0.jpg",
+                    "cleaning_up_refrigerator_1.jpg",
+                    "cleaning_up_refrigerator_2.jpg",
+                    "cleaning_up_refrigerator_3.jpg",
+                    "cleaning_up_refrigerator_4.jpg",
+                    "cleaning_up_refrigerator_5.jpg"
+                ]
+            },
+            "response": "6, 2, 1, 4, 3, 5"
+        },
+        {
+            "sample_id": 58,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "The task is to fetch out the rag from the drawer, then wipe the spoon in the upper drawer using the rag. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "polishing_silver_0.jpg",
+                    "polishing_silver_1.jpg",
+                    "polishing_silver_2.jpg",
+                    "polishing_silver_3.jpg"
+                ]
+            },
+            "response": "1, 4, 3, 2"
+        },
+        {
+            "sample_id": 59,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "The task is to grab the pot and put it into the stove, then pick up the meat and put it into the refrigerator. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "preserving_food_0.jpg",
+                    "preserving_food_1.jpg",
+                    "preserving_food_2.jpg",
+                    "preserving_food_3.jpg"
+                ]
+            },
+            "response": "4, 3, 1, 2"
+        },
+        {
+            "sample_id": 60,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is to fetch out the decorations from the box and put them on the table in the order of bow, wreath, candle. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "putting_up_Christmas_decorations_inside_0.jpg",
+                    "putting_up_Christmas_decorations_inside_1.jpg",
+                    "putting_up_Christmas_decorations_inside_2.jpg",
+                    "putting_up_Christmas_decorations_inside_3.jpg",
+                    "putting_up_Christmas_decorations_inside_4.jpg",
+                    "putting_up_Christmas_decorations_inside_5.jpg"
+                ]
+            },
+            "response": "5, 2, 3, 1, 4, 6"
+        },
+        {
+            "sample_id": 61,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "The task is to pick up the rag on the bed and go to wash it under the faucet, then clean the shoes using the rag. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_shoes_0.jpg",
+                    "cleaning_shoes_1.jpg",
+                    "cleaning_shoes_2.jpg",
+                    "cleaning_shoes_3.jpg"
+                ]
+            },
+            "response": "3, 1, 4, 2"
+        },
+        {
+            "sample_id": 62,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is to open the cabinet, pick up the bow on the table, put it in the cabinet and close the cabinet. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "putting_away_Christmas_decorations_0.jpg",
+                    "putting_away_Christmas_decorations_1.jpg",
+                    "putting_away_Christmas_decorations_2.jpg",
+                    "putting_away_Christmas_decorations_3.jpg"
+                ]
+            },
+            "response": "3, 2, 4, 1"
+        },
+        {
+            "sample_id": 63,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "The task is to pick up the ball, the saucepan and the plates and throw them in the carton. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "organizing_boxes_in_garage_0.jpg",
+                    "organizing_boxes_in_garage_1.jpg",
+                    "organizing_boxes_in_garage_2.jpg",
+                    "organizing_boxes_in_garage_3.jpg"
+                ]
+            },
+            "response": "4, 2, 1, 3"
+        },
+        {
+            "sample_id": 64,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "The task is to put the newspapers together. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "sorting_mail_0.jpg",
+                    "sorting_mail_1.jpg",
+                    "sorting_mail_2.jpg",
+                    "sorting_mail_3.jpg",
+                    "sorting_mail_4.jpg"
+                ]
+            },
+            "response": "5, 2, 1, 3, 4"
+        },
+        {
+            "sample_id": 65,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is to pick up the brush, brush off the lint off the sweater and put the sweater on the bed. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "brushing_lint_off_clothing_0.jpg",
+                    "brushing_lint_off_clothing_1.jpg",
+                    "brushing_lint_off_clothing_2.jpg"
+                ]
+            },
+            "response": "2, 1, 3"
+        },
+        {
+            "sample_id": 66,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "The task is to pick up the toys and put them into the carton. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "putting_away_toys_0.jpg",
+                    "putting_away_toys_1.jpg",
+                    "putting_away_toys_2.jpg",
+                    "putting_away_toys_3.jpg"
+                ]
+            },
+            "response": "2, 3, 1, 4"
+        },
+        {
+            "sample_id": 67,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "The task is to pick up the plates and put them into the cabient. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "putting_dishes_away_after_cleaning_0.jpg",
+                    "putting_dishes_away_after_cleaning_1.jpg",
+                    "putting_dishes_away_after_cleaning_2.jpg",
+                    "putting_dishes_away_after_cleaning_3.jpg"
+                ]
+            },
+            "response": "4, 2, 3, 1"
+        },
+        {
+            "sample_id": 68,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is to open the refrigerator and pick up the sauce and go to put them into the refrigerator. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "putting_leftovers_away_0.jpg",
+                    "putting_leftovers_away_1.jpg",
+                    "putting_leftovers_away_2.jpg",
+                    "putting_leftovers_away_3.jpg",
+                    "putting_leftovers_away_4.jpg"
+                ]
+            },
+            "response": "4, 2, 3, 1, 5"
+        },
+        {
+            "sample_id": 69,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is to pick up the bag on the floor and put it on the bed, then pick up the pencil and put it into the bag, pick up the calculator and put it into the bag. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "organizing_school_stuff_0.jpg",
+                    "organizing_school_stuff_1.jpg",
+                    "organizing_school_stuff_2.jpg",
+                    "organizing_school_stuff_3.jpg",
+                    "organizing_school_stuff_4.jpg",
+                    "organizing_school_stuff_5.jpg"
+                ]
+            },
+            "response": "5, 1, 6, 2, 4, 3"
+        },
+        {
+            "sample_id": 70,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "The task is to move away the bucket and open the drawer, pick up the chips and put them into the drawer. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "storing_food_0.jpg",
+                    "storing_food_1.jpg",
+                    "storing_food_2.jpg",
+                    "storing_food_3.jpg",
+                    "storing_food_4.jpg"
+                ]
+            },
+            "response": "3, 4, 5, 1, 2"
+        },
+        {
+            "sample_id": 71,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "The task is to pick up the books on the table and go to put them on the bookshelf. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "re-shelving_library_books_0.jpg",
+                    "re-shelving_library_books_1.jpg",
+                    "re-shelving_library_books_2.jpg",
+                    "re-shelving_library_books_3.jpg"
+                ]
+            },
+            "response": "4, 1, 2, 3"
+        },
+        {
+            "sample_id": 72,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "The task is to pick up the newspapers on the floor and go to put them in the trashbin. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_garage_0.jpg",
+                    "cleaning_garage_1.jpg",
+                    "cleaning_garage_2.jpg",
+                    "cleaning_garage_3.jpg",
+                    "cleaning_garage_4.jpg"
+                ]
+            },
+            "response": "5, 3, 1, 2, 4"
+        },
+        {
+            "sample_id": 73,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "The task is to clear the table, put the dishes into the bucket. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "clearing_the_table_after_dinner_0.jpg",
+                    "clearing_the_table_after_dinner_1.jpg",
+                    "clearing_the_table_after_dinner_2.jpg",
+                    "clearing_the_table_after_dinner_3.jpg",
+                    "clearing_the_table_after_dinner_4.jpg",
+                    "clearing_the_table_after_dinner_5.jpg",
+                    "clearing_the_table_after_dinner_6.jpg",
+                    "clearing_the_table_after_dinner_7.jpg"
+                ]
+            },
+            "response": "6, 8, 1, 5, 7, 4, 3, 2"
+        },
+        {
+            "sample_id": 74,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "The task is to open the bag and pack the mouse into the bag. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "packing_adult_s_bags_0.jpg",
+                    "packing_adult_s_bags_1.jpg",
+                    "packing_adult_s_bags_2.jpg",
+                    "packing_adult_s_bags_3.jpg"
+                ]
+            },
+            "response": "1, 4, 3, 2"
+        },
+        {
+            "sample_id": 75,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "Put the underwares, shampoo and hardback on the bed into the backpack. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "packing_bags_or_suitcase_0.jpg",
+                    "packing_bags_or_suitcase_1.jpg",
+                    "packing_bags_or_suitcase_2.jpg",
+                    "packing_bags_or_suitcase_3.jpg",
+                    "packing_bags_or_suitcase_4.jpg",
+                    "packing_bags_or_suitcase_5.jpg",
+                    "packing_bags_or_suitcase_6.jpg"
+                ]
+            },
+            "response": "6, 5, 4, 3, 7, 1, 2"
+        },
+        {
+            "sample_id": 76,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "The task is to pick up the pumpkin and put it into the drawer, next pick up the candles and put them into the drawer. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "putting_away_Halloween_decorations_0.jpg",
+                    "putting_away_Halloween_decorations_1.jpg",
+                    "putting_away_Halloween_decorations_2.jpg",
+                    "putting_away_Halloween_decorations_3.jpg",
+                    "putting_away_Halloween_decorations_4.jpg",
+                    "putting_away_Halloween_decorations_5.jpg"
+                ]
+            },
+            "response": "5, 4, 1, 2, 3, 6"
+        },
+        {
+            "sample_id": 77,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "The task is to pick up the file on the table and put it into the cabinet and close the cabinet. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "organizing_file_cabinet_0.jpg",
+                    "organizing_file_cabinet_1.jpg",
+                    "organizing_file_cabinet_2.jpg",
+                    "organizing_file_cabinet_3.jpg"
+                ]
+            },
+            "response": "4, 3, 1, 2"
+        },
+        {
+            "sample_id": 78,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is to open the refrigerator, fetch out the fish inside the refrigerator and put it beside the sink. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "thawing_frozen_food_0.jpg",
+                    "thawing_frozen_food_1.jpg",
+                    "thawing_frozen_food_2.jpg",
+                    "thawing_frozen_food_3.jpg"
+                ]
+            },
+            "response": "3, 1, 4, 2"
+        },
+        {
+            "sample_id": 79,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "The task is to open the dishwasher, put the cup and the plate into it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "loading_the_dishwasher_0.jpg",
+                    "loading_the_dishwasher_1.jpg",
+                    "loading_the_dishwasher_2.jpg",
+                    "loading_the_dishwasher_3.jpg",
+                    "loading_the_dishwasher_4.jpg",
+                    "loading_the_dishwasher_5.jpg"
+                ]
+            },
+            "response": "5, 4, 2, 1, 3, 6"
+        },
+        {
+            "sample_id": 80,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is to fetch out the candles from the carton and put them on the table. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "setting_up_candles_0.jpg",
+                    "setting_up_candles_1.jpg",
+                    "setting_up_candles_2.jpg",
+                    "setting_up_candles_3.jpg",
+                    "setting_up_candles_4.jpg"
+                ]
+            },
+            "response": "3, 2, 4, 1, 5"
+        },
+        {
+            "sample_id": 81,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "The task is to pick up the cans on the bed and put them into the bucket. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "collecting_aluminum_cans_0.jpg",
+                    "collecting_aluminum_cans_1.jpg",
+                    "collecting_aluminum_cans_2.jpg",
+                    "collecting_aluminum_cans_3.jpg"
+                ]
+            },
+            "response": "2, 1, 3, 4"
+        },
+        {
+            "sample_id": 82,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "The task is to pick up the backpack and open it, next pick up the book and put it into the backpack, then pick up the earphone and put it into the backpack. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "packing_child_s_bag_0.jpg",
+                    "packing_child_s_bag_1.jpg",
+                    "packing_child_s_bag_2.jpg",
+                    "packing_child_s_bag_3.jpg",
+                    "packing_child_s_bag_4.jpg",
+                    "packing_child_s_bag_5.jpg"
+                ]
+            },
+            "response": "3, 1, 2, 5, 4, 6"
+        },
+        {
+            "sample_id": 83,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "The task is to pick up the trash and throw it into the trashbin. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "picking_up_trash_0.jpg",
+                    "picking_up_trash_1.jpg",
+                    "picking_up_trash_2.jpg",
+                    "picking_up_trash_3.jpg",
+                    "picking_up_trash_4.jpg"
+                ]
+            },
+            "response": "4, 1, 5, 2, 3"
+        },
+        {
+            "sample_id": 84,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "The task is to open the cabinet, pick up the dishes and put them in the sink. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_out_drawers_0.jpg",
+                    "cleaning_out_drawers_1.jpg",
+                    "cleaning_out_drawers_2.jpg",
+                    "cleaning_out_drawers_3.jpg"
+                ]
+            },
+            "response": "3, 4, 2, 1"
+        },
+        {
+            "sample_id": 85,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "The task is to move away the chair, reach the book under the table and put it on the table. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "collect_misplaced_items_0.jpg",
+                    "collect_misplaced_items_1.jpg",
+                    "collect_misplaced_items_2.jpg",
+                    "collect_misplaced_items_3.jpg"
+                ]
+            },
+            "response": "3, 2, 4, 1"
+        },
+        {
+            "sample_id": 86,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "The task is to fetch out the chip from the closed cabinet and put it into the carton. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "packing_food_for_work_0.jpg",
+                    "packing_food_for_work_1.jpg",
+                    "packing_food_for_work_2.jpg",
+                    "packing_food_for_work_3.jpg",
+                    "packing_food_for_work_4.jpg",
+                    "packing_food_for_work_5.jpg"
+                ]
+            },
+            "response": "4, 3, 5, 1, 2, 6"
+        },
+        {
+            "sample_id": 87,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is to pick up the books on the table and put them on the bookshelf. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "sorting_books_0.jpg",
+                    "sorting_books_1.jpg",
+                    "sorting_books_2.jpg",
+                    "sorting_books_3.jpg"
+                ]
+            },
+            "response": "2, 1, 3, 4"
+        },
+        {
+            "sample_id": 88,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "The task is to pick up rag on the floor and wash it, next wipe the shoes using the rag. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "polishing_shoes_0.jpg",
+                    "polishing_shoes_1.jpg",
+                    "polishing_shoes_2.jpg"
+                ]
+            },
+            "response": "3, 2, 1"
+        },
+        {
+            "sample_id": 89,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "The task is to pick up the moousetrap on the bed and go to set it beside the toilet. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "setting_mousetraps_0.jpg",
+                    "setting_mousetraps_1.jpg",
+                    "setting_mousetraps_2.jpg"
+                ]
+            },
+            "response": "2, 1, 3"
+        },
+        {
+            "sample_id": 90,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is to pick up the chair on the bed and put it on the cabinet. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "rearranging_furniture_0.jpg",
+                    "rearranging_furniture_1.jpg",
+                    "rearranging_furniture_2.jpg",
+                    "rearranging_furniture_3.jpg"
+                ]
+            },
+            "response": "3, 2, 1, 4"
+        },
+        {
+            "sample_id": 91,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "The task is to clean the stained floor. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "mopping_floors_0.jpg",
+                    "mopping_floors_1.jpg",
+                    "mopping_floors_2.jpg"
+                ]
+            },
+            "response": "2, 1, 3"
+        },
+        {
+            "sample_id": 92,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "The task is to pick up the duffel bag and the headset and go to put them into the car. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "packing_car_for_trip_0.jpg",
+                    "packing_car_for_trip_1.jpg",
+                    "packing_car_for_trip_2.jpg",
+                    "packing_car_for_trip_3.jpg",
+                    "packing_car_for_trip_4.jpg"
+                ]
+            },
+            "response": "3, 4, 2, 5, 1"
+        },
+        {
+            "sample_id": 93,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "The task is to lay tile floor. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "laying_tile_floors_0.jpg",
+                    "laying_tile_floors_1.jpg",
+                    "laying_tile_floors_2.jpg"
+                ]
+            },
+            "response": "3, 2, 1"
+        },
+        {
+            "sample_id": 94,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "The task is to clean the stove. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_stove_0.jpg",
+                    "cleaning_stove_1.jpg",
+                    "cleaning_stove_2.jpg",
+                    "cleaning_stove_3.jpg",
+                    "cleaning_stove_4.jpg"
+                ]
+            },
+            "response": "4, 2, 3, 1, 5"
+        },
+        {
+            "sample_id": 95,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "The task is to pick up the brush and wash it under the faucet, then clean the pool using it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_the_pool_0.jpg",
+                    "cleaning_the_pool_1.jpg",
+                    "cleaning_the_pool_2.jpg"
+                ]
+            },
+            "response": "3, 1, 2"
+        },
+        {
+            "sample_id": 96,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "The task is to open the drawer and pick up the rags in it, then wash the rags and use it to wipe the window. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_windows_0.jpg",
+                    "cleaning_windows_1.jpg",
+                    "cleaning_windows_2.jpg",
+                    "cleaning_windows_3.jpg"
+                ]
+            },
+            "response": "3, 4, 1, 2"
+        },
+        {
+            "sample_id": 97,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "The task is to pick up the alarm on the table in the living room and install it on the dining table. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "installing_alarms_0.jpg",
+                    "installing_alarms_1.jpg",
+                    "installing_alarms_2.jpg"
+                ]
+            },
+            "response": "3, 2, 1"
+        },
+        {
+            "sample_id": 98,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "The task is to fetch out the bottle in the freezer, then pick up the rag on kitchencounter and wash it and wipe the freezer using it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_freezer_0.jpg",
+                    "cleaning_freezer_1.jpg",
+                    "cleaning_freezer_2.jpg",
+                    "cleaning_freezer_3.jpg",
+                    "cleaning_freezer_4.jpg",
+                    "cleaning_freezer_5.jpg"
+                ]
+            },
+            "response": "6, 5, 3, 1, 4, 2"
+        },
+        {
+            "sample_id": 99,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "The task is to fetch out the brush from the drawer and wash it under the faucet, then clean the oven with it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_oven_0.jpg",
+                    "cleaning_oven_1.jpg",
+                    "cleaning_oven_2.jpg",
+                    "cleaning_oven_3.jpg"
+                ]
+            },
+            "response": "2, 3, 4, 1"
+        },
+        {
+            "sample_id": 100,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "The task is to go to lock the window. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "locking_every_window_3.jpg",
+                    "locking_every_window_4.jpg"
+                ]
+            },
+            "response": "2, 1"
+        },
+        {
+            "sample_id": 101,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is to fold up to close the box. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "moving_boxes_to_storage_0.jpg",
+                    "moving_boxes_to_storage_1.jpg",
+                    "moving_boxes_to_storage_2.jpg",
+                    "moving_boxes_to_storage_3.jpg",
+                    "moving_boxes_to_storage_4.jpg"
+                ]
+            },
+            "response": "5, 3, 2, 1, 4"
+        },
+        {
+            "sample_id": 102,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is to pick up the soap and put it on the sink. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "preparing_a_shower_for_child_0.jpg",
+                    "preparing_a_shower_for_child_1.jpg",
+                    "preparing_a_shower_for_child_2.jpg"
+                ]
+            },
+            "response": "2, 1, 3"
+        },
+        {
+            "sample_id": 103,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "The task is to go to pick up the rag on the table and wipe the table using it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "polishing_furniture_0.jpg",
+                    "polishing_furniture_1.jpg",
+                    "polishing_furniture_2.jpg"
+                ]
+            },
+            "response": "3, 2, 1"
+        },
+        {
+            "sample_id": 104,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "The task is to go to pick up the plant and water it under the faucet. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "watering_houseplants_0.jpg",
+                    "watering_houseplants_1.jpg",
+                    "watering_houseplants_2.jpg"
+                ]
+            },
+            "response": "2, 1, 3"
+        },
+        {
+            "sample_id": 105,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is to pick up the grill on the floor and go to put it on the washing machine. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_barbecue_grill_0.jpg",
+                    "cleaning_barbecue_grill_1.jpg",
+                    "cleaning_barbecue_grill_2.jpg",
+                    "cleaning_barbecue_grill_3.jpg"
+                ]
+            },
+            "response": "3, 2, 4, 1"
+        },
+        {
+            "sample_id": 106,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "The task is to wash the brush and clean the bathtub with it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_bathtub_0.jpg",
+                    "cleaning_bathtub_1.jpg",
+                    "cleaning_bathtub_2.jpg"
+                ]
+            },
+            "response": "1, 2, 3"
+        },
+        {
+            "sample_id": 107,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "The task is to open the microwave, pick up the rag and wipe the microwave using it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_microwave_oven_0.jpg",
+                    "cleaning_microwave_oven_1.jpg",
+                    "cleaning_microwave_oven_2.jpg"
+                ]
+            },
+            "response": "3, 2, 1"
+        },
+        {
+            "sample_id": 108,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "The task is to open the box. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "opening_presents_0.jpg",
+                    "opening_presents_1.jpg"
+                ]
+            },
+            "response": "1, 2"
+        },
+        {
+            "sample_id": 109,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is to pick up the modem on the table and put it under the table. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "installing_a_modem_0.jpg",
+                    "installing_a_modem_1.jpg",
+                    "installing_a_modem_2.jpg"
+                ]
+            },
+            "response": "2, 3, 1"
+        },
+        {
+            "sample_id": 110,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "The task is to pick up the printer on the floor and put it on the table. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "installing_a_printer_0.jpg",
+                    "installing_a_printer_1.jpg",
+                    "installing_a_printer_2.jpg"
+                ]
+            },
+            "response": "3, 2, 1"
+        },
+        {
+            "sample_id": 111,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "The task is to pick up the scanner on the table and put it onto the floor. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "installing_a_scanner_0.jpg",
+                    "installing_a_scanner_1.jpg",
+                    "installing_a_scanner_2.jpg"
+                ]
+            },
+            "response": "1, 2, 3"
+        },
+        {
+            "sample_id": 112,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "The task is to close the door. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "locking_every_door_0.jpg",
+                    "locking_every_door_1.jpg",
+                    "locking_every_door_2.jpg"
+                ]
+            },
+            "response": "2, 3, 1"
+        },
+        {
+            "sample_id": 113,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "The task is to open the package. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "opening_packages_0.jpg",
+                    "opening_packages_1.jpg"
+                ]
+            },
+            "response": "2, 1"
+        },
+        {
+            "sample_id": 114,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "The task is to pick up the rag on the shelf and wipe the car with it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "waxing_cars_or_other_vehicles_0.jpg",
+                    "waxing_cars_or_other_vehicles_1.jpg",
+                    "waxing_cars_or_other_vehicles_2.jpg"
+                ]
+            },
+            "response": "1, 2, 3"
+        },
+        {
+            "sample_id": 115,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "The task is to pick up the rag on the kitchencounter and wipe the chair with it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_high_chair_0.jpg",
+                    "cleaning_high_chair_1.jpg",
+                    "cleaning_high_chair_2.jpg",
+                    "cleaning_high_chair_3.jpg"
+                ]
+            },
+            "response": "4, 3, 1, 2"
+        },
+        {
+            "sample_id": 116,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "The task is to pick up the rag behind the faucet and wipe the table with it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_table_after_clearing_0.jpg",
+                    "cleaning_table_after_clearing_1.jpg",
+                    "cleaning_table_after_clearing_2.jpg",
+                    "cleaning_table_after_clearing_3.jpg"
+                ]
+            },
+            "response": "3, 4, 2, 1"
+        },
+        {
+            "sample_id": 117,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "The task is to pick up the vacuum and vacuum using it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "vacuuming_floors_0.jpg",
+                    "vacuuming_floors_1.jpg"
+                ]
+            },
+            "response": "2, 1"
+        },
+        {
+            "sample_id": 118,
+            "task_instruction_id": 3,
+            "task_instance": {
+                "context": "The task is to get the bow from the table and put it in the box. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "assembling_gift_baskets_0.jpg",
+                    "assembling_gift_baskets_1.jpg",
+                    "assembling_gift_baskets_2.jpg"
+                ]
+            },
+            "response": "3, 2, 1"
+        },
+        {
+            "sample_id": 119,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is to open the refrigerator door and take out the food inside and put it on the kitchencounter. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "bottling_fruit_0.jpg",
+                    "bottling_fruit_1.jpg",
+                    "bottling_fruit_2.jpg",
+                    "bottling_fruit_3.jpg",
+                    "bottling_fruit_4.jpg"
+                ]
+            },
+            "response": "1, 4, 2, 5, 3"
+        },
+        {
+            "sample_id": 120,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "The task is to pick up the book on the bookshelf and put it into the box. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "boxing_books_up_for_storage_0.jpg",
+                    "boxing_books_up_for_storage_1.jpg",
+                    "boxing_books_up_for_storage_2.jpg"
+                ]
+            },
+            "response": "1, 3, 2"
+        },
+        {
+            "sample_id": 121,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "The task is to cut the tomato and pick it up and put it into the pot. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "chopping_vegetables_0.jpg",
+                    "chopping_vegetables_1.jpg",
+                    "chopping_vegetables_2.jpg",
+                    "chopping_vegetables_3.jpg"
+                ]
+            },
+            "response": "1, 2, 3, 4"
+        },
+        {
+            "sample_id": 122,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "The task is to pick up the rag and use it to wipe the stains on the bathtub. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_bathrooms_0.jpg",
+                    "cleaning_bathrooms_1.jpg",
+                    "cleaning_bathrooms_2.jpg"
+                ]
+            },
+            "response": "2, 3, 1"
+        },
+        {
+            "sample_id": 123,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is to pick up the cloth on the bed and put it into the cabinet. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_bedroom_0.jpg",
+                    "cleaning_bedroom_1.jpg",
+                    "cleaning_bedroom_2.jpg"
+                ]
+            },
+            "response": "1, 3, 2"
+        },
+        {
+            "sample_id": 124,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "The task is to pick up the leftovers on the kitchencounter and throw them into the trash can. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "throwing_away_leftovers_0.jpg",
+                    "throwing_away_leftovers_1.jpg",
+                    "throwing_away_leftovers_2.jpg"
+                ]
+            },
+            "response": "3, 2, 1"
+        },
+        {
+            "sample_id": 125,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "The task is to unpack the box. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "unpacking_suitcase_0.jpg",
+                    "unpacking_suitcase_1.jpg",
+                    "unpacking_suitcase_2.jpg"
+                ]
+            },
+            "response": "2, 3, 1"
+        },
+        {
+            "sample_id": 126,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "The task is to take the dishcloth and wash it, then use the dishcloth to wipe the bowl and put it down. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "washing_dishes_0.jpg",
+                    "washing_dishes_1.jpg",
+                    "washing_dishes_2.jpg"
+                ]
+            },
+            "response": "3, 1, 2, 4"
+        },
+        {
+            "sample_id": 127,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "The task is to put the ball, eggs, bows, and candies equally into the two baskets. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "old_context": "The task is to pick up the ball on the table and put it into the basket. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "filling_an_Easter_basket_0.jpg",
+                    "filling_an_Easter_basket_1.jpg",
+                    "filling_an_Easter_basket_2.jpg"
+                ]
+            },
+            "response": "2, 1, 3"
+        },
+        {
+            "sample_id": 128,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "The task is to take the lollipop out of the bucket and put it in the stocking. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "filling_a_Christmas_stocking_0.jpg",
+                    "filling_a_Christmas_stocking_1.jpg",
+                    "filling_a_Christmas_stocking_2.jpg"
+                ]
+            },
+            "response": "1, 3, 2"
+        },
+        {
+            "sample_id": 129,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is to get the fax machine on the floor and mount it on the table. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "installing_a_fax_machine_0.jpg",
+                    "installing_a_fax_machine_1.jpg",
+                    "installing_a_fax_machine_2.jpg"
+                ]
+            },
+            "response": "1, 2, 3"
+        },
+        {
+            "sample_id": 130,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "The task is to add the tea bag and water to the teapot and boil the tea. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "making_tea_0.jpg",
+                    "making_tea_1.jpg",
+                    "making_tea_2.jpg",
+                    "making_tea_3.jpg"
+                ]
+            },
+            "response": "2, 1, 3, 4"
+        },
+        {
+            "sample_id": 131,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "The task is to put the vegetables on the plate to make salad. There are more and more vegetables on the plate. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "preparing_salad_0.jpg",
+                    "preparing_salad_1.jpg",
+                    "preparing_salad_2.jpg",
+                    "preparing_salad_3.jpg"
+                ]
+            },
+            "response": "1, 3, 2, 4"
+        },
+        {
+            "sample_id": 132,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "The task is to pick up the plywood and put them beside refrigerator. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "bringing_in_wood_0.jpg",
+                    "bringing_in_wood_1.jpg",
+                    "bringing_in_wood_2.jpg"
+                ]
+            },
+            "response": "1,2,3"
+        },
+        {
+            "sample_id": 133,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "The task is to pick up the rag on the shelf and clean the car using it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_a_car_0.jpg",
+                    "cleaning_a_car_1.jpg",
+                    "cleaning_a_car_2.jpg"
+                ]
+            },
+            "response": "2,1,3"
+        },
+        {
+            "sample_id": 134,
+            "task_instruction_id": 1,
+            "task_instance": {
+                "context": "The task is to pick up the rag on the floor and go to wash it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_carpets_0.jpg",
+                    "cleaning_carpets_1.jpg",
+                    "cleaning_carpets_2.jpg"
+                ]
+            },
+            "response": "3,2,1"
+        },
+        {
+            "sample_id": 135,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is to pick up the brush on the floor and go to wash it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_floors_0.jpg",
+                    "cleaning_floors_1.jpg",
+                    "cleaning_floors_2.jpg"
+                ]
+            },
+            "response": "3,1,2"
+        },
+        {
+            "sample_id": 136,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "The task is to pick up the rag on the kitchencounter and wash it, then wipe the cupboard using it. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_kitchen_cupboard_0.jpg",
+                    "cleaning_kitchen_cupboard_1.jpg",
+                    "cleaning_kitchen_cupboard_2.jpg"
+                ]
+            },
+            "response": "1,3,2"
+        },
+        {
+            "sample_id": 137,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is to clean the toilet with the scrub brush on the floor. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "cleaning_toilet_2.jpg",
+                    "cleaning_toilet_1.jpg",
+                    "cleaning_toilet_3.jpg",
+                    "cleaning_toilet_4.jpg",
+                    "cleaning_toilet_5.jpg"
+                ]
+            },
+            "response": "2, 1, 3, 4, 5"
+        },
+        {
+            "sample_id": 138,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "The task is to defrost the freezer with the scraper on the countertop. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "defrosting_freezer_2.jpg",
+                    "defrosting_freezer_0.jpg",
+                    "defrosting_freezer_1.jpg"
+                ]
+            },
+            "response": "2, 3, 1"
+        },
+        {
+            "sample_id": 139,
+            "task_instruction_id": 5,
+            "task_instance": {
+                "context": "The task is to lay the wooden floors near the sofa. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "laying_wood_floors_1.jpg",
+                    "laying_wood_floors_2.jpg",
+                    "laying_wood_floors_0.jpg"
+                ]
+            },
+            "response": "3, 1, 2"
+        },
+        {
+            "sample_id": 140,
+            "task_instruction_id": 4,
+            "task_instance": {
+                "context": "The task is to take out the food from the carton. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "picking_up_take-out_food_0.jpg",
+                    "picking_up_take-out_food_1.jpg"
+                ]
+            },
+            "response": "1,0"
+        },
+        {
+            "sample_id": 141,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "The task is to Wet the rag and scrub the floor. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "installing_a_modem_0.jpg",
+                    "installing_a_modem_1.jpg",
+                    "installing_a_modem_2.jpg"
+                ]
+            },
+            "response": "1, 2, 3"
+        },
+        {
+            "sample_id": 142,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "The task is to Wet the rag and scrub the car. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "washing_cars_or_other_vehicles_0.jpg",
+                    "washing_cars_or_other_vehicles_1.jpg",
+                    "washing_cars_or_other_vehicles_2.jpg",
+                    "washing_cars_or_other_vehicles_3.jpg"
+                ]
+            },
+            "response": "1, 2, 3, 4"
+        },
+        {
+            "sample_id": 143,
+            "task_instruction_id": 2,
+            "task_instance": {
+                "context": "The task is to Put the salad on the table. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "serving_hors_d_oeuvres_1.jpg",
+                    "serving_hors_d_oeuvres_2.jpg",
+                    "serving_hors_d_oeuvres_3.jpg"
+                ]
+            },
+            "response": "3, 1, 2"
+        },
+        {
+            "sample_id": 144,
+            "task_instruction_id": 0,
+            "task_instance": {
+                "context": "The task is to Wet the rag and scrub the floor. Your job is to organize these given pictures in the correct chronological sequence, e.g., 2, 1, 3, showing that the order is Figure 2, Figure 1, and Figure 3. Just give me the ordered results like 2, 1, 3, and avoid adding any extra remarks. Your answer is:",
+                "images_path": [
+                    "washing_floor_1.jpg",
+                    "washing_floor_2.jpg",
+                    "washing_floor_3.jpg"
+                ]
+            },
+            "response": "1, 2, 3"
+        }
+    ]
+}
