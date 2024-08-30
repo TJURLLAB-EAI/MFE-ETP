@@ -3,17 +3,17 @@
 
 <p align="left">
     <a href='https://drive.google.com/drive/folders/1jxiVVzJn87Of6OJ_h0dVUQN1bbjYXy0c?usp=drive_link'>
-      <img src='https://img.shields.io/badge/Paper-arXiv-green?style=plastic&logo=arXiv&logoColor=green' alt='Data'>
+      <img src='https://img.shields.io/badge/Paper-arXiv-green?style=plastic&logo=arXiv&logoColor=green' alt='Paper Arxiv'>
     </a>
     <a href='https://arxiv.org/pdf/2407.05047'>
-      <img src='https://img.shields.io/badge/Paper-PDF-red?style=plastic&logo=adobeacrobatreader&logoColor=red' alt='Paper'>
+      <img src='https://img.shields.io/badge/Paper-PDF-red?style=plastic&logo=adobeacrobatreader&logoColor=red' alt='Paper PDF'>
     </a>
     <a href='https://mfe-etp.github.io/'>
       <img src='https://img.shields.io/badge/Project-Page-blue?style=plastic&logo=Google%20chrome&logoColor=blue' alt='Project Page'>
     </a>
 </p>
 
-for the new data, please refer to [New Data](https://drive.google.com/drive/folders/1jxiVVzJn87Of6OJ_h0dVUQN1bbjYXy0c?usp=drive_link)
+for the new data, please refer to the Google Drive link: [New Data](https://drive.google.com/drive/folders/1jxiVVzJn87Of6OJ_h0dVUQN1bbjYXy0c?usp=drive_link)
 
 This repo contains benchmark data and code for our NeurIPS Datasets and Benchmarks 2024 paper:
 
