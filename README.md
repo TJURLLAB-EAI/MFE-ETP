@@ -13,6 +13,8 @@
     </a>
 </p>
 
+for the new data, please refer to [New Data](https://drive.google.com/drive/folders/1jxiVVzJn87Of6OJ_h0dVUQN1bbjYXy0c?usp=drive_link)
+
 This repo contains benchmark data and code for our NeurIPS Datasets and Benchmarks 2024 paper:
 
 [MFE-ETP: A Comprehensive Evaluation Benchmark for Multi-modal Foundation Models on Embodied Task Planning](https://mfe-etp.github.io/)
